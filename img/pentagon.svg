@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" 
+         "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+ <svg xmlns="http://www.w3.org/2000/svg" width="184.5" height="193.5">
+	<g transform="translate(83.5, 96.5)">
+		<polygon points="0,0 100,0 30.9,95.1"
+			style="fill:none; stroke:black; stroke-width:5; stroke-linecap: round;" />
+		<polygon points="0,0 100,0 30.9,95.1"
+			style="fill:none; stroke:black; stroke-width:5; stroke-linecap: round;" transform="rotate(72)"/>
+		<polygon points="0,0 100,0 30.9,95.1"
+			style="fill:none; stroke:black; stroke-width:5; stroke-linecap: round;" transform="rotate(144)"/>
+		<polygon points="0,0 100,0 30.9,95.1"
+			style="fill:none; stroke:black; stroke-width:5; stroke-linecap: round;" transform="rotate(216)"/>
+		<polygon points="0,0 100,0 30.9,95.1"
+			style="fill:none; stroke:black; stroke-width:5; stroke-linecap: round;" transform="rotate(288)"/>
+	</g>
+	Sorry, your browser does not support inline SVG.  
+</svg>
