@@ -8,6 +8,16 @@ span.avoidwrap {
 	display: inline-block;
 }
 
+.characteristicName {
+    font-size: x-large;
+    vertical-align: middle;
+}
+
+.characteristicRanks img {
+	height: 2em;
+	vertical-align: middle;
+}
+
 .combat, .knowledge {
 	font-style: italic;
 }
