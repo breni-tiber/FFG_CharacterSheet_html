@@ -1,0 +1,46 @@
+
+.characteristicSkill {
+	display: inline-block;
+	vertical-align: top;
+	border-spacing: 0 2px;
+}
+
+.avoidwrap {
+	display: inline-block;
+}
+
+.characteristicName {
+    font-size: x-large;
+    vertical-align: middle;
+}
+
+.characteristicRanks img {
+	height: 2em;
+	vertical-align: middle;
+}
+
+.combat, .knowledge {
+	font-style: italic;
+}
+
+.classSkill img {
+	height: 0.75em;
+}
+
+.skillName {
+  min-width: 10em;
+}
+
+.skillRanks img {
+	height: 2em;
+	vertical-align: middle;
+}
+
+.characteristicSkill tr:nth-child(even) > td {
+	background-color: lightgrey;
+}
+
+.characteristicSkill tr:nth-child(even) .skillRanks img {
+	transform: rotate(180deg);
+}
+

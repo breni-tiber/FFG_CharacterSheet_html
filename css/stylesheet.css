@@ -1,44 +1,63 @@
-table {
+@import "characteristicSkillSection.css";
+
+.hidden {
+	display: none;
+}
+
+header span {
 	display: inline-block;
-	vertical-align: top;
-	border-spacing: 0 2px;
+	width: 30%;
 }
 
-span.avoidwrap {
-	display: inline-block;
-}
-
-.characteristicName {
-    font-size: x-large;
-    vertical-align: middle;
-}
-
-.characteristicRanks img {
-	height: 2em;
-	vertical-align: middle;
-}
-
-.combat, .knowledge {
-	font-style: italic;
-}
-
-.classSkill img {
-	height: 0.75em;
-}
-
-.skillName {
-  min-width: 10em;
-}
-
-.skillRanks img {
-	height: 2em;
-	vertical-align: middle;
-}
-
-.characteristicSkill tr:nth-child(even) > td {
+#healthDefenseSection {
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
 	background-color: lightgrey;
 }
 
-.characteristicSkill tr:nth-child(even) .skillRanks img {
-	transform: rotate(180deg);
+#healthDefense {
+	border-collapse: collapse;
+}
+
+#soak th {
+	text-align: right;
+}
+
+#criticalWounds, #conditionMonitor {
+	border-top: 0.1em solid black;
+	padding-bottom: 5em;
+}
+
+.underlined {
+	background-color: white;
+	border-bottom: 0.1em dotted black;
+}
+
+.smallValueField {
+	display: inline-block;
+	background-color: white;
+	height: 100%;
+	min-width: 3rem;
+	min-height: 2rem;
+}
+
+.mediumValueField {
+	display: inline-block;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	min-height: 3rem;
+	text-align: center;
+	font-size: small;
+}
+
+.bigValueField {
+	display: inline-block;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	min-height: 5rem;
+	text-align: center;
+	font-size: small;
 }
