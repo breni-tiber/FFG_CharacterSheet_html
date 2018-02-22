@@ -1,4 +1,3 @@
-
 .characteristicSkill {
 	display: inline-block;
 	vertical-align: top;
@@ -28,7 +27,7 @@
 }
 
 .skillName {
-  min-width: 10em;
+  min-width: 9em;
 }
 
 .skillRanks img {
@@ -43,4 +42,3 @@
 .characteristicSkill tr:nth-child(even) .skillRanks img {
 	transform: rotate(180deg);
 }
-

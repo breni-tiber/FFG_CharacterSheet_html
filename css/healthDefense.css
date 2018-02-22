@@ -13,10 +13,6 @@
 	text-align: right;
 }
 
-#criticalWounds, #conditionMonitor {
-	border-top: 0.1em solid black;
-}
-
 #criticalWounds tr:nth-child(1) th:nth-child(1) {
 	min-width: 9rem;
 }
