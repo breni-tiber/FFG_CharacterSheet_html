@@ -252,55 +252,72 @@
 
 <article id="healthDefenseSection">
 	<h4 class="hidden">Defenses & Health</h4>
+	<!-- tables for non-tabular data and tables within tables. rather hacky.
+		Problem: there is no colspan, when using "display: table"!-->
 	<table id="healthDefense">
 		<caption class="hidden">Defenses and Health</caption>
-		<tbody id="defense">
+		<tbody>
 			<tr>
+				<td></td>
+				<td></td>
 				<th colspan="2">Defense</th>
 			</tr>
 			<tr>
+				<td></td>
+				<td></td>
 				<td><span class="mediumValueField">Melee</span></td>
 				<td><span class="mediumValueField">Ranged</span></td>
 			</tr>
-		</tbody>
-
-		<tbody id="soak">
 			<tr>
+				<td></td>
+				<td></td>
 				<th>Soak:</th>
 				<td><span class="smallValueField"></span></td>
 			</tr>
-		</tbody>
-
-		<tbody id="criticalWounds">
+			
 			<tr>
 				<th colspan="2">Critical&nbsp;wounds</th>
+				<th>Wounds</th>
+				<th>Strain</th>
 			</tr>
 			<tr>
-				<th>Effect</th>
-				<th>Severity</th>
+				<td rowspan="2" colspan="2">
+					<table>
+						<tbody id="criticalWounds">
+							<tr>
+								<th>Effect</th>
+								<th>Severity</th>
+							</tr>
+							<tr>
+								<td class="underlined"></td>
+								<td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+							</tr>
+							<tr>
+								<td class="underlined"></td>
+								<td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+							</tr>
+							<tr>
+								<td class="underlined"></td>
+								<td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+							</tr>
+							<tr>
+								<td class="underlined"></td>
+								<td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td><span class="mediumValueField">Threshold</span></td>
+				<td><span class="mediumValueField">Threshold</span></td>
 			</tr>
 			<tr>
-				<td class="underlined"></td>
-				<td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
-			</tr>
-			<tr>
-				<td class="underlined"></td>
-				<td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
-			</tr>
-			<tr>
-				<td class="underlined"></td>
-				<td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
-			</tr>
-			<tr>
-				<td class="underlined"></td>
-				<td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
-			</tr>
-			<tr>
-				<td class="underlined"></td>
-				<td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+				<td><span class="bigValueField">Current</span></td>
+				<td><span class="bigValueField">Current</span></td>
 			</tr>
 		</tbody>
-<!--
+	</table>
+	
+	<!--
 		<tbody id="conditionStims">
 			<tr>
 				<th>Conditions</th>
@@ -311,22 +328,7 @@
 				<td>OOOOO</td>
 			</tr>
 		</tbody>
--->
-		<tbody id="conditionMonitor">
-			<tr>
-				<th>Wounds</th>
-				<th>Strain</th>
-			</tr>
-			<tr>
-				<td><span class="mediumValueField">Threshold</span></td>
-				<td><span class="mediumValueField">Threshold</span></td>
-			</tr>
-			<tr>
-				<td><span class="bigValueField">Current</span></td>
-				<td><span class="bigValueField">Current</span></td>
-			</tr>
-		</tbody>
-	</table>
+	-->
 </article>
 	
 </main>

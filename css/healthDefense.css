@@ -1,0 +1,22 @@
+#healthDefenseSection {
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+}
+
+#healthDefense {
+	border-collapse: collapse;
+	margin: 0em 0.1em 0em 0em;
+}
+
+#soak th {
+	text-align: right;
+}
+
+#criticalWounds, #conditionMonitor {
+	border-top: 0.1em solid black;
+}
+
+#criticalWounds tr:nth-child(1) th:nth-child(1) {
+	min-width: 9rem;
+}
