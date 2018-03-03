@@ -5,6 +5,17 @@
 	display: none;
 }
 
+.printedPage {
+	page-break-inside: avoid;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+header {
+    flex-basis: 100%;
+}
+
 header span {
 	display: inline-block;
 	width: 30%;

@@ -1,7 +1,7 @@
 #healthDefenseSection {
-	position: fixed;
-	bottom: 0%;
-	right: 0%;
+	align-self: flex-end;
+	order: 66;
+	margin-left: auto;
 }
 
 #healthDefense {

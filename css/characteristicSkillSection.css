@@ -1,11 +1,5 @@
 .characteristicSkill {
-	display: inline-block;
-	vertical-align: top;
-	border-spacing: 0 2px;
-}
-
-.avoidwrap {
-	display: inline-block;
+	border-spacing: 0 0;
 }
 
 .characteristicName {
@@ -33,6 +27,8 @@
 .skillRanks img {
 	height: 2em;
 	vertical-align: middle;
+	margin-top: -0.2em;
+	margin-bottom: -0.15em;
 }
 
 .characteristicSkill tr:nth-child(even) > td {
@@ -41,4 +37,8 @@
 
 .characteristicSkill tr:nth-child(even) .skillRanks img {
 	transform: rotate(180deg);
+}
+
+.characteristicSkill tr:nth-child(odd) .skillRanks img {
+	padding-left: 0.75em;
 }
