@@ -1,5 +1,12 @@
+.characteristicSkillSection {
+	display: flex;
+	height: 100%;
+	flex-flow: column wrap;
+}
+
 .characteristicSkill {
 	border-spacing: 0 0;
+	margin-right: 1.5em;
 }
 
 .characteristicName {

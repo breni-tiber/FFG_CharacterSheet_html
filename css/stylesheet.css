@@ -1,15 +1,36 @@
 @import "characteristicSkillSection.css";
 @import "healthDefense.css";
 
-.hidden {
-	display: none;
+@media print {
+	@page {
+		size: A4;
+	}
+	
+	.printedPage {
+		page-break-inside: avoid;
+	}
+	
+	body {
+		background: white;
+		font-size: 12pt;
+	}
 }
 
-.printedPage {
-	page-break-inside: avoid;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+@media screen {
+	html {
+		padding: 1em;
+	}
+}
+
+html, body, .printedPage {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.hidden {
+	display: none;
 }
 
 header {
