@@ -1,16 +1,37 @@
 .characteristicSkillSection {
 	display: inline-flex;
 	height: 100%;
-	width: 40%;
 	flex-flow: column wrap;
+	justify-content: space-around;
+}
+
+#brawn {
+	order: 1;
 }
 
 #intellect {
-	order: -1;
+	order: 2;
+}
+
+#willpower {
+	order: 3;
+}
+
+#agility {
+	order: 4;
+}
+
+#cunning {
+	order: 5;
+}
+
+#presence {
+	order: 6;
 }
 
 .characteristicSkill {
 	border-spacing: 0 0;
+	min-width: 14em;
 }
 
 .characteristicName {

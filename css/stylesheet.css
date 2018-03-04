@@ -14,11 +14,46 @@
 		background: white;
 		font-size: 12pt;
 	}
+
+	html {
+		border: 2pt dotted red;	
+	}
 }
 
 @media screen {
 	html {
 		padding: 1em;
+	}
+}
+
+@media (orientation: landscape) {
+	header {
+		position: absolute;
+		right: 0;
+		width: 15em;
+	}
+
+	header span {
+		display: block;
+		border-top: 0.1em dotted black;
+		font-size: small;
+		margin-top: 2em;
+	}
+}
+
+@media (orientation: portrait) {
+	header span {
+		display: inline-block;
+		width: 30%;
+	}
+
+	header span:after {
+		content: ":";
+	}
+
+	.underlined {
+		background-color: white;
+		border-bottom: 0.1em dotted black;
 	}
 }
 
@@ -35,20 +70,6 @@ html, body, .printedPage {
 
 .hidden {
 	display: none;
-}
-
-header {
-    flex-basis: 100%;
-}
-
-header span {
-	display: inline-block;
-	width: 30%;
-}
-
-.underlined {
-	background-color: white;
-	border-bottom: 0.1em dotted black;
 }
 
 .smallValueField {
