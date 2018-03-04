@@ -1,12 +1,16 @@
 .characteristicSkillSection {
-	display: flex;
+	display: inline-flex;
 	height: 100%;
+	width: 40%;
 	flex-flow: column wrap;
+}
+
+#intellect {
+	order: -1;
 }
 
 .characteristicSkill {
 	border-spacing: 0 0;
-	margin-right: 1.5em;
 }
 
 .characteristicName {

@@ -29,6 +29,10 @@ html, body, .printedPage {
 	box-sizing: border-box;
 }
 
+.printedPage {
+	position: relative;
+}
+
 .hidden {
 	display: none;
 }
