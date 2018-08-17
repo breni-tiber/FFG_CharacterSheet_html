@@ -1,37 +1,44 @@
-.characteristicSkillSection {
-	display: inline-flex;
-	height: 100%;
-	flex-flow: column wrap;
-	justify-content: space-around;
-}
-
 #brawn {
-	order: 1;
-}
-
-#intellect {
-	order: 2;
-}
-
-#willpower {
-	order: 3;
+	grid-row-start: header-end;
+	grid-column-start: 1;
 }
 
 #agility {
-	order: 4;
+	grid-row-start: header-end;
+	grid-column-start: 2;
 }
 
 #cunning {
-	order: 5;
+	grid-row-start: 3;
+	grid-column-start:1;
+}
+
+#intellect {
+	grid-row-start: 3;
+}
+
+#knowledge {
+	grid-row-start: 3;
 }
 
 #presence {
-	order: 6;
+	grid-row-start: 4;
+}
+
+#willpower {
+	grid-row-start: 4;
+}
+
+caption.characteristic {
+	/*caption-side: left;
+	transform: rotate(-90deg);*/
+	white-space: nowrap;
+	height: 2em;
 }
 
 .characteristicSkill {
 	border-spacing: 0 0;
-	min-width: 14em;
+	min-width: 10em;
 }
 
 .characteristicName {
@@ -44,7 +51,7 @@
 	vertical-align: middle;
 }
 
-.combat, .knowledge {
+.combat, .knwl {
 	font-style: italic;
 }
 
