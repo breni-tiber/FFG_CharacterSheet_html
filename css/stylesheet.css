@@ -12,7 +12,6 @@
 		box-sizing: border-box;
 		padding: 0px;
 		margin: 0px;
-		border: 2pt dotted red;	
 	}
 	
 	body {
@@ -23,7 +22,6 @@
 		margin: 0px;
 		background: white;
 		font-size: 12pt;
-		border: 2pt dotted green;
 	}
 	
 	.printedPage {
@@ -38,14 +36,13 @@
 
 @media screen {
 	html {
-		padding: 1em;
+		padding: 0.2em;
 	}
 }
 
 @media (orientation: landscape) {
 	header {
-		grid-row-start: header-end;
-		grid-column-end: -1;
+		grid-area: header-end/active-skills-end/3/-1;
 		width: 15em;
 		justify-self: end;
 	}
@@ -60,29 +57,39 @@
 
 @media (orientation: portrait) {
 	header {
-		grid-column: 1 / span 3;
+		grid-area: 1/1/header-end/-1;
+        width: 100%;
+        border-bottom: 0.1em dotted black;
+		font-size: small;
+		margin-top: 1em;
 	}
+    
+    header span {
+        width: 20em;
+        display: inline-block;
+    }
 
 	header span:after {
 		content: ":";
-	}
-
-	.underlined {
-		background-color: white;
-		border-bottom: 0.1em dotted black;
 	}
 }
 
 .printedPage {
 	display: grid;
-	grid-template-rows: max-content [header-end] max-content max-content auto;
-	grid-template-columns: [active-skills-start] max-content max-content [active-skills-end] auto;
+	grid-template-rows: max-content [header-end] max-content max-content max-content auto;
+	grid-template-columns: [active-skills-start] max-content max-content [active-skills-end] max-content [knwl-skills-end] auto;
 	place-items: start;
 	grid-gap: 10px;
 }
 
 .hidden {
 	display: none;
+}
+
+
+.underlined {
+	background-color: white;
+	border-bottom: 0.1em dotted black;
 }
 
 .smallValueField {

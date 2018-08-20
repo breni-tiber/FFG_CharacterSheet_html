@@ -1,16 +1,13 @@
-#healthDefenseSection {
-	grid-row-end: -1;
-	grid-column-end: -1;
-	place-self: end;
-}
-
 #healthDefense {
 	border-collapse: collapse;
 	margin: 0em 0.1em 0em 0em;
+    grid-area: -3 / -2 / -1 / -1;
+	place-self: end;
 }
 
-#soak th {
-	text-align: right;
+#criticalWounds {
+    grid-area: -2 / -4 / -1 / -2;
+    place-self: end;
 }
 
 #criticalWounds tr:nth-child(1) th:nth-child(1) {
