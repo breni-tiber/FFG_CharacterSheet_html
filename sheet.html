@@ -17,6 +17,7 @@
 		<span>Character</span>
 	</header>
 	
+	<!-- characteristics and skills -->
     <table id="brawn" class="characteristicSkill">
         <caption class="characteristic">
             <span class="characteristicName">Brawn</span> <span class="characteristicRanks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"/></span>
@@ -142,11 +143,6 @@
             </tr>
             <tr class="knwl">
                 <td class="classSkill"><img src="img/circle.svg" height="15" alt="classSkill"/></td>
-                <td class="skillName">Galactic Civil War</td>
-                <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"/></td>
-            </tr>
-            <tr class="knwl">
-                <td class="classSkill"><img src="img/circle.svg" height="15" alt="classSkill"/></td>
                 <td class="skillName">Lore</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"/></td>
             </tr>
@@ -158,6 +154,11 @@
             <tr class="knwl">
                 <td class="classSkill"><img src="img/circle.svg" height="15" alt="classSkill"/></td>
                 <td class="skillName">Underworld</td>
+                <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"/></td>
+            </tr>
+            <tr class="knwl">
+                <td class="classSkill"><img src="img/circle.svg" height="15" alt="classSkill"/></td>
+                <td class="skillName">Warfare</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"/></td>
             </tr>
             <tr class="knwl">
@@ -254,9 +255,10 @@
             </tr>
         </tbody>
     </table>
-	
-    <!--healthDefenseSection-->
-	<!-- tables for non-tabular data and tables within tables. rather hacky.
+	<!-- /characteristics and skills -->
+
+    <!-- health and defense -->
+	<!-- tables for non-tabular data. rather hacky.
 				Problem: there is no colspan, when using "display: table"!-->             
     <table id="criticalWounds">
         <caption>Critical&nbsp;wounds</caption>
@@ -291,15 +293,16 @@
                 <th colspan="2">Defense</th>
             </tr>
             <tr>
-                <td><span class="mediumValueField">Melee</span></td>
-                <td><span class="mediumValueField">Ranged</span></td>
+                <td><span class="smallValueField">Melee</span></td>
+                <td><span class="smallValueField">Ranged</span></td>
             </tr>
             
             <tr>
                 <th colspan="2">Soak</th>
             </tr>
             <tr>
-                <td colspan="2"><span class="smallValueField"></span></td>
+                <td><span class="smallValueField">ordinary</span></td>
+				<td><span class="smallValueField">special</span></td>
             </tr>
             
             <tr>
@@ -307,8 +310,8 @@
                 <th>Strain</th>
             </tr>
             <tr>
-                <td><span class="mediumValueField">Threshold</span></td>
-                <td><span class="mediumValueField">Threshold</span></td>
+                <td><span class="smallValueField">Threshold</span></td>
+                <td><span class="smallValueField">Threshold</span></td>
             </tr>
             <tr>
                 <td><span class="bigValueField">Current</span></td>
@@ -316,6 +319,12 @@
             </tr>
         </tbody>
     </table>
+
+	<ul>
+		<li>Disoriented</li>
+		<li>Immobilized</li>
+		<li>Staggered</li>
+	</ul>
     
     <!--
 				<tbody id="conditionStims">
@@ -329,7 +338,7 @@
 					</tr>
 				</tbody>
 			-->
-<!--/healthDefenseSection-->
+	<!-- /health and defense -->
 	
 </div>
 
