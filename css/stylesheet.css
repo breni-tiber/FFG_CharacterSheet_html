@@ -1,124 +1,114 @@
 @import "characteristicSkillSection.css";
 @import "healthDefense.css";
 
-@media print {
-	@page {
-		size: A4;
-	}
 
-	html {
-		width: 100vw;
-		height: 100vh;
-		box-sizing: border-box;
-		padding: 0px;
-		margin: 0px;
-	}
-	
-	body {
-		width: 100%;
-		height: 100%;
-		box-sizing: border-box;
-		padding: 0px;
-		margin: 0px;
-		background: white;
-		font-size: 12pt;
-	}
-	
-	.printedPage {
-		width: 100%;
-		height: 100%;
-		box-sizing: border-box;
-		page-break-inside: avoid;
-		page-break-after: always;
-		border: 2pt dotted grey;
-	}
+@media print {
+  @page {
+    size: A4;
+  }
+  html {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background: white;
+    font-size: 12pt;
+  }
+  .printedPage {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    page-break-inside: avoid;
+    page-break-after: always;
+    border: 2pt dotted grey;
+  }
 }
 
 @media screen {
-	html {
-		padding: 0.2em;
-	}
+  html {
+    padding: 0.2em;
+  }
 }
 
-@media (orientation: landscape) {
-	header {
-		grid-area: header-end/active-skills-end/3/-1;
-		width: 15em;
-		justify-self: end;
-	}
-
-	header span {
-		display: block;
-		border-top: 0.1em dotted black;
-		font-size: small;
-		margin-top: 2em;
-	}
+header {
+  grid-area: 1/1/header-end/-1;
+  width: 100%;
+  border-bottom: 0.1em dotted black;
+  font-size: small;
+  margin-top: 1em;
 }
 
-@media (orientation: portrait) {
-	header {
-		grid-area: 1/1/header-end/-1;
-        width: 100%;
-        border-bottom: 0.1em dotted black;
-		font-size: small;
-		margin-top: 1em;
-	}
-    
-    header span {
-        width: 20em;
-        display: inline-block;
-    }
+header span {
+  width: 10em;
+  display: inline-block;
+}
 
-	header span:after {
-		content: ":";
-	}
+header span:after {
+  content: ":";
 }
 
 .printedPage {
-	display: grid;
-	grid-template-rows: max-content [header-end] max-content max-content max-content auto;
-	grid-template-columns: [active-skills-start] max-content max-content [active-skills-end] max-content [knwl-skills-end] auto;
-	place-items: start;
-	grid-gap: 10px;
+  display: grid;
+  grid-template-rows: max-content [header-end] max-content max-content max-content auto;
+  grid-template-columns: 1fr 1fr 1fr [one-quarter] 1fr [one-third] 1fr 1fr [one-half] 1fr 1fr [two-thirds] 1fr [three-quarters] 1fr 1fr 1fr;
+  place-items: start;
+  grid-gap: 10px;
 }
 
 .hidden {
-	display: none;
+  display: none;
 }
 
 .underlined {
-	background-color: white;
-	border-bottom: 0.1em dotted black;
+  background-color: white;
+  border-bottom: 0.1em dotted black;
 }
 
 .smallValueField {
-	display: inline-block;
-	background-color: white;
-	border: 0.1rem solid lightgrey;
-	width: 100%;
-	height: 100%;
-	min-width: 3rem;
-	min-height: 2rem;
+  display: inline-block;
+  background-color: white;
+  border: 0.1rem solid lightgrey;
+  width: 100%;
+  height: 100%;
+  min-width: 3rem;
+  min-height: 2rem;
 }
 
 .mediumValueField {
-	display: inline-block;
-	background-color: white;
-	border: 0.1rem solid lightgrey;
-	width: 100%;
-	height: 100%;
-	min-height: 3rem;
-	text-align: center;
-	font-size: small;
+  display: inline-block;
+  background-color: white;
+  border: 0.1rem solid lightgrey;
+  width: 100%;
+  height: 100%;
+  min-height: 3rem;
+  text-align: center;
+  font-size: small;
 }
 
 .bigValueField {
-	display: inline-block;
-	background-color: white;
-	border: 0.1rem solid lightgrey;
-	width: 100%;
-	height: 100%;
-	min-height: 5rem;
-	text-align: center;
-	font-size: small;
+  display: inline-block;
+  background-color: white;
+  border: 0.1rem solid lightgrey;
+  width: 100%;
+  height: 100%;
+  min-height: 5rem;
+  text-align: center;
+  font-size: small;
+}
+
+.checkBox {
+    height: 1em;
+    width: 1em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
 }

@@ -1,70 +1,67 @@
 #brawn {
-	grid-row-start: header-end;
-	grid-column-start: 1;
+  grid-area: header-end / 1 / 3 / one-third;
 }
 
 #agility {
-	grid-row-start: header-end;
-	grid-column-start: 2;
-}
-
-#cunning {
-	grid-row-start: 3;
-	grid-column-start:1;
+  grid-area: 3 / 1 / 4 / one-third;
 }
 
 #intellect {
-	grid-row-start: 3;
+  grid-area: header-end / one-third / 3 / two-thirds;
 }
 
-#knowledge {
-	grid-row-start: 3;
-}
-
-#presence {
-	grid-row-start: 4;
+#cunning {
+  grid-area: 3 / one-third / 4 / two-thirds;
 }
 
 #willpower {
-	grid-row-start: 4;
+  grid-area: header-end / two-thirds / 3 / -1;
 }
 
-.characteristicSkill tr:nth-child(even) > td {
-	background-color: lightgrey;
+#presence {
+  grid-area: 3 / two-thirds / 4 / -1;
+}
+
+#knowledge {
+  grid-area: 4 / two-thirds / 5 / -1;
+}
+
+.characteristicSkill tr:nth-child(even)>td {
+  background-color: lightgrey;
 }
 
 .characteristicSkill tr:nth-child(even) .skillRanks img {
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .characteristicSkill tr:nth-child(odd) .skillRanks img {
-	padding-left: 0.75em;
+  padding-left: 0.75em;
 }
 
 .characteristicSkill {
-	border-spacing: 0 0;
-	min-width: 10em;
+  border-spacing: 0 0;
+  min-width: 10em;
 }
 
 caption.characteristic {
-	/*caption-side: left;
+  /*caption-side: left;
 	transform: rotate(-90deg);*/
-	white-space: nowrap;
-	height: 2em;
+  white-space: nowrap;
+  height: 2em;
 }
 
 .characteristicName {
-    font-size: x-large;
-    vertical-align: middle;
+  font-size: x-large;
+  vertical-align: middle;
 }
 
 .characteristicRanks img {
-	height: 2em;
-	vertical-align: middle;
+  height: 2em;
+  vertical-align: middle;
 }
 
 .classSkill img {
-	height: 0.75em;
+  height: 0.75em;
 }
 
 .skillName {
@@ -72,12 +69,14 @@ caption.characteristic {
 }
 
 .skillRanks img {
-	height: 2em;
-	vertical-align: middle;
-	margin-top: -0.2em;
-	margin-bottom: -0.15em;
+  height: 2em;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  margin-bottom: -0.15em;
 }
 
-.combat, .knwl {
-	font-style: italic;
+.combat,
+.knwl {
+  font-style: italic;
 }
+
