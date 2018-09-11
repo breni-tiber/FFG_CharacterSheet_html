@@ -256,36 +256,18 @@
         </tbody>
     </table>
 	<!-- /characteristics and skills -->
+             
+	<div id="statusMonitor"> <!-- there is no colspan, when using "display: table"! -->
 
-    <!-- health and defense -->
-	<!-- tables for non-tabular data. rather hacky.
-				Problem: there is no colspan, when using "display: table"!-->             
-    <table id="criticalWounds">
-        <caption>Critical&nbsp;wounds</caption>
-        <tbody>
-            <tr>
-                <th>Effect</th>
-                <th>Severity</th>
-            </tr>
-            <tr>
-                <td class="underlined"></td>
-                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
-            </tr>
-            <tr>
-                <td class="underlined"></td>
-                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
-            </tr>
-            <tr>
-                <td class="underlined"></td>
-                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
-            </tr>
-            <tr>
-                <td class="underlined"></td>
-                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
-            </tr>
-        </tbody>
-    </table>
-    
+	<figure>
+		<figcaption>Status</figcaption>
+		<ul id="statusOptions">
+			<li>Disoriented</li>
+			<li>Immobilized</li>
+			<li>Staggered</li>
+		</ul>
+	</figure>
+
     <table id="healthDefense">
         <caption class="hidden">Defenses and Health</caption>
         <tbody>
@@ -320,26 +302,48 @@
         </tbody>
     </table>
 
-	<ul>
-		<li>Disoriented</li>
-		<li>Immobilized</li>
-		<li>Staggered</li>
-	</ul>
-    
+	<table id="criticalWounds">
+        <caption>Critical&nbsp;wounds</caption>
+        <tbody>
+            <tr>
+                <th>Effect</th>
+                <th>Severity</th>
+            </tr>
+            <tr>
+                <td class="underlined"></td>
+                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+            </tr>
+            <tr>
+                <td class="underlined"></td>
+                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+            </tr>
+            <tr>
+                <td class="underlined"></td>
+                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+            </tr>
+            <tr>
+                <td class="underlined"></td>
+                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+            </tr>
+        </tbody>
+    </table>
+
     <!--
-				<tbody id="conditionStims">
-					<tr>
-						<th>Conditions</th>
-						<th>Stim Uses</th>
-					</tr>
-					<tr>
-						<td>blind|stunned</td>
-						<td>OOOOO</td>
-					</tr>
-				</tbody>
-			-->
-	<!-- /health and defense -->
+	<tbody id="stims">
+		<tr>
+			<th>Stim Uses</th>
+		</tr>
+		<tr>
+			<td>OOOOO</td>
+		</tr>
+	</tbody>
+	-->
+	</div> <!-- /statusMonitor -->
 	
+</div>
+
+
+<div class="printedPage">
 </div>
 
 </body>

@@ -1,13 +1,21 @@
+#statusMonitor {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: min-content min-content;
+  place-content: end;
+}
+
+#statusOptions li {
+  list-style-type: circle;
+}
+
 #healthDefense {
 	border-collapse: collapse;
 	margin: 0em 0.1em 0em 0em;
-    grid-area: -3 / -2 / -1 / -1;
-	place-self: end;
 }
 
 #criticalWounds {
-    grid-area: -2 / -4 / -1 / -2;
-    place-self: end;
+    grid-area: -2/-3/-1/-1;
 }
 
 #criticalWounds tr:nth-child(1) th:nth-child(1) {
