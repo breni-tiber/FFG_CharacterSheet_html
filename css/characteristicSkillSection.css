@@ -29,16 +29,28 @@
 	grid-row-start: 4;
 }
 
-caption.characteristic {
-	/*caption-side: left;
-	transform: rotate(-90deg);*/
-	white-space: nowrap;
-	height: 2em;
+.characteristicSkill tr:nth-child(even) > td {
+	background-color: lightgrey;
+}
+
+.characteristicSkill tr:nth-child(even) .skillRanks img {
+	transform: rotate(180deg);
+}
+
+.characteristicSkill tr:nth-child(odd) .skillRanks img {
+	padding-left: 0.75em;
 }
 
 .characteristicSkill {
 	border-spacing: 0 0;
 	min-width: 10em;
+}
+
+caption.characteristic {
+	/*caption-side: left;
+	transform: rotate(-90deg);*/
+	white-space: nowrap;
+	height: 2em;
 }
 
 .characteristicName {
@@ -49,10 +61,6 @@ caption.characteristic {
 .characteristicRanks img {
 	height: 2em;
 	vertical-align: middle;
-}
-
-.combat, .knwl {
-	font-style: italic;
 }
 
 .classSkill img {
@@ -70,14 +78,6 @@ caption.characteristic {
 	margin-bottom: -0.15em;
 }
 
-.characteristicSkill tr:nth-child(even) > td {
-	background-color: lightgrey;
-}
-
-.characteristicSkill tr:nth-child(even) .skillRanks img {
-	transform: rotate(180deg);
-}
-
-.characteristicSkill tr:nth-child(odd) .skillRanks img {
-	padding-left: 0.75em;
+.combat, .knwl {
+	font-style: italic;
 }
