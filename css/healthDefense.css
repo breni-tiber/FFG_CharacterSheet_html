@@ -1,5 +1,6 @@
 #statusMonitor {
   grid-area: -2/two-thirds/-1/-1;
+  justify-self: end;
   display: grid;
   grid-template-rows: min-content min-content;
   grid-template-columns: min-content min-content;

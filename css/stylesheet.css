@@ -36,6 +36,28 @@
   html {
     padding: 0.2em;
   }
+  
+  /*development*/
+  #front {
+    border: 2pt dotted blue;
+  }
+  
+  #fluff{
+    border: 2pt dotted pink;
+  }
+  
+  #XP{
+    border: 2pt dotted yellow;
+  }
+  
+  #equip{
+    border: 2pt dotted grey;
+  }
+  
+  #force{
+    border: 2pt dotted green;
+  }
+  /*development*/
 }
 
 header {
