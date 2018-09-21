@@ -1,6 +1,7 @@
 #statusMonitor {
   grid-area: -2/two-thirds/-1/-1;
   justify-self: end;
+  
   display: grid;
   grid-template-rows: min-content min-content;
   grid-template-columns: min-content min-content;
@@ -8,11 +9,13 @@
   grid-gap: 10px;
 }
 
-figure {
+#statusCondition {
   margin: 0;
+  max-height: 6em;
+  align-self: end;
 }
 
-figcaption {
+#statusCondition figcaption {
   text-align: center;
 }
 
@@ -32,4 +35,8 @@ figcaption {
 
 #criticalWounds tr:nth-child(1) th:nth-child(1) {
   min-width: 9rem;
+}
+
+#criticalWounds .healDifficulty {
+  text-align: center;
 }

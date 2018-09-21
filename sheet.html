@@ -11,13 +11,13 @@
 <body>
 
 <div class="printedPage" id="front">
-	<header>
-		<span>Campaign</span>
-		<span>Player</span>
-		<span>Character</span>
-	</header>
-	
-	<!-- characteristics and skills -->
+  <header>
+    <span>Campaign</span>
+    <span>Player</span>
+    <span>Character</span>
+  </header>
+
+  <!-- characteristics and skills -->
     <table id="brawn" class="characteristicSkill">
         <caption class="characteristic">
             <span class="characteristicName">Brawn</span> <span class="characteristicRanks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"/></span>
@@ -255,29 +255,28 @@
             </tr>
         </tbody>
     </table>
-	<!-- /characteristics and skills -->
+  <!-- /characteristics and skills -->
              
-	<div id="statusMonitor"> <!-- there is no colspan, when using "display: table"! -->
+  <div id="statusMonitor"> <!-- there is no colspan, when using "display: table"! -->
 
-	<figure>
-		<figcaption>Status</figcaption>
-		<ul id="statusOptions">
-			<li>Disoriented</li>
-			<li>Immobilized</li>
-			<li>Staggered</li>
-		</ul>
-	</figure>
+  <figure id="statusCondition">
+    <figcaption>Status</figcaption>
+    <ul id="statusOptions">
+      <li>Disoriented</li>
+      <li>Immobilized</li>
+      <li>Staggered</li>
+    </ul>
+  </figure>
 
-    <!--
-	<tbody id="stims">
-		<tr>
-			<th>Stim Uses</th>
-		</tr>
-		<tr>
-			<td>OOOOO</td>
-		</tr>
-	</tbody>
-	-->
+  <!-- stimpack uses with difference EotE/AoR
+  <tbody id="stims">
+    <tr>
+      <th>Stim Uses</th>
+    </tr>
+    <tr>
+      <td>OOOOO</td>
+    </tr>
+  </tbody> -->
 
     <table id="healthDefense">
         <caption class="hidden">Defenses and Health</caption>
@@ -295,7 +294,7 @@
             </tr>
             <tr>
                 <td><span class="smallValueField">ordinary</span></td>
-				<td><span class="smallValueField">special</span></td>
+                <td><span class="smallValueField">special</span></td>
             </tr>
             
             <tr>
@@ -313,7 +312,7 @@
         </tbody>
     </table>
 
-	<table id="criticalWounds">
+  <table id="criticalWounds">
         <caption>Critical&nbsp;wounds</caption>
         <tbody>
             <tr>
@@ -322,65 +321,79 @@
             </tr>
             <tr>
                 <td class="underlined"></td>
-                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+                <td class="healDifficulty">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
             </tr>
             <tr>
                 <td class="underlined"></td>
-                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+                <td class="healDifficulty">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
             </tr>
             <tr>
                 <td class="underlined"></td>
-                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+                <td class="healDifficulty">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
             </tr>
             <tr>
                 <td class="underlined"></td>
-                <td class="">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
+                <td class="healDifficulty">&#9671;&#8239;&#9671;&#8239;&#9671;&#8239;&#9671;</td>
             </tr>
         </tbody>
     </table>
 
-	</div> <!-- /statusMonitor -->
-	
+  </div> <!-- /statusMonitor -->
+
 </div>
 
 <div class="printedPage" id="fluff">
-	<!-- notable features, portrait, gender, age, height, weight, build, hair/eye colour, home planet, species, known languages -->
-	
-	<!-- motivation, obligation, duty -->
-	<img src="inspo/bastionkane-motivation.png" alt="motivation" />
-	<img src="inspo/bastionkane-duty.png" alt="duty" />
+  <section id="motivation">
+    <img src="inspo/bastionkain-motivation.png" alt="motivation" />
+  </section>
+
+  <!-- notable features, portrait, gender, age, height, weight, build, hair/eye colour, home planet, species, known languages -->
+  <section id="features">
+    <img src="inspo/rpg-vitruv.png" alt="portrait" />
+  </section>
+  
+  <!-- obligation, duty -->
+  <section id="duty">
+    <img id="duty" src="inspo/bastionkain-duty.png" alt="duty" />
+  </section>
 </div>
 
 <div class="printedPage" id="XP"> <!--XP: career, specs/talent trees, signature abilities, spent/total XP, log book -->
-	<header>
-		<span>Character</span>
-		<span>Career</span>
-	</header>
+  <header>
+    <span>Character</span>
+    <span>Career</span>
+  </header>
 
-	<section id="talentTrees">
-		<h3>Specialization Trees</h3>
-		<img src="inspo/jhamlet-spec.png" alt="specialization trees" />
-	</section>
+  <section id="talentTrees">
+    <h3>Specialization Trees</h3>
+    <img src="inspo/jhamlet-spec.png" alt="specialization trees" />
+  </section>
 
-	<section id="XPLogbook">
-		<h3>Earned XP</h3>
-	</section>
+  <section id="XPLogbook">
+    <h3>Earned XP</h3>
+  </section>
 </div>
 
 <div class="printedPage" id="equip">
-	<!-- cash: debt, credits, ...; -->
-	<!-- armor [minor, moderate, major, attachments, mods],
-		 cybernetics [functional|deactivated],
-		 gear [EDC|backpack|ship|other],
-		 weapons [minor, moderate, major, attachments, mods],
-		 encumberance [current/threshold] -->
+  <h2>Equipment</h2>
+  <!-- cash: debt, credits, ...; -->
+  <!-- armor [minor, moderate, major, attachments, mods],
+    cybernetics [functional|deactivated],
+    gear [EDC|backpack|ship|other],
+    weapons [minor, moderate, major, attachments, mods],
+    encumberance [current/threshold] -->
 </div>
 
 <div class="printedPage" id="force">
-	<!-- Morality: emotional strength|weakness, conflict, numeric morality value -->
-	<img src="inspo/bastionkane-morality.png" alt="morality" />
-	<!-- Force: rank, committed|available, powers -->
-	<img src="inspo/jhamlet-power.png" alt="force power" />
+  <!-- Morality: emotional strength|weakness, conflict, numeric morality value -->
+  <section id="morality">
+    <img src="inspo/bastionkain-morality.png" alt="morality" />
+  </section>
+  
+  <!-- Force: rank, committed|available, powers -->
+  <section id="powers">
+    <img src="inspo/jhamlet-power.png" alt="force power" />
+  </section>
 </div>
 
 <!-- duplex reasoning: not equip<->front, because skills+tool; not XP<->front, because skills+talents; force entirely optional for some players -->

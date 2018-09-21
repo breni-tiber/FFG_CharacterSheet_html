@@ -1,7 +1,7 @@
 #talentTrees {
-	grid-area: header-end/1/-2/one-third;
+	grid-area: header-end/1/-1/half;
 }
 
 #XPLogbook {
-	grid-area: header-end/two-thirds/-2/-1;
+	grid-area: header-end/half/-2/-1;
 }

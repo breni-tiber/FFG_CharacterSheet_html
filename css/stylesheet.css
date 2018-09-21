@@ -1,6 +1,8 @@
 @import "characteristicSkillSection.css";
 @import "healthDefense.css";
-
+@import "fluff.css";
+@import "xp.css";
+@import "force.css";
 
 @media print {
   @page {
@@ -47,7 +49,7 @@
   }
   
   #XP{
-    border: 2pt dotted yellow;
+    border: 2pt dotted green;
   }
   
   #equip{
@@ -55,7 +57,7 @@
   }
   
   #force{
-    border: 2pt dotted green;
+    border: 2pt dotted fuchsia;
   }
   /*development*/
 }
@@ -80,9 +82,13 @@ header span:after {
 .printedPage {
   display: grid;
   grid-template-rows: max-content [header-end] max-content max-content max-content auto;
-  grid-template-columns: 1fr 1fr 1fr [one-quarter] 1fr [one-third] 1fr 1fr [one-half] 1fr 1fr [two-thirds] 1fr [three-quarters] 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr [one-quarter] 1fr [one-third] 1fr 1fr [half] 1fr 1fr [two-thirds] 1fr [three-quarters] 1fr 1fr 1fr;
   place-items: start;
   grid-gap: 10px;
+}
+
+section > img { /* make images respect parent width */
+  max-width: 100%;
 }
 
 .hidden {
@@ -101,7 +107,9 @@ header span:after {
   width: 100%;
   height: 100%;
   min-width: 3rem;
-  min-height: 2rem;
+  min-height: 3em;
+  text-align: center;
+  font-size: small;
 }
 
 .mediumValueField {
@@ -110,7 +118,7 @@ header span:after {
   border: 0.1rem solid lightgrey;
   width: 100%;
   height: 100%;
-  min-height: 3rem;
+  min-height: 5em;
   text-align: center;
   font-size: small;
 }
@@ -121,7 +129,7 @@ header span:after {
   border: 0.1rem solid lightgrey;
   width: 100%;
   height: 100%;
-  min-height: 5rem;
+  min-height: 6em;
   text-align: center;
   font-size: small;
 }
