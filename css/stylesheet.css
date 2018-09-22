@@ -71,7 +71,7 @@ header {
 }
 
 header span {
-  width: 10em;
+  width: 33%;
   display: inline-block;
 }
 
@@ -81,8 +81,8 @@ header span:after {
 
 .printedPage {
   display: grid;
-  grid-template-rows: max-content [header-end] max-content max-content max-content auto;
-  grid-template-columns: 1fr 1fr 1fr [one-quarter] 1fr [one-third] 1fr 1fr [half] 1fr 1fr [two-thirds] 1fr [three-quarters] 1fr 1fr 1fr;
+  grid-template-rows: max-content [header-end] max-content max-content auto max-content;
+  grid-template-columns: 1fr 1fr 1fr [one-quarter] 1fr [one-third] 1fr 1fr [half] 1fr 1fr [two-thirds] 1fr [three-quarter] 1fr 1fr 1fr;
   place-items: start;
   grid-gap: 10px;
 }
