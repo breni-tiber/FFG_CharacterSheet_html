@@ -346,8 +346,8 @@
 </div>
 
 <div class="printedPage" id="fluff">
-  <section id="motivation">
-    <img src="inspo/bastionkain-motivation.png" alt="motivation" />
+  <section id="motivation" class="bigValueField">
+    Character motivations
   </section>
 
   <!-- notable features, portrait, gender, age, height, weight, build, hair/eye colour, home planet, species, known languages -->
@@ -387,25 +387,33 @@
     encumberance [current/threshold] -->
 </div>
 
-<div class="printedPage" id="force">
+<div class="printedPage" id="force"> 
+  <!-- force powers -->
+  <section id="powers">
+    <img src="inspo/jhamlet-power.png" alt="force power" />
+  </section>
+  
+  <!-- force rank, committed|available dice -->
+  <section id="forceDice">
+	<span>rank</span>
+	<span>committed</span>
+	<span>available</span>
+  </section>
+  
   <!-- Morality: emotional strength|weakness, conflict, numeric morality value -->
+  <div id="moralityBar">
+	<div id="ten" class="darkSide">10</div>
+	<div id="twenty" class="darkSide">20</div>
+	<div id="thirty" class="lightSide">30</div>
+	<div id="seventy" class="lightSide">70</div>
+	<div id="eighty" class="lightSide">80</div>
+    <div id="ninety" class="lightSide">90</div>
+  </div>
+	
   <section id="morality">
-    <div id="moralityNumeric">
-		<div id="ten" class="darkSide">10</div>
-		<div id="twenty" class="darkSide">20</div>
-		<div id="thirty" class="lightSide">30</div>
-		<div id="seventy" class="lightSide">70</div>
-		<div id="eighty" class="lightSide">80</div>
-		<div id="ninety" class="lightSide">90</div>
-	</div>
 	<div id="moralityString">
 		<div id="emotionalWeakness">Emotional Weakness</div><div id="emotionalStrength">Emotional Strength</div><div id="conflict">Conflict</div><div id="moralityValue">Morality</div>
 	</div>
-  </section>
-  
-  <!-- Force: rank, committed|available, powers -->
-  <section id="powers">
-    <img src="inspo/jhamlet-power.png" alt="force power" />
   </section>
 </div>
 

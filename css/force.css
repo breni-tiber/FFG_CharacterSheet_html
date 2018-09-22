@@ -1,24 +1,22 @@
 #powers {
-  grid-area: header-end/1/3/half;
+  grid-area: header-end/1/5/half;
 }
 
-/*#features {
-  grid-area: 3/1/-2/-1;
-  justify-self: center;
-}*/
+#forceDice {
+  grid-area: header-end/three-quarter/3/-2;
+}
 
 #morality {
-  grid-area: -2/1/-1/-1;
+  grid-area: -3/8/-1/-1;
   width: 100%;
 }
 
-#moralityNumeric, #moralityString > * {
-	border: 0.1em solid black;
-}
-
-#moralityNumeric {
-	height: 2em;
-	background: linear-gradient(to right, 
+#moralityBar {
+	grid-area: 1/half/-1/8;
+	min-width: 2.1em;
+	max-width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, 
 		RGB(  0,   0,   0)  0%, RGB(  0,   0,   0)  10%, 
 		RGB( 25,  25,  25) 10%, RGB( 25,  25,  25)  20%, 
 		RGB( 51,  51,  51) 20%, RGB( 51,  51,  51)  30%, 
@@ -26,12 +24,15 @@
 		RGB(204, 204, 204) 70%, RGB(204, 204, 204)  80%, 
 		RGB(230, 230, 230) 80%, RGB(230, 230, 230)  90%, 
 		RGB(255, 255, 255) 90%, RGB(255, 255, 255) 100%);
+	border: 0.1em solid lightgrey;
 }
 
 .darkSide, .lightSide {
 	font-size: 2em;
+	width: 0;
 	height: 0;
 	overflow: visible;
+	position: relative;
 }
 
 .darkSide {
@@ -39,40 +40,45 @@
 }
 
 .lightSide {
-	float: right;
 }
 
 #ten {
-	padding-left: 10%;
+	top: 85%;
 }
 
 #twenty {
-	padding-left: 20%;
+	top: 75%;
 }
 
 #thirty {
-	float: none;
-	padding-left: 30%;
+	top: 65%;
 }
 
 #seventy {
-	padding-right: 30%;
+	top: 30%;
 }
 
 #eighty {
-	padding-right: 20%;
+	top: 20%;
 }
 
 #ninety {
-	padding-right: 10%;
+	top: 10%;
 }
 
 #emotionalWeakness, #emotionalStrength {
 	display: inline-block;
 	width: 40%;
+	height: 2em;
+	border-right: 0.1em solid lightgrey;
 }
 
 #conflict, #moralityValue {
 	display: inline-block;
 	width: 10%;
+	height: 2em;
+}
+
+#conflict {
+	border: 0.1em solid lightgrey;
 }
