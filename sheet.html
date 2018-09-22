@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
 </head>
 
+<!-- duplex reasoning: not equip<->front, because skills+tool; not XP<->front, because skills+talents; force entirely optional for some players -->
+<!-- won't create: animal companion, beast, contacts, homestead, ship, ... -->
+
 <body>
 
 <div class="printedPage" id="front">
@@ -256,7 +259,7 @@
         </tbody>
     </table>
   <!-- /characteristics and skills -->
-             
+
   <div id="statusMonitor"> <!-- there is no colspan, when using "display: table"! -->
 
   <figure id="statusCondition">
@@ -387,7 +390,17 @@
 <div class="printedPage" id="force">
   <!-- Morality: emotional strength|weakness, conflict, numeric morality value -->
   <section id="morality">
-    <img src="inspo/bastionkain-morality.png" alt="morality" />
+    <div id="moralityNumeric">
+		<div id="ten" class="darkSide">10</div>
+		<div id="twenty" class="darkSide">20</div>
+		<div id="thirty" class="lightSide">30</div>
+		<div id="seventy" class="lightSide">70</div>
+		<div id="eighty" class="lightSide">80</div>
+		<div id="ninety" class="lightSide">90</div>
+	</div>
+	<div id="moralityString">
+		<div id="emotionalWeakness">Emotional Weakness</div><div id="emotionalStrength">Emotional Strength</div><div id="conflict">Conflict</div><div id="moralityValue">Morality</div>
+	</div>
   </section>
   
   <!-- Force: rank, committed|available, powers -->
@@ -395,9 +408,6 @@
     <img src="inspo/jhamlet-power.png" alt="force power" />
   </section>
 </div>
-
-<!-- duplex reasoning: not equip<->front, because skills+tool; not XP<->front, because skills+talents; force entirely optional for some players -->
-<!-- won't create: animal companion, beast, contacts, homestead, ship, ... -->
 
 </body>
 

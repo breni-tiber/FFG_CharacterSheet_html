@@ -9,4 +9,70 @@
 
 #morality {
   grid-area: -2/1/-1/-1;
+  width: 100%;
+}
+
+#moralityNumeric, #moralityString > * {
+	border: 0.1em solid black;
+}
+
+#moralityNumeric {
+	height: 2em;
+	background: linear-gradient(to right, 
+		RGB(  0,   0,   0)  0%, RGB(  0,   0,   0)  10%, 
+		RGB( 25,  25,  25) 10%, RGB( 25,  25,  25)  20%, 
+		RGB( 51,  51,  51) 20%, RGB( 51,  51,  51)  30%, 
+		RGB(179, 179, 179) 30%, RGB(179, 179, 179)  70%, 
+		RGB(204, 204, 204) 70%, RGB(204, 204, 204)  80%, 
+		RGB(230, 230, 230) 80%, RGB(230, 230, 230)  90%, 
+		RGB(255, 255, 255) 90%, RGB(255, 255, 255) 100%);
+}
+
+.darkSide, .lightSide {
+	font-size: 2em;
+	height: 0;
+	overflow: visible;
+}
+
+.darkSide {
+	color: white;
+}
+
+.lightSide {
+	float: right;
+}
+
+#ten {
+	padding-left: 10%;
+}
+
+#twenty {
+	padding-left: 20%;
+}
+
+#thirty {
+	float: none;
+	padding-left: 30%;
+}
+
+#seventy {
+	padding-right: 30%;
+}
+
+#eighty {
+	padding-right: 20%;
+}
+
+#ninety {
+	padding-right: 10%;
+}
+
+#emotionalWeakness, #emotionalStrength {
+	display: inline-block;
+	width: 40%;
+}
+
+#conflict, #moralityValue {
+	display: inline-block;
+	width: 10%;
 }
