@@ -6,11 +6,6 @@
   grid-area: header-end/three-quarter/3/-2;
 }
 
-#morality {
-  grid-area: -3/8/-1/-1;
-  width: 100%;
-}
-
 #moralityBar {
 	grid-area: 1/half/-1/8;
 	min-width: 2.1em;
@@ -66,19 +61,11 @@
 	top: 10%;
 }
 
-#emotionalWeakness, #emotionalStrength {
-	display: inline-block;
-	width: 40%;
-	height: 2em;
-	border-right: 0.1em solid lightgrey;
+#moralityString {
+  grid-area: -2/8/-1/-1;
+  width: 100%;
 }
 
 #conflict, #moralityValue {
-	display: inline-block;
-	width: 10%;
-	height: 2em;
-}
-
-#conflict {
-	border: 0.1em solid lightgrey;
+  width: 49%;
 }

@@ -361,20 +361,48 @@
   </section>
 </div>
 
-<div class="printedPage" id="XP"> <!--XP: career, specs/talent trees, signature abilities, spent/total XP, log book -->
-  <header>
-    <span>Character</span>
+<div class="printedPage" id="XP">
+  <header id="career">
     <span>Career</span>
   </header>
 
+  <!-- XP: career, specs/talent trees, signature abilities, spent XP -->
   <section id="talentTrees">
-    <h3>Specialization Trees</h3>
     <img src="inspo/jhamlet-spec.png" alt="specialization trees" />
   </section>
 
-  <section id="XPLogbook">
-    <h3>Earned XP</h3>
-  </section>
+  <!-- total XP, logbook -->
+  <table id="XPLogbook">
+    <caption></caption>
+	<thead>
+	  <tr>
+	    <th class="date">date</th>
+	    <th>summary</th>
+	    <th class="xp">XP</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <td class="date">date</td>
+	    <td>----------</td>
+	    <td class="xp">XP</td>
+	  </tr>
+	</tbody>
+  </table>
+
+  <div id="spentOnSkills" class="smallValueField">skills</div>
+  <div id="spentOnObligation" class="smallValueField">obligation</div>
+  <div id="spentOnTalents" class="smallValueField">talents</div>
+  <div id="spentOnTrees" class="smallValueField">trees</div>
+  <div id="spentOnSigAbilities" class="smallValueField">sign abilities</div>
+  <div id="spentOnForcePowers" class="smallValueField">Force powers</div>
+
+  <div id="spentSum" class="smallValueField">&sum; spent XP</div>
+
+  <div id="gainedSum" class="smallValueField">&sum; gained XP</div>
+
+  <div id="gainedOnStart" class="smallValueField">start XP</div>
+  <div id="gainedOnAdventures" class="smallValueField">adventure XP</div>
 </div>
 
 <div class="printedPage" id="equip">
@@ -387,20 +415,20 @@
     encumberance [current/threshold] -->
 </div>
 
-<div class="printedPage" id="force"> 
+<div class="printedPage" id="force">
   <!-- force powers -->
   <section id="powers">
     <img src="inspo/jhamlet-power.png" alt="force power" />
   </section>
-  
+
   <!-- force rank, committed|available dice -->
   <section id="forceDice">
-	<span>rank</span>
-	<span>committed</span>
-	<span>available</span>
+	<span class="smallValueField">force rank</span>
+	<span class="smallValueField">committed</span>
+	<span class="smallValueField">available</span>
   </section>
-  
-  <!-- Morality: emotional strength|weakness, conflict, numeric morality value -->
+
+  <!-- decorative morality bar-->
   <div id="moralityBar">
 	<div id="ten" class="darkSide">10</div>
 	<div id="twenty" class="darkSide">20</div>
@@ -409,12 +437,14 @@
 	<div id="eighty" class="lightSide">80</div>
     <div id="ninety" class="lightSide">90</div>
   </div>
-	
-  <section id="morality">
-	<div id="moralityString">
-		<div id="emotionalWeakness">Emotional Weakness</div><div id="emotionalStrength">Emotional Strength</div><div id="conflict">Conflict</div><div id="moralityValue">Morality</div>
-	</div>
-  </section>
+
+  <!-- Morality: emotional strength|weakness, conflict, numeric morality value -->
+  <div id="moralityString">
+    <div id="emotionalStrength" class="bigValueField">Emotional Strength</div>
+    <div id="emotionalWeakness" class="bigValueField">Emotional Weakness</div>
+	<div id="conflict" class="smallValueField">Conflict</div>
+	<div id="moralityValue" class="smallValueField">Morality</div>
+  </div>
 </div>
 
 </body>
