@@ -30,6 +30,10 @@
   background-color: lightgrey;
 }
 
+.characteristicSkill tr:nth-child(even)>td:last-child {
+  background: linear-gradient(to left, white 75%, lightgrey 75%);
+}
+
 .characteristicSkill tr:nth-child(even) .skillRanks img {
   transform: rotate(180deg);
 }
