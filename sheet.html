@@ -421,18 +421,6 @@
 </div>
 
 <div class="printedPage" id="force">
-  <!-- force powers -->
-  <section id="powers">
-    <img src="inspo/jhamlet-power.png" alt="force power" />
-  </section>
-
-  <!-- force rank, committed|available dice -->
-  <section id="forceDice">
-	<span class="smallValueField">force rank</span>
-	<span class="smallValueField">committed</span>
-	<span class="smallValueField">available</span>
-  </section>
-
   <!-- decorative morality bar-->
   <div id="moralityBar">
 	<div id="ten" class="darkSide">10</div>
@@ -442,14 +430,59 @@
 	<div id="eighty" class="lightSide">80</div>
     <div id="ninety" class="lightSide">90</div>
   </div>
-
-  <!-- Morality: emotional strength|weakness, conflict, numeric morality value -->
-  <div id="moralityString">
-    <div id="emotionalStrength" class="bigValueField">Emotional Strength</div>
-    <div id="emotionalWeakness" class="bigValueField">Emotional Weakness</div>
-	<div id="conflict" class="smallValueField">Conflict</div>
-	<div id="moralityValue" class="smallValueField">Morality</div>
+  
+  <!-- emotional strength|weakness -->
+  <div id="emotionalStrength" class="bigValueField">Emotional Strength</div>
+  <div id="emotionalWeakness" class="bigValueField">Emotional Weakness</div>
+	
+  <!-- force powers -->
+  <div class="mediumValueField forcePowerName">Power</div>
+  <div class="forcePowerTree">
+    <input class="basePower" type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
   </div>
+
+  <div class="mediumValueField forcePowerName">Power</div>
+  <div class="forcePowerTree">
+    <input class="basePower" type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+  </div>
+
+  <div class="mediumValueField forcePowerName">Power</div>
+  <div class="forcePowerTree">
+    <input class="basePower" type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+  </div>
+
+  <div class="mediumValueField forcePowerName">Power</div>
+  <div class="forcePowerTree">
+    <input class="basePower" type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+  </div>
+
+
+  <!-- Morality: conflict, numeric morality value -->
+  <div id="morality" class="smallValueField">Morality</div>
+  <div id="conflict" class="smallValueField">Conflict</div>
+
+  <!-- force rank, committed|available dice -->
+  <section id="forceDice">
+    <span id="forceRank" class="smallValueField">force rank</span>
+	<span class="smallValueField">committed</span>
+	<span class="smallValueField">available</span>
+  </section>
 </div>
 
 </body>
