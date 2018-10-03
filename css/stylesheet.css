@@ -93,6 +93,10 @@ header span:after {
   justify-items: center;
 }
 
+#statusMonitor {
+  place-self: end;
+}
+
 section > img { /* make images respect parent width */
   max-width: 100%;
 }
