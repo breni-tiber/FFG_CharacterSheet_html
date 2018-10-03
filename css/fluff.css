@@ -8,5 +8,9 @@
 }
 
 #duty {
-  grid-area: -2/1/-1/-1;
+  grid-area: -2/1/-1/half;
+}
+
+#obligation {
+  grid-area: -2/half/-1/-1;
 }
