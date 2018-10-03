@@ -88,8 +88,9 @@ header span:after {
   display: grid;
   grid-template-rows: max-content [header-end] repeat(8, auto) [footer-start] max-content;
   grid-template-columns: 1fr 1fr 1fr [one-quarter] 1fr [one-third] 1fr 1fr [half] 1fr 1fr [two-thirds] 1fr [three-quarter] 1fr 1fr 1fr;
-  place-items: start;
   grid-gap: 10px;
+  align-items: start;
+  justify-items: center;
 }
 
 section > img { /* make images respect parent width */
@@ -108,7 +109,8 @@ section > img { /* make images respect parent width */
 .smallValueField {
   display: inline-block;
   background-color: white;
-  border: 0.1rem solid lightgrey;
+  border-top: thin solid lightgrey;
+  border-left: thin solid lightgrey;
   width: 100%;
   height: 100%;
   min-width: 3rem;
@@ -120,18 +122,20 @@ section > img { /* make images respect parent width */
 .mediumValueField {
   display: inline-block;
   background-color: white;
-  border: 0.1em solid lightgrey;
+  border-top: thin solid lightgrey;
+  border-left: thin solid lightgrey;
   width: 100%;
   height: 100%;
-  min-height: 5em;
-  text-align: center;
+  min-height: 2em;
+  text-align: right;
   font-size: small;
 }
 
 .bigValueField {
   display: inline-block;
   background-color: white;
-  border: 0.1em solid lightgrey;
+  border-top: thin solid lightgrey;
+  border-left: thin solid lightgrey;
   width: 100%;
   height: 100%;
   min-height: 6em;
