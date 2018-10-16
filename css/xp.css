@@ -2,8 +2,38 @@
 	grid-area: 1/1/header-end/half;
 }
 
-#talentTrees {
-	grid-area: header-end/1/footer-start/half;
+.spec, .signAbility {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.talentTree, .signatureAbilityTree {
+  grid-column-start: 3;
+  grid-column-end: 4;  
+}
+
+.talentTree {
+	display: inline-grid;
+	grid-template-rows: repeat(5, min-content);
+	grid-template-columns: repeat(4, min-content);
+}
+
+.talentTree input {
+	margin: 0;
+}
+
+.signatureAbilityTree {
+	display: inline-grid;
+	grid-template-rows: repeat(3, min-content);
+	grid-template-columns: repeat(4, min-content);
+}
+
+.signatureAbilityTree input {
+	margin: 0;
+}
+
+.signatureAbilityTree .basePower {
+  grid-area: 1/1/2/-1;
 }
 
 #XPLogbook {
