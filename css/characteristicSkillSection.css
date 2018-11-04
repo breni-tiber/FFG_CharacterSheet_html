@@ -79,6 +79,10 @@ caption.characteristic {
   margin-bottom: -0.15em;
 }
 
-.combat, .knwl {
+.combat {
+  font-weight: bold;
+}
+
+.knwl {
   font-style: italic;
 }
