@@ -9,10 +9,12 @@
 
 #duty {
   grid-area: -4/1/-2/half;
+  width: 100%;
 }
 
 #obligation {
   grid-area: -4/half/-2/-1;
+  width: 100%;
 }
 
 #obligationSum {
