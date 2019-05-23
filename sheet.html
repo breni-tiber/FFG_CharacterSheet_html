@@ -5,6 +5,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Character Sheet | FFG Star Wars</title>
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet" />
+  <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
 </head>
 
@@ -260,16 +263,14 @@
     </table>
   <!-- /characteristics and skills -->
 
-  <div id="statusMonitor"> <!-- there is no colspan, when using "display: table"! -->
-
-  <figure id="statusCondition">
-    <figcaption>Status</figcaption>
-    <ul id="statusOptions">
-      <li>Disoriented</li>
-      <li>Immobilized</li>
-      <li>Staggered</li>
-    </ul>
-  </figure>
+    <figure id="statusCondition">
+      <figcaption>Status</figcaption>
+      <ul id="statusOptions">
+        <li>Disoriented</li>
+        <li>Immobilized</li>
+        <li>Staggered</li>
+      </ul>
+    </figure>
 
   <!-- stimpack uses with difference EotE/AoR
   <tbody id="stims">
@@ -315,33 +316,31 @@
         </tbody>
     </table>
 
-  <table id="criticalWounds">
-        <caption>Critical&nbsp;wounds</caption>
-        <tbody>
-            <tr>
-                <th>Effect</th>
-                <th>Severity</th>
-            </tr>
-            <tr>
-                <td class="underlined"></td>
-                <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
-            </tr>
-            <tr>
-                <td class="underlined"></td>
-                <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
-            </tr>
-            <tr>
-                <td class="underlined"></td>
-                <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
-            </tr>
-            <tr>
-                <td class="underlined"></td>
-                <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
-            </tr>
-        </tbody>
-    </table>
-
-  </div> <!-- /statusMonitor -->
+    <table id="criticalWounds">
+          <caption>Critical&nbsp;wounds</caption>
+          <tbody>
+              <tr>
+                  <th>Effect</th>
+                  <th>Severity</th>
+              </tr>
+              <tr>
+                  <td class="underlined"></td>
+                  <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+              </tr>
+              <tr>
+                  <td class="underlined"></td>
+                  <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+              </tr>
+              <tr>
+                  <td class="underlined"></td>
+                  <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+              </tr>
+              <tr>
+                  <td class="underlined"></td>
+                  <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+              </tr>
+          </tbody>
+      </table>
 
 </div>
 
