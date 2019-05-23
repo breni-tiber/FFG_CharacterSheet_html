@@ -16,12 +16,12 @@
 
 <body>
 
-<div class="printedPage" id="front">
-  <header>
-    <span>Campaign</span>
-    <span>Player</span>
-    <span>Character</span>
-  </header>
+  <div class="printedPage" id="front">
+    <header>
+      <span>Campaign</span>
+      <span>Player</span>
+      <span>Character</span>
+    </header>
 
   <!-- characteristics and skills -->
     <table id="brawn" class="characteristicSkill">
@@ -57,7 +57,7 @@
             </tr>
         </tbody>
     </table>
-        
+
     <table id="agility" class="characteristicSkill">
         <caption class="characteristic">
             <span class="characteristicName">Agility</span> <span class="characteristicRanks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"/></span>
@@ -263,86 +263,110 @@
     </table>
   <!-- /characteristics and skills -->
 
+  <!-- stimpack uses with difference EotE/AoR
+    <tbody id="stims">
+      <tr>
+        <th>Stim Uses</th>
+      </tr>
+      <tr>
+        <td>OOOOO</td>
+      </tr>
+    </tbody> -->
+
+    <table id="defense" class="health">
+      <caption>Defense</caption>
+      <tbody>
+        <tr>
+          <th>Melee</th>
+          <th>Ranged</th>
+        </tr>
+        <tr>
+          <td><span class="smallValueField"></span></td>
+          <td><span class="smallValueField"></span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table id="soak" class="health">
+      <caption>Soak</caption>
+      <tbody>
+        <tr>
+          <th>ordinary</th>
+          <th>special</th>
+        </tr>
+        <tr>
+          <td><span class="smallValueField"></span></td>
+          <td><span class="smallValueField"></span></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <table id="wounds" class="health">
+      <caption>Wounds</caption>
+      <tbody>
+        <tr>
+          <th>THOLD</th>
+          <th>Current</th>
+        </tr>
+        <tr>
+          <td><span class="smallValueField"></span></td>
+          <td><span class="smallValueField"></span></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <table id="strain" class="health">
+      <caption>Strain</caption>
+      <tbody>
+        <tr>
+          <th>THOLD</th>
+          <th>Current</th>
+        </tr>
+        <tr>
+          <td><span class="smallValueField"></span></td>
+          <td><span class="smallValueField"></span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table id="criticalWounds" class="health">
+      <caption>Critical&nbsp;wounds</caption>
+      <tbody>
+        <tr>
+          <th>Effect</th>
+          <th>Severity</th>
+        </tr>
+        <tr>
+          <td class="underlined"></td>
+          <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+        </tr>
+        <tr>
+          <td class="underlined"></td>
+          <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+        </tr>
+        <tr>
+          <td class="underlined"></td>
+          <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+        </tr>
+        <tr>
+          <td class="underlined"></td>
+          <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+        </tr>
+      </tbody>
+    </table>
+
     <figure id="statusCondition">
       <figcaption>Status</figcaption>
       <ul id="statusOptions">
-        <li>Disoriented</li>
-        <li>Immobilized</li>
-        <li>Staggered</li>
+        <li>Disoriented
+          <span class="reminder">&#9632; to all checks</span></li>
+        <li>Immobilized
+          <span class="reminder">No maneuvers</span></li>
+        <li>Staggered
+          <span class="reminder">No actions</span></li>
       </ul>
     </figure>
-
-  <!-- stimpack uses with difference EotE/AoR
-  <tbody id="stims">
-    <tr>
-      <th>Stim Uses</th>
-    </tr>
-    <tr>
-      <td>OOOOO</td>
-    </tr>
-  </tbody> -->
-
-    <table id="healthDefense">
-        <caption class="hidden">Defenses and Health</caption>
-        <tbody>
-            <tr>
-                <th colspan="2">Defense</th>
-            </tr>
-            <tr>
-                <td><span class="smallValueField">Melee</span></td>
-                <td><span class="smallValueField">Ranged</span></td>
-            </tr>
-            
-            <tr>
-                <th colspan="2">Soak</th>
-            </tr>
-            <tr>
-                <td><span class="smallValueField">ordinary</span></td>
-                <td><span class="smallValueField">special</span></td>
-            </tr>
-            
-            <tr>
-                <th>Wounds</th>
-                <th>Strain</th>
-            </tr>
-            <tr>
-                <td><span class="smallValueField">Threshold</span></td>
-                <td><span class="smallValueField">Threshold</span></td>
-            </tr>
-            <tr>
-                <td><span class="bigValueField">Current</span></td>
-                <td><span class="bigValueField">Current</span></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <table id="criticalWounds">
-          <caption>Critical&nbsp;wounds</caption>
-          <tbody>
-              <tr>
-                  <th>Effect</th>
-                  <th>Severity</th>
-              </tr>
-              <tr>
-                  <td class="underlined"></td>
-                  <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
-              </tr>
-              <tr>
-                  <td class="underlined"></td>
-                  <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
-              </tr>
-              <tr>
-                  <td class="underlined"></td>
-                  <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
-              </tr>
-              <tr>
-                  <td class="underlined"></td>
-                  <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
-              </tr>
-          </tbody>
-      </table>
-
-</div>
+  </div>
 
 <div class="printedPage" id="fluff">
   <section id="motivation" class="bigValueField">
@@ -418,13 +442,6 @@
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
   </div>
-
-  <span class="mediumValueField signAbility">Signature Ability</span>
-  <div class="signatureAbilityTree">
-    <input class="basePower" type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
   
   <span class="mediumValueField spec">Specialization</span>
   <div class="talentTree">
@@ -434,26 +451,12 @@
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
   </div>
-
-  <span class="mediumValueField signAbility">Signature Ability</span>
-  <div class="signatureAbilityTree">
-    <input class="basePower" type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
   
   <span class="mediumValueField spec">Specialization</span>
   <div class="talentTree">
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
-
-  <span class="mediumValueField signAbility">Signature Ability</span>
-  <div class="signatureAbilityTree">
-    <input class="basePower" type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
   </div>
