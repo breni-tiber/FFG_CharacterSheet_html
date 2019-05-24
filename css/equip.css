@@ -1,0 +1,7 @@
+h2 {
+  grid-area: 1/1/header-end/-1;
+}
+
+.armor {
+  grid-area: header-end/1/3/-1;
+}

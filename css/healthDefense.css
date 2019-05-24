@@ -14,6 +14,10 @@
   .health:not(#criticalWounds) th {
     width: 50%;
   }
+  
+#stims {
+  grid-area: 7 / one-quarter / 9 / half;
+}
 
 #defense {
   grid-area: 11/1/footer-start/3;
@@ -35,13 +39,9 @@
   grid-area: 11/two-thirds/-1/-1;
 }
 
-  #criticalWounds .healDifficulty {
-    text-align: center;
-  }
-
-    #criticalWounds tr:nth-child(1) th:nth-child(1) {
-      min-width: 9rem;
-    }
+      #criticalWounds tr:nth-child(1) th:nth-child(2) {
+        min-width: 9rem;
+      }
 
 #statusCondition {
   grid-area: footer-start/1/-1/two-thirds;

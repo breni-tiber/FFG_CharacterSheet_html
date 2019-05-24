@@ -262,16 +262,43 @@
         </tbody>
     </table>
   <!-- /characteristics and skills -->
+  
+    <object type="image/png" data="img/pic.png">
+      <div>
+        <span>Height</span>
+        <span>Build</span>
+        <span>Species</span>
+        <span>Gender</span>
+        <span>Hair</span>
+        <span>Age</span>
+        <span>Eyes</span>
+        <span>Notable Features</span>
+      
+        <p class="screenOnly">Place a picture of your character inside the 'img' folder. It must have the name 'pic.png'.</p>
+      </div>
+    </object>
 
-  <!-- stimpack uses with difference EotE/AoR
-    <tbody id="stims">
-      <tr>
-        <th>Stim Uses</th>
-      </tr>
-      <tr>
-        <td>OOOOO</td>
-      </tr>
-    </tbody> -->
+<!-- stimpack uses with difference EotE/AoR -->
+    <table id="stims" class="health">
+      <caption>Stims used</caption>
+      <tbody>
+        <tr>
+          <td><span class="">&#9711;&#9711;&#9711;&#9711;&#9711;</span></td>
+        </tr>
+        <tr>
+          <td><span class="">&#9711;&#9711;&#9711;&#9711;</span></td>
+        </tr>
+        <tr>
+          <td><span class="">&#9711;&#9711;&#9711;</span></td>
+        </tr>
+        <tr>
+          <td><span class="">&#9711;&#9711;</span></td>
+        </tr>
+        <tr>
+          <td><span class="">&#9711;</span></td>
+        </tr>
+      </tbody>
+    </table>
 
     <table id="defense" class="health">
       <caption>Defense</caption>
@@ -333,24 +360,24 @@
       <caption>Critical&nbsp;wounds</caption>
       <tbody>
         <tr>
-          <th>Effect</th>
           <th>Severity</th>
+          <th>Effect</th>
         </tr>
         <tr>
-          <td class="underlined"></td>
           <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+          <td class="underlined"></td>
         </tr>
         <tr>
-          <td class="underlined"></td>
           <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+          <td class="underlined"></td>
         </tr>
         <tr>
-          <td class="underlined"></td>
           <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+          <td class="underlined"></td>
         </tr>
         <tr>
-          <td class="underlined"></td>
           <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
+          <td class="underlined"></td>
         </tr>
       </tbody>
     </table>
@@ -495,15 +522,183 @@
   <div id="gainedOnAdventures" class="smallValueField footer">adventure XP</div>
 </div>
 
-<div class="printedPage" id="equip">
-  <h2>Equipment</h2>
+  <div class="printedPage" id="equip">
+    <h2>Equipment</h2>
+    <table class="armor">
+      <caption>Armor</caption>
+      <!-- base profile: Type (Model), Defense, Soak, Price+Rarity, Enc, HP, Source book+page -->
+      <tbody>
+        <tr>
+          <th>Type</th>
+          <td></td>
+          <th>Defense</th>
+          <td></td>
+          <th>Soak</th>
+          <td></td>
+          <th>HP</th>
+          <td></td>
+          <th>Enc</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Model</th>
+          <td></td>
+          <th>Notes</th>
+          <td></td><!-- colspan="5" -->
+          <th>Sourcebook/page</th>
+          <td></td>
+        </tr>
+      </tbody>
+      <!-- [attachments, mods, Source book+page] -->
+      <tbody class="attachment">
+        <tr>
+          <th>Type</th>
+          <td></td>
+          <th>Model</th>
+          <td></td>
+          <th>Base Modifiers</th>
+          <td></td>
+          <th>HP</th>
+          <td></td>
+          <th>Sourcebook/page</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Notes/Mods</th>
+          <td></td><!-- colspan="all" -->
+        </tr>
+        <tr>
+          <th>Notes/Mods</th>
+          <td></td><!-- colspan="all" -->
+        </tr>
+      </tbody>
+      <tbody class="attachment">
+        <tr>
+          <th>Type</th>
+          <td></td>
+          <th>Model</th>
+          <td></td>
+          <th>Base Modifiers</th>
+          <td></td>
+          <th>HP</th>
+          <td></td>
+          <th>Sourcebook/page</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Notes/Mods</th>
+          <td></td><!-- colspan="all" -->
+        </tr>
+        <tr>
+          <th>Notes/Mods</th>
+          <td></td><!-- colspan="all" -->
+        </tr>
+      </tbody>
+      <tbody class="attachment">
+        <tr>
+          <th>Type</th>
+          <td></td>
+          <th>Model</th>
+          <td></td>
+          <th>Base Modifiers</th>
+          <td></td>
+          <th>HP</th>
+          <td></td>
+          <th>Sourcebook/page</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Notes/Mods</th>
+          <td></td><!-- colspan="all" -->
+        </tr>
+        <tr>
+          <th>Notes/Mods</th>
+          <td></td><!-- colspan="all" -->
+        </tr>
+      </tbody>
+      <tbody class="attachment">
+        <tr>
+          <th>Type</th>
+          <td></td>
+          <th>Model</th>
+          <td></td>
+          <th>Base Modifiers</th>
+          <td></td>
+          <th>HP</th>
+          <td></td>
+          <th>Sourcebook/page</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Notes/Mods</th>
+          <td></td><!-- colspan="all" -->
+        </tr>
+        <tr>
+          <th>Notes/Mods</th>
+          <td></td><!-- colspan="all" -->
+        </tr>
+      </tbody>
+      <tbody class="attachment">
+        <tr>
+          <th>Type</th>
+          <td></td>
+          <th>Model</th>
+          <td></td>
+          <th>Base Modifiers</th>
+          <td></td>
+          <th>HP</th>
+          <td></td>
+          <th>Sourcebook/page</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Notes/Mods</th>
+          <td></td><!-- colspan="all" -->
+        </tr>
+        <tr>
+          <th>Notes/Mods</th>
+          <td></td><!-- colspan="all" -->
+        </tr>
+      </tbody>
+      <!--resulting profile: [minor, moderate, major],  Defense, Soak, HP, Enc -->
+      <tbody class="resultingProfile">
+        <tr>
+          <th>Defense</th>
+          <td></td>
+          <th>Soak</th>
+          <td></td>
+          <th>HP</th>
+          <td></td>
+          <th>Enc</th>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+  <!-- weapons [minor, moderate, major, attachments, mods] -->
+  
+  <!-- cybernetics [functional|deactivated] -->
+  <!-- gear [EDC|backpack|ship|other] -->
+  
+  <!-- encumberance [current/threshold] -->
+  
   <!-- cash: debt, credits, ...; -->
-  <!-- armor [minor, moderate, major, attachments, mods],
-    cybernetics [functional|deactivated],
-    gear [EDC|backpack|ship|other],
-    weapons [minor, moderate, major, attachments, mods],
-    encumberance [current/threshold] -->
-</div>
+  
+  <!-- 
+  ---armor1--- enc
+  ---armor2--- enc
+  
+  ---weapn1--- enc
+  ---weapn2--- enc
+  ---weapn3--- enc
+  
+  cyber | gear enc
+  cyber | gear enc
+  cyber | gear enc
+  
+  cash | encumberance  
+  -->
+  </div>
 
 <div class="printedPage" id="force">
   <!-- decorative morality bar-->
