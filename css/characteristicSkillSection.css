@@ -11,19 +11,19 @@
 }
 
 #cunning {
-  grid-area: 4 / one-quarter / 7 / half;
+  grid-area: 4 / one-quarter / 6 / half;
 }
 
 #willpower {
-  grid-area: 9 / 1 / 11 / one-quarter;
+  grid-area: 6 / 1 / 7 / one-quarter;
 }
 
 #presence {
-  grid-area: 9 / one-quarter / 11 / half;
+  grid-area: 6 / one-quarter / 8 / half;
 }
 
 #knowledge {
-  grid-area: 6 / 1 / 9 / one-quarter;
+  grid-area: 7 / 1 / 11 / one-quarter;
 }
 
 .characteristicSkill tr:nth-child(even)>td {
