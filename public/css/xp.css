@@ -4,7 +4,7 @@
 
 .spec, .signAbility {
   grid-column-start: 1;
-  grid-column-end: one-quarter;
+  grid-column-end: 3;
 }
 
 .talentTree, .signatureAbilityTree {
@@ -41,8 +41,9 @@
 	width: 100%;
 }
 
-#XPLogbook .date, #XPLogbook .xp {
-	width: 19%;
+#XPLogbook th {
+  font-weight: normal;
+  font-size: small;
 }
 
 #gainedSum {

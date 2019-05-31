@@ -2,18 +2,8 @@
   grid-area: 4/half/6/end;
 }
 
-/* #features {
-  grid-area: 3/1/-4/-1;
-  justify-self: center;
-} */
-
-#duty {
-  grid-area: 9/half/-2/end;
-  width: 100%;
-}
-
-#obligation {
-  grid-area: 6/half/9/end;
+#dutyObligation {
+  grid-area: 6/half/-2/end;
   width: 100%;
 }
 

@@ -18,8 +18,8 @@
 
   <div class="printedPage" id="front">
     <header>
-      <span>Campaign</span>
-      <span>Player</span>
+      <span class="underlined">Campaign</span>
+      <span class="underlined">Player</span>
     </header>
 
   <!-- characteristics and skills -->
@@ -264,12 +264,12 @@
   
     <object id="portrait" class="smallFont" type="image/png" data="img/pic.png">
       <div>
-        <span>Height</span>
-        <span>Build</span>
-        <span>Gender</span>
-        <span>Hair</span>
-        <span>Age</span>
-        <span>Eyes</span>
+        <span class="underlined">Height</span>
+        <span class="underlined">Build</span>
+        <span class="underlined">Gender</span>
+        <span class="underlined">Hair</span>
+        <span class="underlined">Age</span>
+        <span class="underlined">Eyes</span>
         <!-- home planet, known languages -->
 
         <p class="screenOnly">Place a picture of your character inside the 'img' folder. It must have the name 'pic.png'.</p>
@@ -277,29 +277,19 @@
     </object>
     
     <div id="details" class="smallFont">
-      <span>Character</span>
-      <span>Species</span>
-      <span>Notable Features</span>
+      <span class="underlined">Character</span>
+      <span class="underlined">Species</span>
+      <span class="underlined">Notable Features</span>
     </div>
 
     <section id="motivation" class="bigValueField">
       Character motivations
     </section>
 
-  <!--
-  <section id="features">
-    <img src="img/rpg-vitruv.png" alt="portrait" />
-  </section>
-  -->
-
-    <!-- duty -->
-    <section id="duty">
+    <!-- duty, obligation -->
+    <section id="dutyObligation">
       <div class="bigValueField">duty</div>
       <div class="bigValueField">duty</div>
-    </section>
-
-    <!-- obligation -->
-    <section id="obligation">
       <div class="bigValueField">obligation</div>
       <div class="bigValueField">obligation</div>
     </section>
@@ -416,12 +406,28 @@
 
   <div class="printedPage" id="XP">
     <header id="career">
-      <span>Career</span>
+      <span class="underlined">Career</span>
     </header>
 
-  <!-- XP: career, specs/talent trees, signature abilities, spent XP -->
-  <span class="mediumValueField spec">Specialization</span>
-  <div class="talentTree">
+    <!-- XP: career, specs/talent trees, signature abilities, spent XP -->
+    <span class="mediumValueField spec">Specialization</span>
+    <div class="talentTree">
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    </div>
+
+    <span class="mediumValueField signAbility">Signature Ability</span>
+    <div class="signatureAbilityTree">
+      <input class="basePower" type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    </div>
+
+    <span class="mediumValueField spec">Specialization</span>
+    <div class="talentTree">
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
@@ -429,15 +435,15 @@
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
   </div>
 
-  <span class="mediumValueField signAbility">Signature Ability</span>
-  <div class="signatureAbilityTree">
+    <span class="mediumValueField signAbility">Signature Ability</span>
+    <div class="signatureAbilityTree">
     <input class="basePower" type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
   </div>
-  
-  <span class="mediumValueField spec">Specialization</span>
-  <div class="talentTree">
+
+    <span class="mediumValueField spec">Specialization</span>
+    <div class="talentTree">
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
@@ -445,33 +451,8 @@
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
   </div>
 
-  <span class="mediumValueField signAbility">Signature Ability</span>
-  <div class="signatureAbilityTree">
-    <input class="basePower" type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
-  
-  <span class="mediumValueField spec">Specialization</span>
-  <div class="talentTree">
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
-  
-  <span class="mediumValueField spec">Specialization</span>
-  <div class="talentTree">
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
-  
-  <span class="mediumValueField spec">Specialization</span>
-  <div class="talentTree">
+    <span class="mediumValueField spec">Specialization</span>
+    <div class="talentTree">
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
@@ -479,43 +460,61 @@
     <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
   </div>
 
-  <!-- total XP, logbook -->
-  <table id="XPLogbook">
-    <caption></caption>
-	<thead>
-	  <tr>
-	    <th class="date">date</th>
-	    <th>summary</th>
-	    <th class="xp">earned XP</th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr>
-	    <td class="date">date</td>
-	    <td>----------</td>
-	    <td class="xp">XP</td>
-	  </tr>
-	</tbody>
-  </table>
+    <span class="mediumValueField spec">Specialization</span>
+    <div class="talentTree">
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+  </div>
 
-  <div id="spentOnSkills" class="smallValueField footer">skills</div>
-  <div id="spentOnObligation" class="smallValueField footer">obligation</div>
-  <div id="spentOnTalents" class="smallValueField footer">talents</div>
-  <div id="spentOnTrees" class="smallValueField footer">trees</div>
-  <div id="spentOnSigAbilities" class="smallValueField footer">sign abilities</div>
-  <div id="spentOnForcePowers" class="smallValueField footer">Force powers</div>
+    <!-- total XP, logbook,
+    session/Date, Description/Notes, references???, Award (+)Debit, Spend (-)Credit, Balance (Net) -->
+    <table id="XPLogbook">
+      <caption>XP register</caption>
+      <thead>
+        <tr>
+          <th class="date">date</th>
+          <th>summary</th>
+          <!-- <th>reference</th> -->
+          <th class="xp">Award (+)Debit</th>
+          <th>Spend (-)Credit</th>
+          <th>Balance (Net)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="date"></td>
+          <td></td>
+          <td></td>
+          <td class="xp"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
 
-  <div id="spentSum" class="smallValueField footer">&sum; spent XP</div>
+    <div class="hidden">
+      <div id="spentOnSkills" class="smallValueField footer">skills</div>
+      <div id="spentOnObligation" class="smallValueField footer">obligation</div>
+      <div id="spentOnTalents" class="smallValueField footer">talents</div>
+      <div id="spentOnTrees" class="smallValueField footer">trees</div>
+      <div id="spentOnSigAbilities" class="smallValueField footer">sign abilities</div>
+      <div id="spentOnForcePowers" class="smallValueField footer">Force powers</div>
 
-  <div id="gainedSum" class="smallValueField footer">&sum; gained XP</div>
+      <div id="spentSum" class="smallValueField footer">&sum; spent XP</div>
 
-  <div id="gainedOnStart" class="smallValueField footer">start XP</div>
-  <div id="gainedOnAdventures" class="smallValueField footer">adventure XP</div>
-</div>
+      <div id="gainedSum" class="smallValueField footer">&sum; gained XP</div>
+
+      <div id="gainedOnStart" class="smallValueField footer">start XP</div>
+      <div id="gainedOnAdventures" class="smallValueField footer">adventure XP</div>
+    </div>
+  </div>
 
   <div class="printedPage" id="equip">
-    <h2>Equipment</h2>
-    <table class="armor">
+
+    <table class="modded armor">
       <caption>Armor</caption>
       <!-- base profile: Type (Model), Defense, Soak, Price+Rarity, Enc, HP, Source book+page -->
       <tbody>
@@ -629,28 +628,6 @@
           <td></td><!-- colspan="all" -->
         </tr>
       </tbody>
-      <tbody class="attachment">
-        <tr>
-          <th>Type</th>
-          <td></td>
-          <th>Model</th>
-          <td></td>
-          <th>Base Modifiers</th>
-          <td></td>
-          <th>HP</th>
-          <td></td>
-          <th>Sourcebook/page</th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>Notes/Mods</th>
-          <td></td><!-- colspan="all" -->
-        </tr>
-        <tr>
-          <th>Notes/Mods</th>
-          <td></td><!-- colspan="all" -->
-        </tr>
-      </tbody>
       <!--resulting profile: [minor, moderate, major],  Defense, Soak, HP, Enc -->
       <tbody class="resultingProfile">
         <tr>
@@ -660,6 +637,9 @@
           <td></td>
           <th>HP</th>
           <td></td>
+          <th>Con</th>
+          <td>&loz;&#x202F;&loz;&#x202F;&loz;
+          </td>
           <th>Enc</th>
           <td></td>
         </tr>

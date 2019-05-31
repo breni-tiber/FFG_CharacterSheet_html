@@ -9,7 +9,6 @@ header {
 
 header span {
   display: block;
-  border-bottom: 0.1em dotted black;
 }
 
 header span:after {
@@ -18,6 +17,11 @@ header span:after {
 
 #details {
   grid-area: header-end / three-quarter / 3 / end;
+  width: 100%;
+}
+
+#details span {
+  display: block;
 }
 
   #front object {

@@ -81,6 +81,7 @@
 }
 
 section > img { /* make images respect parent width */
+  max-height: 100%;
   max-width: 100%;
 }
 
@@ -90,7 +91,7 @@ section > img { /* make images respect parent width */
 
 .underlined {
   background-color: white;
-  border-bottom: 0.1em dotted black;
+  border-bottom: 0.1em solid lightgrey;
 }
 
 .smallValueField {
