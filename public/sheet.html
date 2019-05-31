@@ -20,7 +20,6 @@
     <header>
       <span>Campaign</span>
       <span>Player</span>
-      <span>Character</span>
     </header>
 
   <!-- characteristics and skills -->
@@ -263,22 +262,54 @@
     </table>
   <!-- /characteristics and skills -->
   
-    <object type="image/png" data="img/pic.png">
+    <object id="portrait" class="smallFont" type="image/png" data="img/pic.png">
       <div>
         <span>Height</span>
         <span>Build</span>
-        <span>Species</span>
         <span>Gender</span>
         <span>Hair</span>
         <span>Age</span>
         <span>Eyes</span>
-        <span>Notable Features</span>
-      
+        <!-- home planet, known languages -->
+
         <p class="screenOnly">Place a picture of your character inside the 'img' folder. It must have the name 'pic.png'.</p>
       </div>
     </object>
+    
+    <div id="details" class="smallFont">
+      <span>Character</span>
+      <span>Species</span>
+      <span>Notable Features</span>
+    </div>
 
-<!-- stimpack uses with difference EotE/AoR -->
+    <section id="motivation" class="bigValueField">
+      Character motivations
+    </section>
+
+  <!--
+  <section id="features">
+    <img src="img/rpg-vitruv.png" alt="portrait" />
+  </section>
+  -->
+
+    <!-- duty -->
+    <section id="duty">
+      <div class="bigValueField">duty</div>
+      <div class="bigValueField">duty</div>
+    </section>
+
+    <!-- obligation -->
+    <section id="obligation">
+      <div class="bigValueField">obligation</div>
+      <div class="bigValueField">obligation</div>
+    </section>
+
+    <div id="contributionRank" class="smallValueField">Contribution</div>
+    <div id="dutySum" class="smallValueField">&sum; duty</div>
+
+    <div id="obligationSum" class="smallValueField">&sum; obligation</div>
+
+    <!-- stimpack uses -->
     <table id="stims" class="health">
       <caption>Stims used</caption>
       <tbody>
@@ -383,38 +414,10 @@
     </figure>
   </div>
 
-<div class="printedPage" id="fluff">
-  <section id="motivation" class="bigValueField">
-    Character motivations
-  </section>
-
-  <!-- notable features, portrait, gender, age, height, weight, build, hair/eye colour, home planet, species, known languages -->
-  <section id="features">
-    <img src="img/rpg-vitruv.png" alt="portrait" />
-  </section>
-  
-  <!-- duty -->
-  <section id="duty">
-    <div class="bigValueField">duty</div>
-	<div class="bigValueField">duty</div>
-  </section>
-  
-  <!-- obligation -->
-  <section id="obligation">
-    <div class="bigValueField">obligation</div>
-	<div class="bigValueField">obligation</div>
-  </section>
-
-  <div id="contributionRank" class="smallValueField footer">Contribution</div>
-  <div id="dutySum" class="smallValueField footer">&sum; duty</div>
-
-  <div id="obligationSum" class="smallValueField footer">&sum; obligation</div>
-</div>
-
-<div class="printedPage" id="XP">
-  <header id="career">
-    <span>Career</span>
-  </header>
+  <div class="printedPage" id="XP">
+    <header id="career">
+      <span>Career</span>
+    </header>
 
   <!-- XP: career, specs/talent trees, signature abilities, spent XP -->
   <span class="mediumValueField spec">Specialization</span>

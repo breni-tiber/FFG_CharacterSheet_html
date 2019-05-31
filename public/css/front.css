@@ -1,0 +1,37 @@
+@import "characteristicSkillSection.css";
+@import "fluff.css";
+@import "healthDefense.css";
+
+header {
+  grid-area: 1/three-quarter/header-end/end;
+  width: 100%;
+}
+
+header span {
+  display: block;
+  border-bottom: 0.1em dotted black;
+}
+
+header span:after {
+  content: ":";
+}
+
+#details {
+  grid-area: header-end / three-quarter / 3 / end;
+}
+
+  #front object {
+    grid-area: 1 / half / 4 / three-quarter;
+    width: 100%;
+    height: 100%;
+  }
+  
+    #front object div {
+    border: thin solid lightgrey;
+    width: 100%;
+    height: 100%;
+    }
+  
+    #front object span {
+      display: block;
+    }

@@ -1,6 +1,4 @@
-@import "characteristicSkillSection.css";
-@import "healthDefense.css";
-@import "fluff.css";
+@import "front.css";
 @import "xp.css";
 @import "equip.css";
 @import "force.css";
@@ -63,19 +61,8 @@
   /*development*/
 }
 
-header {
-  grid-area: 1/half/3/-1;
-  width: 100%;
+.smallFont {
   font-size: small;
-}
-
-header span {
-  display: block;
-  border-bottom: 0.1em dotted black;
-}
-
-header span:after {
-  content: ":";
 }
 
 .printedPage {
