@@ -1,3 +1,4 @@
+
 .health {
   width: 100%;
 }
@@ -39,20 +40,20 @@
   grid-area: 11/two-thirds/-1/-1;
 }
 
-      #criticalWounds tr:nth-child(1) th:nth-child(2) {
-        min-width: 9rem;
-      }
+.healDifficulty {
+  white-space: nowrap;
+}
 
+      #criticalWounds tr:nth-child(1) th:nth-child(2) {
+        width: 100%;
+      }
+  
 #statusCondition {
   grid-area: footer-start/1/-1/two-thirds;
   display: flex;
   align-items: center;
   margin: 0;
   width: 100%;
-  /*
-  max-height: 6em;
-  align-self: end;
-  */
 }
   
   #statusCondition ul {

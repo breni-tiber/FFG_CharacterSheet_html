@@ -296,7 +296,6 @@
 
     <div id="contributionRank" class="smallValueField">Contribution</div>
     <div id="dutySum" class="smallValueField">&sum; duty</div>
-
     <div id="obligationSum" class="smallValueField">&sum; obligation</div>
 
     <!-- stimpack uses -->
@@ -366,10 +365,10 @@
     </table>
 
     <table id="criticalWounds" class="health">
-      <caption>Critical&nbsp;wounds</caption>
+      <caption>Critical wounds</caption>
       <tbody>
         <tr>
-          <th>Severity</th>
+          <th class="healDifficulty">Severity</th>
           <th>Effect</th>
         </tr>
         <tr>
@@ -428,88 +427,77 @@
 
     <span class="mediumValueField spec">Specialization</span>
     <div class="talentTree">
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    </div>
 
     <span class="mediumValueField signAbility">Signature Ability</span>
     <div class="signatureAbilityTree">
-    <input class="basePower" type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
+      <input class="basePower" type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    </div>
 
     <span class="mediumValueField spec">Specialization</span>
     <div class="talentTree">
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    </div>
 
     <span class="mediumValueField spec">Specialization</span>
     <div class="talentTree">
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    </div>
 
     <span class="mediumValueField spec">Specialization</span>
     <div class="talentTree">
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    </div>
 
     <!-- total XP, logbook,
     session/Date, Description/Notes, references???, Award (+)Debit, Spend (-)Credit, Balance (Net) -->
     <table id="XPLogbook">
       <caption>XP register</caption>
+      <colgroup>
+        <col class="date">
+        <col>
+        <col class="xp" span="3">
+      </colgroup>
       <thead>
         <tr>
-          <th class="date">date</th>
+          <th>date</th>
           <th>summary</th>
           <!-- <th>reference</th> -->
-          <th class="xp">Award (+)Debit</th>
+          <th>Award (+)Debit</th>
           <th>Spend (-)Credit</th>
           <th>Balance (Net)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="date"></td>
           <td></td>
           <td></td>
-          <td class="xp"></td>
+          <td></td>
+          <td></td>
           <td></td>
           <td></td>
         </tr>
       </tbody>
     </table>
-
-    <div class="hidden">
-      <div id="spentOnSkills" class="smallValueField footer">skills</div>
-      <div id="spentOnObligation" class="smallValueField footer">obligation</div>
-      <div id="spentOnTalents" class="smallValueField footer">talents</div>
-      <div id="spentOnTrees" class="smallValueField footer">trees</div>
-      <div id="spentOnSigAbilities" class="smallValueField footer">sign abilities</div>
-      <div id="spentOnForcePowers" class="smallValueField footer">Force powers</div>
-
-      <div id="spentSum" class="smallValueField footer">&sum; spent XP</div>
-
-      <div id="gainedSum" class="smallValueField footer">&sum; gained XP</div>
-
-      <div id="gainedOnStart" class="smallValueField footer">start XP</div>
-      <div id="gainedOnAdventures" class="smallValueField footer">adventure XP</div>
-    </div>
   </div>
 
   <div class="printedPage" id="equip">
@@ -629,7 +617,7 @@
         </tr>
       </tbody>
       <!--resulting profile: [minor, moderate, major],  Defense, Soak, HP, Enc -->
-      <tbody class="resultingProfile">
+      <tfoot class="resultingProfile">
         <tr>
           <th>Defense</th>
           <td></td>
@@ -643,7 +631,7 @@
           <th>Enc</th>
           <td></td>
         </tr>
-      </tbody>
+      </tfoot>
     </table>
 
   <!-- weapons [minor, moderate, major, attachments, mods] -->
@@ -671,70 +659,70 @@
   -->
   </div>
 
-<div class="printedPage" id="force">
-  <!-- decorative morality bar-->
-  <div id="moralityBar">
-	<div id="ten" class="darkSide">10</div>
-	<div id="twenty" class="darkSide">20</div>
-	<div id="thirty" class="lightSide">30</div>
-	<div id="seventy" class="lightSide">70</div>
-	<div id="eighty" class="lightSide">80</div>
-    <div id="ninety" class="lightSide">90</div>
+  <div class="printedPage" id="force">
+    <!-- decorative morality bar-->
+    <div id="moralityBar">
+    <div id="ten" class="darkSide">10</div>
+    <div id="twenty" class="darkSide">20</div>
+    <div id="thirty" class="lightSide">30</div>
+    <div id="seventy" class="lightSide">70</div>
+    <div id="eighty" class="lightSide">80</div>
+      <div id="ninety" class="lightSide">90</div>
+    </div>
+    
+    <!-- emotional strength|weakness -->
+    <div id="emotionalStrength" class="bigValueField">Emotional Strength</div>
+    <div id="emotionalWeakness" class="bigValueField">Emotional Weakness</div>
+    
+    <!-- force powers -->
+    <div class="mediumValueField forcePowerName">Power</div>
+    <div class="forcePowerTree">
+      <input class="basePower" type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    </div>
+
+    <div class="mediumValueField forcePowerName">Power</div>
+    <div class="forcePowerTree">
+      <input class="basePower" type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    </div>
+
+    <div class="mediumValueField forcePowerName">Power</div>
+    <div class="forcePowerTree">
+      <input class="basePower" type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    </div>
+
+    <div class="mediumValueField forcePowerName">Power</div>
+    <div class="forcePowerTree">
+      <input class="basePower" type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+      <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
+    </div>
+
+
+    <!-- Morality: conflict, numeric morality value -->
+    <div id="morality" class="smallValueField">Morality</div>
+    <div id="conflict" class="smallValueField">Conflict</div>
+
+    <!-- force rank, committed|available dice -->
+    <section id="forceDice">
+      <span id="forceRank" class="smallValueField">force rank</span>
+    <span class="smallValueField">committed</span>
+    <span class="smallValueField">available</span>
+    </section>
   </div>
-  
-  <!-- emotional strength|weakness -->
-  <div id="emotionalStrength" class="bigValueField">Emotional Strength</div>
-  <div id="emotionalWeakness" class="bigValueField">Emotional Weakness</div>
-	
-  <!-- force powers -->
-  <div class="mediumValueField forcePowerName">Power</div>
-  <div class="forcePowerTree">
-    <input class="basePower" type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
-
-  <div class="mediumValueField forcePowerName">Power</div>
-  <div class="forcePowerTree">
-    <input class="basePower" type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
-
-  <div class="mediumValueField forcePowerName">Power</div>
-  <div class="forcePowerTree">
-    <input class="basePower" type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
-
-  <div class="mediumValueField forcePowerName">Power</div>
-  <div class="forcePowerTree">
-    <input class="basePower" type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-    <input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input type="checkbox" />
-  </div>
-
-
-  <!-- Morality: conflict, numeric morality value -->
-  <div id="morality" class="smallValueField">Morality</div>
-  <div id="conflict" class="smallValueField">Conflict</div>
-
-  <!-- force rank, committed|available dice -->
-  <section id="forceDice">
-    <span id="forceRank" class="smallValueField">force rank</span>
-	<span class="smallValueField">committed</span>
-	<span class="smallValueField">available</span>
-  </section>
-</div>
 
 </body>
 
