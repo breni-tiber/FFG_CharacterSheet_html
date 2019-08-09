@@ -1,0 +1,7 @@
+npm install -g chromehtml2pdf
+
+chromehtml2pdf 
+    --out=out.pdf 
+    --printBackground=true 
+    --format=a4 
+    file:///home/bremer/git/FFG_CharacterSheet_html/public/sheet.html
