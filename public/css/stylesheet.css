@@ -6,15 +6,16 @@
 @media print {
   @page {
     size: A4;
+    margin: 0;
   }
-  
+
   html {
     width: 100%;
     height: 100%;
     padding: 0px;
     margin: 0px;
   }
-  
+
   body {
     width: 100%;
     height: 100%;
@@ -23,7 +24,7 @@
     background: white;
     font-size: 12pt;
   }
-  
+
   .printedPage {
     width: 100%;
     height: 100%;
@@ -31,30 +32,30 @@
     page-break-after: always;
     border: 2pt dotted grey;
   }
-  
+
   .screenOnly {
     display: none;
   }
 }
 
-@media screen {  
+@media screen {
   /*development*/
   #front {
     border: 2pt dotted blue;
   }
-  
+
   #fluff{
     border: 2pt dotted pink;
   }
-  
+
   #XP{
     border: 2pt dotted green;
   }
-  
+
   #equip{
     border: 2pt dotted grey;
   }
-  
+
   #force{
     border: 2pt dotted fuchsia;
   }
