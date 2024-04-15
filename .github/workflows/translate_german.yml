@@ -21,3 +21,5 @@ jobs:
         git config user.name "GitHub Actions Bot"
         git config user.email "<>"
         git status
+        git checkout i18n_german
+        git merge master --no-ff
