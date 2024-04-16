@@ -16,8 +16,10 @@ jobs:
         with:
           htmlFile: ./public/sheet.html
           outputFile: ./portrait_en.pdf
-      - name: Upload binaries to release
+      - name: upload pdf
         uses: svenstaro/upload-release-action@v2
         with:
           file: portrait_en.pdf
           overwrite: true
+      - name: print pdf path
+        run: echo "$browser_download_url"
