@@ -13,7 +13,6 @@ jobs:
     - name: Git checkout
       uses: actions/checkout@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: '0'
     - name: git
       run: |
@@ -29,3 +28,5 @@ jobs:
         git checkout origin/i18n_german
         git merge origin/main --no-ff
         git push origin HEAD:i18n_german
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
