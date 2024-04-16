@@ -3,6 +3,7 @@ name: Translate German
 on:
   push:
     branches: [ main ]
+    paths: [public/**]
 
 jobs:
   build-version:
