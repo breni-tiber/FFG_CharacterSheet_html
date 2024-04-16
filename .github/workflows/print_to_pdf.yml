@@ -17,9 +17,10 @@ jobs:
           htmlFile: ./public/sheet.html
           outputFile: ./portrait_en.pdf
       - name: upload pdf
+        id: attach_to_release
         uses: svenstaro/upload-release-action@v2
         with:
           file: portrait_en.pdf
           overwrite: true
       - name: print pdf path
-        run: echo "$browser_download_url"
+        run: echo ${{ steps.attach_to_release.outputs.browser_download_url }}
