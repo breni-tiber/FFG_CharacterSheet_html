@@ -27,3 +27,4 @@ jobs:
         git status
         git checkout origin/i18n_german
         git merge origin/main --no-ff
+        git push
