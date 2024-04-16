@@ -14,3 +14,8 @@ jobs:
         with:
           htmlFile: ./public/sheet.html
           outputFile: ./portrait_en.pdf
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          file: ./portrait_en.pdf
+          overwrite: true
