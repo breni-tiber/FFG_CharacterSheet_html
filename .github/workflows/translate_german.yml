@@ -14,6 +14,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: '0'
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: git
       run: |
         # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
@@ -28,5 +29,3 @@ jobs:
         git checkout origin/i18n_german
         git merge origin/main --no-ff
         git push origin HEAD:i18n_german
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
