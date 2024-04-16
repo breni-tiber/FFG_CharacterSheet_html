@@ -11,11 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: browser-actions/setup-chrome@v1
+      - run: chrome --version
       - name: html to pdf
-        uses: fifsky/html-to-pdf-action@master
-        with:
-          htmlFile: ./public/sheet.html
-          outputFile: ./portrait_en.pdf
+        #uses: fifsky/html-to-pdf-action@master
+        #with:
+        #  htmlFile: ./public/sheet.html
+        #  outputFile: ./portrait_en.pdf
+        run: chromium --headless=new --disable-gpu --print-to-pdf="portrait_en.pdf" ./public/sheet.html
       - name: upload pdf
         id: attach_to_release
         uses: svenstaro/upload-release-action@v2
