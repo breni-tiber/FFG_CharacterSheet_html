@@ -1,0 +1,16 @@
+name: Print to PDF
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  portrait_en:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: html to pdf
+        uses: fifsky/html-to-pdf-action@master
+        with:
+          htmlFile: ./public/sheet.html
+          outputFile: ./portrait_en.pdf
