@@ -29,7 +29,9 @@ jobs:
           # setup the username and email.
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
+          git fetch --all
           git branch -a
+          git status
           git checkout remotes/github/i18n_german
           git merge remotes/github/main --no-ff
       - name: html to portrait_de.pdf
