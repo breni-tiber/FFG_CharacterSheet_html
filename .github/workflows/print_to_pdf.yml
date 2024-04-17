@@ -30,10 +30,9 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git fetch --all
-          git branch -a
-          git checkout origin/i18n_german
+          git checkout i18n_german
           git status
-          git merge origin/main --no-ff
+          git merge main --no-ff
       - name: html to portrait_de.pdf
         run: chromium --headless=new --disable-gpu --print-to-pdf="portrait_de.pdf" ./public/sheet.html
       - name: upload portrait_de
