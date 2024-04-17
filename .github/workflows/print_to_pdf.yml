@@ -29,8 +29,9 @@ jobs:
           # setup the username and email.
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git checkout remotes/origin/i18n_german
-          git merge remotes/origin/main --no-ff
+          git branch -a
+          git checkout remotes/github/i18n_german
+          git merge remotes/github/main --no-ff
       - name: html to portrait_de.pdf
         run: chromium --headless=new --disable-gpu --print-to-pdf="portrait_de.pdf" ./public/sheet.html
       - name: upload portrait_de
