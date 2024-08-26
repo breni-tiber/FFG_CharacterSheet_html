@@ -20,13 +20,13 @@ jobs:
       run: |
         # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
         # branches are named:
-        #  remotes/origin/i18n_german
+        #  remotes/origin/i18n_de
         #  remotes/origin/main
         #  remotes/origin/master
         git --version
         git config user.name "GitHub Actions Bot"
         git config user.email "<>"
         git status
-        git checkout origin/i18n_german
+        git checkout origin/i18n_de
         git merge origin/main --no-ff
-        git push origin HEAD:i18n_german
+        git push origin HEAD:i18n_de
