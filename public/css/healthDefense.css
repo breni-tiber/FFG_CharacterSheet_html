@@ -18,6 +18,7 @@
   
 #stims {
   grid-area: 10 / 5 / 11 / half;
+  width: fit-content;
 }
 
 #defense {
