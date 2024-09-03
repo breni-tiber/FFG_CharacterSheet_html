@@ -17,7 +17,7 @@
   }
   
 #stims {
-  grid-area: 10 / 5 / 11 / half;
+  grid-area: 12 / half / footer-start / two-thirds;
   width: fit-content;
 }
 
@@ -50,13 +50,17 @@
       }
   
 #statusCondition {
-  grid-area: footer-start/1/-1/two-thirds;
+  grid-area: footer-start/1/-1/half;
   display: flex;
   align-items: center;
   margin: 0;
   width: 100%;
 }
-  
+
+  #statusCondition figcaption {
+    display: none;
+  }
+
   #statusCondition ul {
     margin: 0;
     flex-grow: 1;
@@ -64,12 +68,12 @@
     justify-content: space-between;
   }  
 
-    #statusOptions li {
-      list-style-type: circle;
-      width: 31%;
-    }
+  #statusOptions li {
+    list-style-type: circle;
+    width: 31%;
+  }
 
-    #statusOptions .reminder {
-      display: block;
-      font-size: small;
-    }
+  #statusOptions .reminder {
+    display: block;
+    font-size: small;
+  }

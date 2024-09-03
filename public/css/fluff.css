@@ -8,13 +8,13 @@
 }
 
 #obligationSum {
-  grid-area: 8/one-quarter/9/5;
+  grid-area: 10/half/11/9;
 }
 
 #dutySum {
-  grid-area: 8/5/9/6;
+  grid-area: 10/9/11/11;
 }
 
 #contributionRank {
-  grid-area: 8/6/9/7;
+  grid-area: 10/11/11/13;
 }

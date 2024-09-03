@@ -260,7 +260,14 @@
             </tr>
         </tbody>
     </table>
-  <!-- /characteristics and skills -->
+    <!-- remider box social skills. active and defending skills. 
+      charme <-> cool
+      coercion <-> discipline
+      deception <-> discipline
+      leadership <-> discipline
+      negotiation <-> negotiation/cool
+    -->
+    <!-- /characteristics and skills -->
 
     <object id="portrait" class="smallFont" type="image/png" data="img/pic.png">
       <div>
@@ -288,10 +295,10 @@
 
     <!-- duty, obligation -->
     <div id="dutyObligation">
-      <div class="bigValueField">duty</div>
-      <div class="bigValueField">duty</div>
-      <div class="bigValueField">obligation</div>
-      <div class="bigValueField">obligation</div>
+      <div class="bigValueField">duty/obligation</div>
+      <div class="bigValueField">duty/obligation</div>
+      <div class="bigValueField">duty/obligation</div>
+      <!-- <div class="bigValueField">obligation</div> -->
     </div>
 
     <div id="contributionRank" class="smallValueField">Contribution</div>
@@ -300,10 +307,11 @@
 
     <!-- stimpack uses -->
     <table id="stims" class="health">
-      <caption>Stims used</caption>
+      <caption>Stims&nbsp;used</caption>
       <tbody>
         <tr>
-          <td><span class="">&#9711;&#9711;&#9711;&#9711;&#9711;</span></td>
+          <!-- <td><span class="">&#9711;&#9711;&#9711;&#9711;&#9711;</span></td> -->
+          <td><span class=""><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></span></td>
         </tr>
       </tbody>
     </table>
@@ -409,7 +417,8 @@
 
   <div class="printedPage" id="XP">
     <header id="career">
-      <span class="underlined">Career</span>
+      <span class="smallValueField">Career</span>
+      <!--<span class="underlined">Career</span>-->
     </header>
 
     <!-- XP: career, specs/talent trees, signature abilities, spent XP -->
@@ -472,8 +481,8 @@
       <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
     </div>
 
-    <!-- total XP, logbook,
-    session/Date, Description/Notes, references???, Award (+)Debit, Spend (-)Credit, Balance (Net) -->
+    <!-- total XP, logbook, session/Date, Description/Notes,
+    references???, Award (+)Debit, Spend (-)Credit, Balance (Net) -->
     <table id="XPLogbook">
       <caption>XP register</caption>
       <colgroup>
@@ -505,145 +514,166 @@
   </div>
 
   <div class="printedPage" id="equip">
+  
+    <!-- base profile: Damage, Crit, 
+    Type (Model), Skill, Range, Qualities, 
+    Source book+page, HP, Enc -->
+    <table class="modded weapons">
+      <colgroup>
+        <col class="damage">
+        <col class="critical">
 
-    <table class="modded armor">
-      <caption>Armor</caption>
-      <!-- base profile: Type (Model), Defense, Soak, Price+Rarity, Enc, HP, Source book+page -->
+        <col class="weaponDesc" span="4">
+
+        <col class="weaponSource">
+        <col class="weaponHP">
+        <col class="weaponEnc">
+      </colgroup>
+      
+      <thead>
+        <tr>
+          <th class="rotate" scope="col"><div><span>Dmg</span></div></th>
+          <th class="rotate" scope="col"><div><span>Crt</span></div></th>
+          
+          <th class="rotate" scope="col"><div><span>Name</span></div></th>
+          <th class="rotate" scope="col"><div><span></span></div></th>
+          <th class="rotate" scope="col"><div><span></span></div></th>
+          <th class="rotate" scope="col"><div><span></span></div></th>
+          
+          <th class="rotate" scope="col"><div><span>Src</span></div></th>
+          <th class="rotate" scope="col"><div><span>HP</span></div></th>
+          <th class="rotate" scope="col"><div><span>Enc</span></div></th>
+        </tr>
+      </thead>
+
       <tbody>
         <tr>
-          <th>Type</th>
-          <td></td>
-          <th>Defense</th>
-          <td></td>
-          <th>Soak</th>
-          <td></td>
-          <th>HP</th>
-          <td></td>
-          <th>Enc</th>
-          <td></td>
+          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td></td>
+          <td>Range</td><td>Skill</td><td>Qualities</td>
+          <td>&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
         </tr>
         <tr>
-          <th>Model</th>
-          <td></td>
-          <th>Notes</th>
-          <td></td><!-- colspan="5" -->
-          <th>Sourcebook/page</th>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="5">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
         </tr>
       </tbody>
-      <!-- [attachments, mods, Source book+page] -->
-      <tbody class="attachment">
+      
+      <tbody>
         <tr>
-          <th>Type</th>
-          <td></td>
-          <th>Model</th>
-          <td></td>
-          <th>Base Modifiers</th>
-          <td></td>
-          <th>HP</th>
-          <td></td>
-          <th>Sourcebook/page</th>
-          <td></td>
+          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td></td>
+          <td>Range</td><td>Skill</td><td>Qualities</td>
+          <td>&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
         </tr>
         <tr>
-          <th>Notes/Mods</th>
-          <td colspan="9"></td><!-- colspan="all" -->
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
-          <th>Notes/Mods</th>
-          <td colspan="9"></td><!-- colspan="all" -->
-        </tr>
-      </tbody>
-      <tbody class="attachment">
-        <tr>
-          <th>Type</th>
-          <td></td>
-          <th>Model</th>
-          <td></td>
-          <th>Base Modifiers</th>
-          <td></td>
-          <th>HP</th>
-          <td></td>
-          <th>Sourcebook/page</th>
-          <td></td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
-          <th>Notes/Mods</th>
-          <td colspan="9"></td><!-- colspan="all" -->
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
-          <th>Notes/Mods</th>
-          <td colspan="9"></td><!-- colspan="all" -->
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="5">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
         </tr>
       </tbody>
-      <tbody class="attachment">
-        <tr>
-          <th>Type</th>
-          <td></td>
-          <th>Model</th>
-          <td></td>
-          <th>Base Modifiers</th>
-          <td></td>
-          <th>HP</th>
-          <td></td>
-          <th>Sourcebook/page</th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>Notes/Mods</th>
-          <td colspan="9"></td><!-- colspan="all" -->
-        </tr>
-        <tr>
-          <th>Notes/Mods</th>
-          <td colspan="9"></td><!-- colspan="all" -->
-        </tr>
-      </tbody>
-      <tbody class="attachment">
-        <tr>
-          <th>Type</th>
-          <td></td>
-          <th>Model</th>
-          <td></td>
-          <th>Base Modifiers</th>
-          <td></td>
-          <th>HP</th>
-          <td></td>
-          <th>Sourcebook/page</th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>Notes/Mods</th>
-          <td colspan="9"></td><!-- colspan="all" -->
-        </tr>
-        <tr>
-          <th>Notes/Mods</th>
-          <td colspan="9"></td><!-- colspan="all" -->
-        </tr>
-      </tbody>
-      <!--resulting profile: [minor, moderate, major],  Defense, Soak, HP, Enc -->
-      <tfoot class="resultingProfile">
-        <tr>
-          <th>Defense</th>
-          <td></td>
-          <th>Soak</th>
-          <td></td>
-          <th>HP</th>
-          <td></td>
-          <th>Con</th>
-          <td>&loz;&#x202F;&loz;&#x202F;&loz;</td>
-          <th>Enc</th>
-          <td></td>
-        </tr>
-      </tfoot>
+      
     </table>
 
-  <!-- weapons [minor, moderate, major, attachments, mods] -->
+    <!-- base profile: Type (Model), Defense, Soak, Price+Rarity, Enc, HP, Source book+page -->
+    <!-- [attachments, mods, Source book+page] -->
+    <table class="modded armors">
+      <colgroup>
+        <col class="damage">
+        <col class="critical">
+
+        <col class="weaponDesc" span="4">
+
+        <col class="weaponSource">
+        <col class="weaponHP">
+        <col class="weaponEnc">
+      </colgroup>
+      
+      <thead>
+        <tr>
+          <th class="rotate" scope="col"><div><span>Dmg</span></div></th>
+          <th class="rotate" scope="col"><div><span>Crt</span></div></th>
+          
+          <th class="rotate" scope="col"><div><span>Name</span></div></th>
+          <th class="rotate" scope="col"><div><span></span></div></th>
+          <th class="rotate" scope="col"><div><span></span></div></th>
+          <th class="rotate" scope="col"><div><span></span></div></th>
+          
+          <th class="rotate" scope="col"><div><span>Src</span></div></th>
+          <th class="rotate" scope="col"><div><span>HP</span></div></th>
+          <th class="rotate" scope="col"><div><span>Enc</span></div></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td></td>
+          <td>Range</td><td>Skill</td><td>Qualities</td>
+          <td>&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="5">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+      </tbody>
+      
+      <tbody>
+        <tr>
+          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td></td>
+          <td>Range</td><td>Skill</td><td>Qualities</td>
+          <td>&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="5">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+      </tbody>
+      
+    </table>
 
   <!-- cybernetics [functional|deactivated] -->
+  
   <!-- gear [EDC|backpack|ship|other] -->
 
   <!-- encumberance [current/threshold] -->
@@ -664,7 +694,7 @@
 
   cash | encumberance
   -->
-  </div>
+  </div><!-- /printedPage#eqiup -->
 
   <div class="printedPage" id="force">
     <!-- decorative morality bar-->
