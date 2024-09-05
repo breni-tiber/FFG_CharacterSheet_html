@@ -47,6 +47,10 @@
   min-width: 12em;
 }
 
+.characteristicSkill caption {
+  text-align: left;
+}
+
 caption.characteristic {
   caption-side: top;
 	/*transform: rotate(-90deg);*/

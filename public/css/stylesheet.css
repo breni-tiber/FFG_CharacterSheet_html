@@ -30,7 +30,7 @@
     height: 100%;
     page-break-inside: avoid;
     page-break-after: always;
-    border: 2pt dotted grey;
+    /* border: 2pt dotted grey; */
   }
 
   .screenOnly {

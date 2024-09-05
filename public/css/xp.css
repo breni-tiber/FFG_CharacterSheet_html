@@ -2,6 +2,16 @@
 	grid-area: 1/1/header-end/one-quarter;
 }
 
+#XPLogbook {
+	grid-area: 1/one-quarter/footer-start/end;
+	width: 100%;
+}
+
+#XPLogbook th {
+  font-weight: normal;
+  font-size: small;
+}
+
 .spec, .signAbility {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -34,14 +44,4 @@
 
 .signatureAbilityTree .basePower {
   grid-area: 1/1/2/-1;
-}
-
-#XPLogbook {
-	grid-area: header-end/one-quarter/footer-start/end;
-	width: 100%;
-}
-
-#XPLogbook th {
-  font-weight: normal;
-  font-size: small;
 }

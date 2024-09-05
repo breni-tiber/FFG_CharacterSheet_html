@@ -1,15 +1,18 @@
 .weapons {
   grid-area: header-end/1/3/-1;
-  width: 100%;
 }
 
 .armors {
   grid-area: 3/1/4/-1;
+}
+
+.modded {
+  text-align: right;
   width: 100%;
 }
 
 .modded td {
-  border: 1px solid rgb(160 160 160);
+  border: 1px solid #ccc;
 }
 
 .modded tbody::after
@@ -19,28 +22,37 @@
   height: 15px;
 }
 
-.modded tbody tr:nth-last-child(1) {
-  border-top: solid black;
-}
-
 .narrow_column {
   width: 2em;
 }
 
+.midColumn {
+  width: 5em;
+}
+
+.wideColumn {
+  width: 10em;
+}
+
 th.rotate {
-  height: 80px; /* Something you can count on */
-  white-space: nowrap;
+  padding: 0px;
 }
 
 th.rotate > div {
-  transform-origin: top left;
-  transform:
-    translateY(40px)
-    rotate(270deg); /* 45 is really 360 - 45 */
-  width: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 50px;
+  width: 100%;
 }
 
 th.rotate > div > span {
-  border-bottom: 1px solid #ccc;
-  padding: 5px 5px;
+  border-right: 1px solid #ccc;
+  writing-mode: sideways-lr;
+  height: fit-content;
+  width: fit-content;
+}
+
+.modded tbody tr:nth-last-child(2) {
+  border-bottom: solid black;
 }

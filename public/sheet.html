@@ -260,7 +260,7 @@
             </tr>
         </tbody>
     </table>
-    <!-- remider box social skills. active and defending skills. 
+    <!-- reminder box social skills. active and defending skills. 
       charme <-> cool
       coercion <-> discipline
       deception <-> discipline
@@ -298,7 +298,7 @@
       <div class="bigValueField">duty/obligation</div>
       <div class="bigValueField">duty/obligation</div>
       <div class="bigValueField">duty/obligation</div>
-      <!-- <div class="bigValueField">obligation</div> -->
+      <div class="bigValueField">duty/obligation</div>
     </div>
 
     <div id="contributionRank" class="smallValueField">Contribution</div>
@@ -417,7 +417,7 @@
 
   <div class="printedPage" id="XP">
     <header id="career">
-      <span class="smallValueField">Career</span>
+      <div class="smallValueField">Career</div>
       <!--<span class="underlined">Career</span>-->
     </header>
 
@@ -522,8 +522,9 @@
       <colgroup>
         <col class="damage">
         <col class="critical">
+        <col class="weaponName">
 
-        <col class="weaponDesc" span="4">
+        <col class="weaponDesc" span="3">
 
         <col class="weaponSource">
         <col class="weaponHP">
@@ -532,25 +533,25 @@
       
       <thead>
         <tr>
-          <th class="rotate" scope="col"><div><span>Dmg</span></div></th>
-          <th class="rotate" scope="col"><div><span>Crt</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Dmg</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Crit</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Name</span></div></th>
           
-          <th class="rotate" scope="col"><div><span>Name</span></div></th>
-          <th class="rotate" scope="col"><div><span></span></div></th>
-          <th class="rotate" scope="col"><div><span></span></div></th>
-          <th class="rotate" scope="col"><div><span></span></div></th>
+          <th class="rotate" scope="col"><div></div></th>
+          <th class="rotate" scope="col"><div></div></th>
+          <th class="rotate" scope="col"><div></div></th>
           
-          <th class="rotate" scope="col"><div><span>Src</span></div></th>
-          <th class="rotate" scope="col"><div><span>HP</span></div></th>
-          <th class="rotate" scope="col"><div><span>Enc</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Src</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;HP</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Enc</span></div></th>
         </tr>
       </thead>
 
       <tbody>
         <tr>
-          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td></td>
-          <td>Range</td><td>Skill</td><td>Qualities</td>
-          <td>&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="wideColumn">&nbsp;</td>
+          <td class="midColumn">Range</td><td class="midColumn">Skill</td><td>Qualities</td>
+          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
         </tr>
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -571,9 +572,9 @@
       
       <tbody>
         <tr>
-          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td></td>
-          <td>Range</td><td>Skill</td><td>Qualities</td>
-          <td>&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="wideColumn">&nbsp;</td>
+          <td class="midColumn">Range</td><td class="midColumn">Skill</td><td>Qualities</td>
+          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
         </tr>
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -598,75 +599,74 @@
     <!-- [attachments, mods, Source book+page] -->
     <table class="modded armors">
       <colgroup>
-        <col class="damage">
-        <col class="critical">
+        <col class="armorDefense">
+        <col class="armorSoak">
+        <col class="armorName">
 
-        <col class="weaponDesc" span="4">
+        <col class="armorDesc">
 
-        <col class="weaponSource">
-        <col class="weaponHP">
-        <col class="weaponEnc">
+        <col class="armorSource">
+        <col class="armorHP">
+        <col class="armorEnc">
       </colgroup>
       
       <thead>
         <tr>
-          <th class="rotate" scope="col"><div><span>Dmg</span></div></th>
-          <th class="rotate" scope="col"><div><span>Crt</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Def</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Soak</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Name</span></div></th>
           
-          <th class="rotate" scope="col"><div><span>Name</span></div></th>
-          <th class="rotate" scope="col"><div><span></span></div></th>
-          <th class="rotate" scope="col"><div><span></span></div></th>
-          <th class="rotate" scope="col"><div><span></span></div></th>
+          <th class="rotate" scope="col"><div></div></th>
           
-          <th class="rotate" scope="col"><div><span>Src</span></div></th>
-          <th class="rotate" scope="col"><div><span>HP</span></div></th>
-          <th class="rotate" scope="col"><div><span>Enc</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Src</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;HP</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Enc</span></div></th>
         </tr>
       </thead>
 
       <tbody>
         <tr>
-          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td></td>
-          <td>Range</td><td>Skill</td><td>Qualities</td>
-          <td>&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="wideColumn">&nbsp;</td>
+          <td>Qualities</td>
+          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
         </tr>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="5">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="3">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
         </tr>
       </tbody>
       
       <tbody>
         <tr>
-          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td></td>
-          <td>Range</td><td>Skill</td><td>Qualities</td>
-          <td>&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="wideColumn">&nbsp;</td>
+          <td>Qualities</td>
+          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
         </tr>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="5">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="3">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
         </tr>
       </tbody>
       
@@ -699,12 +699,7 @@
   <div class="printedPage" id="force">
     <!-- decorative morality bar-->
     <div id="moralityBar">
-			<div id="ten" class="darkSide">10</div>
-			<div id="twenty" class="darkSide">20</div>
-			<div id="thirty" class="lightSide">30</div>
-			<div id="seventy" class="lightSide">70</div>
-			<div id="eighty" class="lightSide">80</div>
-			<div id="ninety" class="lightSide">90</div>
+      <span id="ten" class="darkSide">10</span><span id="twenty" class="darkSide">20</span><span id="thirty" class="lightSide">30</span><span id="seventy" class="lightSide">70</span><span id="eighty" class="lightSide">80</span><span id="ninety" class="lightSide">90</span>
     </div>
 
     <!-- emotional strength|weakness -->
@@ -748,17 +743,90 @@
       <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
     </div>
 
+    <!-- lightsaber weapons -->
+    <table class="modded lightsabers">
+      <colgroup>
+        <col class="damage">
+        <col class="critical">
+
+        <col calss="weaponName">
+        <col class="weaponDesc">
+
+        <col class="weaponSource">
+        <col class="weaponHP">
+        <col class="weaponEnc">
+      </colgroup>
+      
+      <thead>
+        <tr>
+          <th class="rotate" scope="col"><div><span>&nbsp;Dmg</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Crit</span></div></th>
+          
+          <th class="rotate" scope="col"><div><span>&nbsp;Name</span></div></th>
+          <th class="rotate" scope="col"></th>
+          
+          <th class="rotate" scope="col"><div><span>&nbsp;Src</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;HP</span></div></th>
+          <th class="rotate" scope="col"><div><span>&nbsp;Enc</span></div></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="wideColumn">&nbsp;</td><td>Qualities</td>
+          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="3">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+      </tbody>
+      
+      <tbody>
+        <tr>
+          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="wideColumn">&nbsp;</td><td>Qualities</td>
+          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="3">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+      </tbody>
+      
+    </table>
 
     <!-- Morality: conflict, numeric morality value -->
     <div id="morality" class="smallValueField">Morality</div>
     <div id="conflict" class="smallValueField">Conflict</div>
 
     <!-- force rank, committed|available dice -->
-    <div id="forceDice">
-      <span id="forceRank" class="smallValueField">force rank</span>
-    <span class="smallValueField">committed</span>
-    <span class="smallValueField">available</span>
-	</div>
+    <span id="forceRank" class="smallValueField">force rank</span>
+    <span id="forceCommitted" class="smallValueField">committed</span>
+    <span id="forceAvailable" class="smallValueField">available</span>
   </div>
 
 </body>
