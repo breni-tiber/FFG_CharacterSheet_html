@@ -3,7 +3,7 @@
 @import "healthDefense.css";
 
 header {
-  grid-area: 1/three-quarter/header-end/end;
+  grid-area: 1/three-quarter/header-end/-1;
   width: 100%;
 }
 
@@ -16,7 +16,7 @@ header span:after {
 }
 
 #details {
-  grid-area: header-end / three-quarter / 3 / end;
+  grid-area: header-end/three-quarter/3/-1;
   width: 100%;
 }
 
@@ -25,17 +25,34 @@ header span:after {
 }
 
   #front object {
-    grid-area: 1 / half / 4 / three-quarter;
+    grid-area: 1/half/3/three-quarter;
     width: 100%;
     height: 100%;
   }
-  
+
     #front object div {
     border: thin solid lightgrey;
     width: 100%;
     height: 100%;
     }
-  
+
     #front object span {
       display: block;
     }
+
+    #front object p {
+      margin: 0px;
+    }
+
+#socialSkillInteractions {
+  grid-row: 8 / 10;
+  border: 1px solid #ccc;
+}
+
+#socialSkillInteractions * {
+  border: 1px solid #ccc;
+}
+
+#socialSkillInteractions caption {
+  display: none;
+}

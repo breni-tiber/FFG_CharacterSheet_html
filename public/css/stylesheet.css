@@ -77,9 +77,36 @@
   overflow: hidden;
 }
 
+.header {
+  grid-row: 1 / header-end;
+}
+
 .footer {
-  grid-row-start: footer-start;
-  grid-row-end: -1;
+  grid-row: footer-start / -1;
+}
+
+.firstQuart {
+  grid-column: 1 / one-quarter;
+}
+
+.secondQuart {
+  grid-column: one-quarter / half;
+}
+
+.thirdQuart {
+  grid-column: half / three-quarter;
+}
+
+.fourthQuart {
+  grid-column: three-quarter / -1;
+}
+
+.firstHalf {
+  grid-column: 1 / half;
+}
+
+.secondHalf {
+  grid-column: half / -1;
 }
 
 section > img { /* make images respect parent width */
@@ -139,10 +166,10 @@ section > img { /* make images respect parent width */
 }
 
 .checkBox {
-    height: 1em;
-    width: 1em;
-    background-color: white;
-    border: 0.1em solid lightgrey;
-    border-radius: 50%;
-    display: inline-block;
+  height: 1em;
+  width: 1em;
+  background-color: white;
+  border: 0.1em solid lightgrey;
+  border-radius: 50%;
+  display: inline-block;
 }

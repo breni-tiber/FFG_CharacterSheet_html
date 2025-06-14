@@ -23,7 +23,7 @@
     </header>
 
   <!-- characteristics and skills -->
-    <table id="brawn" class="characteristicSkill">
+    <table id="brawn" class="characteristicSkill firstQuart">
         <caption class="characteristic">
             <span class="characteristicName">Brawn</span> <span class="characteristicRanks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
         </caption>
@@ -57,7 +57,7 @@
         </tbody>
     </table>
 
-    <table id="agility" class="characteristicSkill">
+    <table id="agility" class="characteristicSkill secondQuart">
         <caption class="characteristic">
             <span class="characteristicName">Agility</span> <span class="characteristicRanks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
         </caption>
@@ -101,7 +101,7 @@
         </tbody>
     </table>
 
-    <table id="intellect" class="characteristicSkill">
+    <table id="intellect" class="characteristicSkill firstQuart">
         <caption class="characteristic">
             <span class="characteristicName">Intellect</span> <span class="characteristicRanks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
         </caption>
@@ -130,7 +130,7 @@
         </tbody>
     </table>
 
-    <table id="knowledge" class="characteristicSkill">
+    <table id="knowledge" class="characteristicSkill firstQuart">
         <caption class="characteristic">
             <span class="characteristicName">Knowlewdge</span>
         </caption>
@@ -174,7 +174,7 @@
         </tbody>
     </table>
 
-    <table id="cunning" class="characteristicSkill">
+    <table id="cunning" class="characteristicSkill secondQuart">
         <caption class="characteristic">
             <span class="characteristicName">Cunning</span> <span class="characteristicRanks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
         </caption>
@@ -208,7 +208,7 @@
         </tbody>
     </table>
 
-    <table id="willpower" class="characteristicSkill">
+    <table id="willpower" class="characteristicSkill firstQuart">
         <caption class="characteristic">
             <span class="characteristicName">Willpower</span> <span class="characteristicRanks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
         </caption>
@@ -232,7 +232,7 @@
         </tbody>
     </table>
 
-    <table id="presence" class="characteristicSkill">
+    <table id="presence" class="characteristicSkill secondQuart">
         <caption class="characteristic">
             <span class="characteristicName">Presence</span> <span class="characteristicRanks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
         </caption>
@@ -260,13 +260,30 @@
             </tr>
         </tbody>
     </table>
-    <!-- reminder box social skills. active and defending skills. 
-      charme <-> cool
-      coercion <-> discipline
-      deception <-> discipline
-      leadership <-> discipline
-      negotiation <-> negotiation/cool
-    -->
+    
+    <table id="socialSkillInteractions" class="reminder secondQuart">
+      <caption>Social Skill Interactions</caption>
+      <thead>
+        <tr>
+          <th>Acting</th>
+          <th>Opposing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Coercion, Deception, Leadership</td>
+          <td>Discipline</td>
+        </tr>
+        <tr>
+          <td>Charm</td>
+          <td>Cool</td>
+        </tr>
+        <tr>
+          <td>Negotiation</td>
+          <td>Negotiation or Cool</td>
+        </tr>
+      </tbody>
+    </table>
     <!-- /characteristics and skills -->
 
     <object id="portrait" class="smallFont" type="image/png" data="img/pic.png">
@@ -289,12 +306,12 @@
       <span class="underlined">Notable Features</span>
     </div>
 
-    <div id="motivation" class="bigValueField">
+    <div id="motivation" class="bigValueField secondHalf">
       Character motivations
     </div>
 
     <!-- duty, obligation -->
-    <div id="dutyObligation">
+    <div id="dutyObligation" class="secondHalf">
       <div class="bigValueField">duty/obligation</div>
       <div class="bigValueField">duty/obligation</div>
       <div class="bigValueField">duty/obligation</div>
@@ -316,58 +333,50 @@
       </tbody>
     </table>
 
-    <table id="defense" class="health">
+    <table id="defense" class="health footer">
       <caption>Defense</caption>
       <tbody>
         <tr>
-          <th scope="col">Melee</th>
-          <th scope="col">Ranged</th>
+          <td><span class="smallValueField">Melee</span></td>
         </tr>
         <tr>
-          <td><span class="smallValueField"></span></td>
-          <td><span class="smallValueField"></span></td>
+          <td><span class="smallValueField">Ranged</span></td>
         </tr>
       </tbody>
     </table>
 
-    <table id="soak" class="health">
+    <table id="soak" class="health footer">
       <caption>Soak</caption>
       <tbody>
         <tr>
-          <th scope="col">ordinary</th>
-          <th scope="col">special</th>
+          <td><span class="smallValueField">special</span></td>
         </tr>
         <tr>
-          <td><span class="smallValueField"></span></td>
-          <td><span class="smallValueField"></span></td>
+          <td><span class="smallValueField">ordinary</span></td>
         </tr>
       </tbody>
     </table>
 
-    <table id="wounds" class="health">
+    <table id="wounds" class="health footer">
       <caption>Wounds</caption>
       <tbody>
         <tr>
-          <th scope="col">THOLD</th>
-          <th scope="col">Current</th>
+          <td><span class="smallValueField">THOLD</span></td>
         </tr>
         <tr>
-          <td><span class="smallValueField"></span></td>
-          <td><span class="smallValueField"></span></td>
+          <td><span class="smallValueField">Current</span></td>
         </tr>
       </tbody>
     </table>
 
-    <table id="strain" class="health">
+    <table id="strain" class="health footer">
       <caption>Strain</caption>
       <tbody>
         <tr>
-          <th scope="col">THOLD</th>
-          <th scope="col">Current</th>
+          <td><span class="smallValueField">THOLD</span></td>
         </tr>
         <tr>
-          <td><span class="smallValueField"></span></td>
-          <td><span class="smallValueField"></span></td>
+          <td><span class="smallValueField">Current</span></td>
         </tr>
       </tbody>
     </table>
@@ -549,9 +558,9 @@
 
       <tbody>
         <tr>
-          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="wideColumn">&nbsp;</td>
+          <td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="wideColumn">&nbsp;</td>
           <td class="midColumn">Range</td><td class="midColumn">Skill</td><td>Qualities</td>
-          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="midColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td>
         </tr>
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -572,9 +581,9 @@
       
       <tbody>
         <tr>
-          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="wideColumn">&nbsp;</td>
+          <td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="wideColumn">&nbsp;</td>
           <td class="midColumn">Range</td><td class="midColumn">Skill</td><td>Qualities</td>
-          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="midColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td>
         </tr>
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -626,9 +635,9 @@
 
       <tbody>
         <tr>
-          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="wideColumn">&nbsp;</td>
+          <td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="wideColumn">&nbsp;</td>
           <td>Qualities</td>
-          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="midColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td>
         </tr>
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -649,9 +658,9 @@
       
       <tbody>
         <tr>
-          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="wideColumn">&nbsp;</td>
+          <td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="wideColumn">&nbsp;</td>
           <td>Qualities</td>
-          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="midColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td>
         </tr>
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -773,9 +782,9 @@
 
       <tbody>
         <tr>
-          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td>
           <td class="wideColumn">&nbsp;</td><td>Qualities</td>
-          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="midColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td>
         </tr>
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -796,9 +805,9 @@
       
       <tbody>
         <tr>
-          <td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td>
           <td class="wideColumn">&nbsp;</td><td>Qualities</td>
-          <td class="midColumn">&nbsp;</td><td class="narrow_column">&nbsp;</td><td class="narrow_column">&nbsp;</td>
+          <td class="midColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td>
         </tr>
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>

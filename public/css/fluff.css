@@ -1,20 +1,20 @@
 #motivation {
-  grid-area: 4/half/6/end;
+  grid-row: 4 / 6;
 }
 
 #dutyObligation {
-  grid-area: 6/half/-2/end;
+  grid-row: 6 / 9;
   width: 100%;
 }
 
 #obligationSum {
-  grid-area: 10/half/11/9;
+  grid-area: 9/half/10/9;
 }
 
 #dutySum {
-  grid-area: 10/9/11/11;
+  grid-area: 9/9/10/11;
 }
 
 #contributionRank {
-  grid-area: 10/11/11/13;
+  grid-area: 9/11/10/-1;
 }
