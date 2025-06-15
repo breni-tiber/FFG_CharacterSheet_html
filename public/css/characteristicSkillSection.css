@@ -23,7 +23,7 @@
 }
 
 #knowledge {
-  grid-row: 8 / 11;
+  grid-row: 8 / -3;
 }
 
 .characteristicSkill tr:nth-child(even)>td {

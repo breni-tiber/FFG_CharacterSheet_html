@@ -3,13 +3,29 @@
 }
 
 #XPLogbook {
-	grid-area: 1/one-quarter/footer-start/end;
+	grid-area: 1/one-quarter/-1/-1;
 	width: 100%;
 }
 
 #XPLogbook th {
   font-weight: normal;
   font-size: small;
+}
+
+#XPLogbook td {
+  border: 1px solid #ccc;
+}
+
+#XPLogbook tbody {
+  height: 1000px;
+}
+
+.date {
+  width: 5em;
+}
+
+.xp {
+  width: 4em;
 }
 
 .spec, .signAbility {

@@ -32,7 +32,7 @@
 }
 
 #criticalWounds {
-  grid-area: 11/two-thirds/-1/-1;
+  grid-area: -3/two-thirds/-1/-1;
 }
 
 .healDifficulty {
@@ -44,12 +44,12 @@
       }
 
 #stims {
-  grid-area: 11/half/footer-start/two-thirds;
+  grid-area: -3/half/footer-start/two-thirds;
   width: fit-content;
 }
 
 #statusCondition {
-  grid-area: 11/1/footer-start/half;
+  grid-area: -3/1/footer-start/half;
   display: flex;
   align-items: center;
   margin: 0;
