@@ -1,13 +1,1 @@
-<a href="public/sheet.html">link</a>
-
-Acting Skill | Opposing Skill
-
-Charm	| Cool
-
-Coercion |	Discipline
-
-Deception |	Discipline
-
-Leadership	| Discipline
-
-Negotiation	| Negotiation or Cool
+<a href="https://breni-tiber.github.io/FFG_CharacterSheet_html/public/sheet.html">Preview in browser</a>
