@@ -14,7 +14,7 @@ jobs:
       - run: chrome --version
       - uses: actions/checkout@v4
       - name: html to portrait_en.pdf
-        run: chromium --headless=new --disable-gpu --print-to-pdf="portrait_en.pdf" ./public/sheet.html
+        run: chromium --no-sandbox --headless=new --disable-gpu --print-to-pdf="portrait_en.pdf" ./public/sheet.html
       - name: upload portrait_en
         id: upload_portrait_en
         uses: svenstaro/upload-release-action@v2
