@@ -9,6 +9,7 @@
 
 #XPCostsReminder td:nth-child(2) {
 	text-align: right;
+	white-space:nowrap;
 }
 
 #XPLogbook {
