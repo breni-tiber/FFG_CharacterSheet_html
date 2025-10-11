@@ -2,6 +2,15 @@
 	grid-area: 1/1/header-end/one-quarter;
 }
 
+
+#XPCostsReminder td {
+	border: 1px solid #ccc;
+}
+
+#XPCostsReminder td:nth-child(2) {
+	text-align: right;
+}
+
 #XPLogbook {
 	grid-area: 1/one-quarter/-1/-1;
 	width: 100%;
