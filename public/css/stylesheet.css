@@ -4,25 +4,25 @@
 @import "force.css";
 
 @media print {
-  @page {
-    size: A4;
+  /*@page {
+    size: A4 landscape;
     margin: 0;
-  }
+  }*/
 
   html {
     width: 100%;
     height: 100%;
-    padding: 0px;
-    margin: 0px;
+    padding: 0em;
+    margin: 0em;
   }
 
   body {
     width: 100%;
     height: 100%;
-    padding: 0px;
-    margin: 0px;
+    padding: 0em;
+    margin: 0em;
     background: white;
-    font-size: 12pt;
+    font-size: 11pt;
   }
 
   .printedPage {
@@ -30,7 +30,7 @@
     height: 100%;
     page-break-inside: avoid;
     page-break-after: always;
-    /* border: 2pt dotted grey; */
+    border: 2pt dotted grey;
   }
 
   .screenOnly {
@@ -70,14 +70,34 @@
   font-size: small;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.zebra tr:nth-child(even)>td {
+    background-color: lightgrey;
+}
+
+.widthStretch {
+    width: stretch;
+}
+
+th, caption {
+    text-align: start;
+}
+
 .printedPage {
   padding: 0.6cm; /* tweak this value to your printer's capabilities */
   display: grid;
   grid-template-rows: min-content [header-end] repeat(10, auto) [footer-start] max-content;
   grid-template-columns: 1fr 1fr 1fr [one-quarter] 1fr [one-third] 1fr 1fr [half] 1fr 1fr [two-thirds] 1fr [three-quarter] 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 0.5em;
   align-items: start;
-  justify-items: center;
+  justify-items: left;
   overflow: hidden;
 }
 
@@ -132,6 +152,8 @@ section > img { /* make images respect parent width */
   background-color: white;
   border-top: thin solid lightgrey;
   border-left: thin solid lightgrey;
+  border-right: thin solid lightgrey;
+  border-bottom: thin solid lightgrey;
   width: 100%;
   height: 100%;
   min-width: 3rem;
@@ -146,6 +168,8 @@ section > img { /* make images respect parent width */
   background-color: white;
   border-top: thin solid lightgrey;
   border-left: thin solid lightgrey;
+  border-right: thin solid lightgrey;
+  border-bottom: thin solid lightgrey;
   width: 100%;
   height: 100%;
   min-width: 3rem;
@@ -160,6 +184,8 @@ section > img { /* make images respect parent width */
   background-color: white;
   border-top: thin solid lightgrey;
   border-left: thin solid lightgrey;
+  border-right: thin solid lightgrey;
+  border-bottom: thin solid lightgrey;
   width: 100%;
   height: 100%;
   min-width: 3rem;

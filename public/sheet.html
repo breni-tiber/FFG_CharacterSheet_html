@@ -29,17 +29,17 @@
         </caption>
         <thead></thead>
         <tbody>
-            <tr class="combat">
+            <tr class="bold">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Brawl</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
             </tr>
-            <tr class="combat">
+            <tr class="bold">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Lightsaber</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
             </tr>
-            <tr class="combat">
+            <tr class="bold">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Melee</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
@@ -63,17 +63,17 @@
         </caption>
         <thead></thead>
         <tbody>
-            <tr class="combat">
+            <tr class="bold">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Gunnery</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
             </tr>
-            <tr class="combat">
+            <tr class="bold">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Ranged&nbsp;(HVY)</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
             </tr>
-            <tr class="combat">
+            <tr class="bold">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Ranged&nbsp;(LT)</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
@@ -132,41 +132,41 @@
 
     <table id="knowledge" class="characteristicSkill firstQuart">
         <caption class="characteristic">
-            <span class="characteristicName">Knowlewdge</span>
+            <span class="characteristicName italic">Knowlewdge</span>
         </caption>
         <thead></thead>
         <tbody>
-            <tr class="knwl">
+            <tr class="italic">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Core Worlds</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
             </tr>
-            <tr class="knwl">
+            <tr class="italic">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Education</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
             </tr>
-            <tr class="knwl">
+            <tr class="italic">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Lore</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
             </tr>
-            <tr class="knwl">
+            <tr class="italic">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Outer Rim</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
             </tr>
-            <tr class="knwl">
+            <tr class="italic">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Underworld</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
             </tr>
-            <tr class="knwl">
+            <tr class="italic">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Warfare</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
             </tr>
-            <tr class="knwl">
+            <tr class="italic">
                 <td class="classSkill"><input type="checkbox"></td>
                 <td class="skillName">Xenology</td>
                 <td class="skillRanks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
@@ -261,7 +261,7 @@
         </tbody>
     </table>
     
-    <table id="socialSkillInteractions" class="reminder secondQuart xsmallFont">
+    <table id="socialSkillInteractions" class="reminder secondQuart xsmallFont zebra">
       <caption>Social Skill Interactions</caption>
       <thead>
         <tr>
@@ -280,7 +280,7 @@
         </tr>
         <tr>
           <td>Negotiation</td>
-          <td>Negotiation or Cool</td>
+          <td>Negotiation, Cool</td>
         </tr>
       </tbody>
     </table>
@@ -297,7 +297,7 @@
         <span class="underlined">Notable Features</span>
         <!-- home planet, known languages -->
 
-        <p class="screenOnly">Picture 'img/pic.png' not found.</p>
+        <p class="screenOnly italic">Picture 'img/pic.png' not found.</p>
         <!-- Place a picture of your character inside the 'img' folder. It must have the name 'pic.png'. -->
       </div>
     </object>
@@ -384,11 +384,13 @@
 
     <table id="criticalWounds" class="health">
       <caption>Critical wounds</caption>
-      <tbody>
-        <tr>
+      <thead>
+      	<tr>
           <th scope="col" class="healDifficulty">Severity</th>
           <th scope="col">Effect</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
           <td class="healDifficulty">&loz;&#x202F;&loz;&#x202F;&loz;&#x202F;&loz;</td>
           <td class="underlined"></td>
@@ -412,17 +414,19 @@
       </tbody>
     </table>
 
+<!--
     <figure id="statusCondition">
       <figcaption>Status</figcaption>
       <ul id="statusOptions">
-        <li>Disoriented
-          <span class="reminder xsmallFont">&#9632; to all checks</span></li>
-        <li>Immobilized
-          <span class="reminder xsmallFont">No maneuvers</span></li>
-        <li>Staggered
-          <span class="reminder xsmallFont">No actions</span></li>
+        <li><input type="checkbox"><span>Disoriented<span class="reminder xsmallFont">&#9632; to all checks</span></span></li>
+        <li><input type="checkbox"> <span>Immobilized<span class="reminder xsmallFont">No maneuvers</span></span></li>
+        <li><input type="checkbox"> <span>Staggered<span class="reminder xsmallFont">No actions</span></span></li>
       </ul>
     </figure>
+-->
+    <span id="disoriented"><input type="checkbox"> <span>Disoriented<br /><span class="reminder xsmallFont">&#9632; to all checks</span></span></span>
+    <span id="immobilized"><input type="checkbox"> <span>Immobilized<br /><span class="reminder xsmallFont">No maneuvers</span></span></span>
+    <span id="staggered"><input type="checkbox"> <span><span>Staggered</span><br/><span class="reminder xsmallFont">No actions</span></span></span>
   </div>
 
   <div class="printedPage" id="XP">
@@ -490,8 +494,14 @@
       <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
     </div>
 
-    <table id="XPCostsReminder" class="reminder footer firstQuart xsmallFont">
-      <caption>XP costs</caption>
+    <table id="XPCostsReminder" class="reminder footer firstQuart widthStretch xsmallFont zebra">
+      <caption class="hidden">XP costs</caption>
+      <thead>
+      	<tr>
+      	<th>item</th>
+      	<th>XP cost</th>
+      	</tr>
+      </thead>
       <tbody>
         <tr>
           <td>career skill</td><td>[new rank]*5</td>
@@ -598,11 +608,30 @@
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
+      </tbody>  
+        
+      <tfoot>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="5">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="6">&loz;&#x202F;&loz;&#x202F;&loz;</td> <td>&nbsp;</td>
         </tr>
-      </tbody>
-      
+      </tfoot>
+
+    </table>
+    
+    
+    <table class="modded weapons2">
+      <colgroup>
+        <col class="damage">
+        <col class="critical">
+        <col class="weaponName">
+
+        <col class="weaponDesc" span="3">
+
+        <col class="weaponSource">
+        <col class="weaponHP">
+        <col class="weaponEnc">
+      </colgroup>
+
       <tbody>
         <tr>
           <td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="wideColumn">&nbsp;</td>
@@ -621,10 +650,14 @@
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td colspan="3">Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
+      </tbody>  
+        
+      <tfoot>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="5">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="6">&loz;&#x202F;&loz;&#x202F;&loz;</td> <td>&nbsp;</td>
         </tr>
-      </tbody>
+      </tfoot>
+
       
     </table>
 
@@ -675,10 +708,28 @@
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
-        <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="3">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
       </tbody>
+
+      <tfoot>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="4">&loz;&#x202F;&loz;&#x202F;&loz;</td> <td>&nbsp;</td>
+        </tr>
+      </tfoot>
+
+    </table>
+    
+    <table class="modded armors2">
+      <colgroup>
+        <col class="armorDefense">
+        <col class="armorSoak">
+        <col class="armorName">
+
+        <col class="armorDesc">
+
+        <col class="armorSource">
+        <col class="armorHP">
+        <col class="armorEnc">
+      </colgroup>
       
       <tbody>
         <tr>
@@ -698,10 +749,13 @@
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td></td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
-        <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="3">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
       </tbody>
+
+      <tfoot>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="4">&loz;&#x202F;&loz;&#x202F;&loz;</td> <td>&nbsp;</td>
+        </tr>
+      </tfoot>
       
     </table>
 
@@ -822,11 +876,29 @@
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
-        <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="3">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
       </tbody>
+
+      <tfoot>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="4">&loz;&#x202F;&loz;&#x202F;&loz;</td> <td>&nbsp;</td>
+        </tr>
+      </tfoot>
       
+    </table>
+
+    <table class="modded lightsabers2">
+      <colgroup>
+        <col class="damage">
+        <col class="critical">
+
+        <col calss="weaponName">
+        <col class="weaponDesc">
+
+        <col class="weaponSource">
+        <col class="weaponHP">
+        <col class="weaponEnc">
+      </colgroup>
+
       <tbody>
         <tr>
           <td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td>
@@ -834,7 +906,7 @@
           <td class="midColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td><td class="narrowColumn">&nbsp;</td>
         </tr>
         <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>   <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         </tr>
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -844,11 +916,14 @@
         </tr>
         <tr>
           <td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;</td> <td>Mods</td>    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="3">&loz;&#x202F;&loz;&#x202F;&loz;</td>  <td>&nbsp;</td><td>&nbsp;</td>
         </tr>
       </tbody>
+
+      <tfoot>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td>    <td colspan="4">&loz;&#x202F;&loz;&#x202F;&loz;</td> <td>&nbsp;</td>
+        </tr>
+      </tfoot>
       
     </table>
 
