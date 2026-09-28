@@ -2,13 +2,9 @@
 	grid-area: 1/1/2/one-quarter;
 }
 
-#XPCostsReminder td:nth-child(2) {
-	text-align: right;
-	white-space:nowrap;
-}
-
 #XPLogbook {
 	grid-area: 1/one-quarter/-1/-1;
+	height: stretch;
 	width: 100%;
 }
 
@@ -19,10 +15,6 @@
 
 #XPLogbook td {
   border: 1px solid #ccc;
-}
-
-#XPLogbook tbody {
-  height: 1000px;
 }
 
 .date {
@@ -65,4 +57,9 @@
 
 .signatureAbilityTree .basePower {
   grid-area: 1/1/2/-1;
+}
+
+#XPCostsReminder td:nth-child(2) {
+	text-align: right;
+	white-space:nowrap;
 }

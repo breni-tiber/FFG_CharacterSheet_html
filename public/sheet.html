@@ -20,6 +20,7 @@
     <header>
       <span class="underlined">Campaign</span>
       <span class="underlined">Player</span>
+      <span class="underlined">Character</span>
     </header>
 
   <!-- characteristics and skills -->
@@ -290,6 +291,7 @@
       <div>
         <span class="underlined">Height</span>
         <span class="underlined">Build</span>
+        <span class="underlined">Species</span>
         <span class="underlined">Gender</span>
         <span class="underlined">Hair</span>
         <span class="underlined">Age</span>
@@ -301,11 +303,6 @@
         <!-- Place a picture of your character inside the 'img' folder. It must have the name 'pic.png'. -->
       </div>
     </object>
-
-    <div id="details" class="smallFont fourthQuart">
-      <span class="underlined">Character</span>
-      <span class="underlined">Species</span>
-    </div>
 
     <div id="motivation" class="bigValueField secondHalf">
       Character motivations
@@ -414,19 +411,24 @@
       </tbody>
     </table>
 
-<!--
-    <figure id="statusCondition">
-      <figcaption>Status</figcaption>
-      <ul id="statusOptions">
-        <li><input type="checkbox"><span>Disoriented<span class="reminder xsmallFont">&#9632; to all checks</span></span></li>
-        <li><input type="checkbox"> <span>Immobilized<span class="reminder xsmallFont">No maneuvers</span></span></li>
-        <li><input type="checkbox"> <span>Staggered<span class="reminder xsmallFont">No actions</span></span></li>
-      </ul>
-    </figure>
--->
-    <span id="disoriented"><input type="checkbox"> <span>Disoriented<br /><span class="reminder xsmallFont">&#9632; to all checks</span></span></span>
-    <span id="immobilized"><input type="checkbox"> <span>Immobilized<br /><span class="reminder xsmallFont">No maneuvers</span></span></span>
-    <span id="staggered"><input type="checkbox"> <span><span>Staggered</span><br/><span class="reminder xsmallFont">No actions</span></span></span>
+    <span id="disoriented" class="condition">
+        <input type="checkbox" id="disorientedCheck" />
+        <label for="disorientedCheck">Disoriented</label>
+        <span></span>
+        <label for="disorientedCheck" class="reminder xsmallFont">&#9632; to all checks</label>
+    </span>
+    <span id="immobilized" class="condition">
+        <input type="checkbox" id="immobilizedCheck"/>
+        <label for="immobilizedCheck">Immobilized</label>
+        <span></span>
+        <label for="immobilizedCheck" class="reminder xsmallFont">No maneuvers</label>
+    </span>
+    <span id="staggered"  class="condition">
+        <input type="checkbox" id="staggeredCheck"/>
+        <label for="staggeredCheck">Staggered</label>
+        <span></span>
+        <label for="staggeredCheck" class="reminder xsmallFont">No actions</label>
+    </span>
   </div>
 
   <div class="printedPage" id="XP">

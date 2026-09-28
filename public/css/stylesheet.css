@@ -30,7 +30,7 @@
     height: 100%;
     page-break-inside: avoid;
     page-break-after: always;
-    border: 2pt dotted grey;
+    <!-- border: 2pt dotted grey;-->
   }
 
   .screenOnly {
@@ -39,27 +39,21 @@
 }
 
 @media screen {
-  /* development */
   #front {
-    border: 2pt dotted blue;
+    border: 2pt dashed blue;
   }
 
-  #fluff{
-    border: 2pt dotted pink;
+  #XP {
+    border: 2pt dashed green;
   }
 
-  #XP{
-    border: 2pt dotted green;
+  #equip {
+    border: 2pt dashed grey;
   }
 
-  #equip{
-    border: 2pt dotted grey;
+  #force {
+    border: 2pt dashed fuchsia;
   }
-
-  #force{
-    border: 2pt dotted fuchsia;
-  }
-  /* /development */
 }
 
 .xsmallFont {
@@ -93,7 +87,7 @@ th, caption {
 .printedPage {
   padding: 0.6cm; /* tweak this value to your printer's capabilities */
   display: grid;
-  grid-template-rows: min-content [header-end] repeat(10, auto) [footer-start] max-content;
+  grid-template-rows: min-content [header-end] repeat(22, auto) [footer-start] max-content;
   grid-template-columns: 1fr 1fr 1fr [one-quarter] 1fr [one-third] 1fr 1fr [half] 1fr 1fr [two-thirds] 1fr [three-quarter] 1fr 1fr 1fr;
   grid-gap: 0.5em;
   align-items: start;
