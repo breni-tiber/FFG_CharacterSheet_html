@@ -4,10 +4,10 @@
 @import "force.css";
 
 @media print {
-  /*@page {
-    size: A4 landscape;
+  @page {
+    size: A4 portrait;
     margin: 0;
-  }*/
+  }
 
   html {
     width: 100%;
