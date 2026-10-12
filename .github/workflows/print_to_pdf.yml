@@ -10,9 +10,19 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v7
+      - name: Create tag
+        id: tagging
+        run: |
+          TAG=$(date +'%Y-%m-%dT%H:%M:%S')
+          echo "Create tag ${TAG}"
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git tag -f -a ${TAG} -m "Release ${TAG}."
+          git push -f origin ${TAG}
+          echo "tag_name=${TAG}" >> "$GITHUB_OUTPUT"
       - uses: browser-actions/setup-chrome@v2
       - run: chrome --version
-      - uses: actions/checkout@v7
       - name: html to portrait_en.pdf
         run: chromium --no-sandbox --headless=new --disable-gpu --print-to-pdf="portrait_en.pdf" ./public/sheet.html --no-pdf-header-footer
       - name: upload portrait_en
@@ -20,6 +30,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           file: portrait_en.pdf
+          tag: ${{ steps.tagging.outputs.tag_name }}
           overwrite: true
       - name: print portrait_en.pdf path
         run: echo ${{ steps.upload_portrait_en.outputs.browser_download_url }}
@@ -39,6 +50,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           file: portrait_de.pdf
+          tag: ${{ steps.tagging.outputs.tag_name }}
           overwrite: true
       - name: print portrait_de.pdf path
         run: echo ${{ steps.upload_portrait_de.outputs.browser_download_url }}
