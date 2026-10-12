@@ -27,30 +27,30 @@
   width: fit-content;
 }
 
-  #statusCondition {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-  }
+#statusCondition {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
 
-  #statusCondition figcaption {
-    display: none;
-  }
+#statusCondition figcaption {
+  display: none;
+}
 
-  #statusCondition ul {
-    margin: 0;
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
-  }
+#statusCondition ul {
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
 
-  #statusOptions li {
-    display: contents;
-    list-style-type: none;
-    width: 31%;
-  }
+#statusOptions li {
+  display: contents;
+  list-style-type: none;
+  width: 31%;
+}
 
-  #statusOptions .reminder {
-    display: block;
-  }
+#statusOptions .reminder {
+  display: block;
+}

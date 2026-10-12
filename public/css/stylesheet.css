@@ -5,8 +5,23 @@
 
 @media print {
   @page {
-    size: A4 portrait;
+    /*size: A4;*/
     margin: 0;
+  }
+
+  @page upright {
+    size: portrait;
+    page-orientation: upright;
+  }
+
+  @page rotateLeft {
+    size: landscape;
+    page-orientation: rotate-left;
+  }
+
+  @page rotateRight {
+    size: landscape;
+    page-orientation: rotate-right;
   }
 
   html {
@@ -44,7 +59,7 @@
   }
 
   #XP {
-    border: 2pt dashed green;
+    border: 2pt dashed fuchsia;
   }
 
   #equip {
@@ -52,7 +67,7 @@
   }
 
   #force {
-    border: 2pt dashed fuchsia;
+    border: 2pt dashed green;
   }
 }
 
@@ -73,15 +88,15 @@
 }
 
 .zebra tr:nth-child(even)>td {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
 
 .widthStretch {
-    width: stretch;
+  width: stretch;
 }
 
 th, caption {
-    text-align: start;
+  text-align: start;
 }
 
 .printedPage {

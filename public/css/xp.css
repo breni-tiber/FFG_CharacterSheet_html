@@ -1,3 +1,12 @@
+/*******************************************************************landscape*/
+@media (orientation: landscape){  
+  .printedPage#XP {
+    background: lime;
+    page: upright;
+  }
+}
+/***************************************************************** /landscape*/
+
 #career {
 	grid-area: 1/1/2/one-quarter;
 }

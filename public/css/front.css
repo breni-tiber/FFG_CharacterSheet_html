@@ -13,24 +13,24 @@ header span:after {
   display: block;
 }
 
-    #front object div {
-      border: thin solid lightgrey;
-      width: 100%;
-    }
+#front object div {
+  border: thin solid lightgrey;
+  width: 100%;
+}
 
-    #front object span {
-      display: block;
-    }
+#front object span {
+  display: block;
+}
 
-    #front object p {
-      margin: 0em;
-    }
+#front object p {
+  margin: 0em;
+}
 
 .condition {
-    display: inline-grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 7fr;
-    column-gap: 0.25em;
+  display: inline-grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 7fr;
+  column-gap: 0.25em;
 }
 
 /*******************************************************************landscape*/
@@ -69,7 +69,6 @@ header span:after {
   #knowledge {
     grid-row: 4 / 13;
     grid-column: 5 / 7;
-    align-self: end;
   }
 
   #cunning {
@@ -120,36 +119,37 @@ header span:after {
   }
 
   #obligationSum {
-    grid-area: 24/8/25/9;
+    grid-area: 7/9/10/10;
   }
 
   #dutySum {
-    grid-area: 24/7/25/8;
+    grid-area: 10/9/13/10;
   }
 
   #contributionRank {
-    grid-area: 24/5/25/6;
+    grid-area: 13/9/18/10;
   }
   
   /* health/defense */
   #defense {
     grid-column: 11 / -1;
-    grid-row: 13 / 20;
+    grid-row: 4 / 24;
   }
 
   #soak {
     grid-column: 11 / -1;
-    grid-row: 13 / 20;
+    grid-row: 8 / 20;
   }
 
   #strain {
     grid-column: 11 / -1;
-    grid-row: 13 / 20;
+    grid-row: 11 / 24;
   }
 
   #wounds {
     grid-column: 11 / -1;
-    grid-row: 13 / 20;
+    grid-row: 10 / 22;
+    align-self: end;;
   }
 
   #stims {
@@ -160,17 +160,16 @@ header span:after {
   }
 
   #disoriented {
-    grid-area: 13/10/19/12;
+    grid-area: 5/10/10/12;
     align-self: end;
   }
 
   #immobilized {
-    grid-area: 13/10/21/12;
-    align-self: end;
+    grid-area: 10/10/21/12;
   }
 
   #staggered {
-    grid-area: 13/10/20/12;
+    grid-area: 8/10/16/12;
     align-self: end;
   }
   
