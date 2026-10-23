@@ -1,25 +1,25 @@
 .health {
   width: 100%;
-}
 
-.health caption {
-  font-weight: bold;
-}
+  caption {
+    font-weight: bold;
+  }
 
-.health th {
-  font-weight: normal;
-  font-size: small;
+  th {
+    font-weight: normal;
+    font-size: small;
+  }
+
+  &:not(#critical-wounds) th {
+    width: 50%;
+  }
 }
   
-.health:not(#criticalWounds) th {
-  width: 50%;
-}
-
-.healDifficulty {
+.heal-difficulty {
   white-space: nowrap;
 }
 
-#criticalWounds tr:nth-child(2) td:nth-child(2) {
+#critical-wounds tr:nth-child(2) td:nth-child(2) {
   width: 100%;
 }
 
@@ -27,30 +27,32 @@
   width: fit-content;
 }
 
-#statusCondition {
+#status-condition {
   display: flex;
   align-items: center;
   margin: 0;
   width: 100%;
+
+  figcaption {
+    display: none;
+  }
+
+  ul {
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-#statusCondition figcaption {
-  display: none;
-}
+#status-options {
+  li {
+    display: contents;
+    list-style-type: none;
+    width: 31%;
+  }
 
-#statusCondition ul {
-  margin: 0;
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-}
-
-#statusOptions li {
-  display: contents;
-  list-style-type: none;
-  width: 31%;
-}
-
-#statusOptions .reminder {
-  display: block;
+  .reminder {
+    display: block;
+  }
 }

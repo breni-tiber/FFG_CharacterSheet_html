@@ -17,33 +17,32 @@
 .modded {
   text-align: right;
   width: 100%;
-}
 
-.modded td {
-  border: 1px solid #ccc;
-}
+  td {
+    border: 1px solid #ccc;
+  }
 
-.modded tfoot {
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  /*font-size: x-small;*/
-}
-/*
-.modded tfoot::after {
-  content: '';
-  display: block;
-  height: 15px;
+  tfoot {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    /*font-size: x-small;*/
+  }
+/*  tfoot::after {
+      content: '';
+      display: block;
+      height: 15px;
 }*/
+}
 
-.narrowColumn {
+.narrow-column {
   width: 2em;
 }
 
-.midColumn {
+.mid-column {
   width: 5em;
 }
 
-.wideColumn {
+.wide-column {
   width: 10em;
 }
 

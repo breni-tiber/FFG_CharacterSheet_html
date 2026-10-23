@@ -7,21 +7,21 @@
   @page {
     /*size: A4;*/
     margin: 0;
-  }
 
-  @page upright {
-    size: portrait;
-    page-orientation: upright;
-  }
+    upright {
+      size: portrait;
+      page-orientation: upright;
+    }
 
-  @page rotateLeft {
-    size: landscape;
-    page-orientation: rotate-left;
-  }
+    rotateLeft {
+      size: landscape;
+      page-orientation: rotate-left;
+    }
 
-  @page rotateRight {
-    size: landscape;
-    page-orientation: rotate-right;
+    rotateRight {
+      size: landscape;
+      page-orientation: rotate-right;
+    }
   }
 
   html {
@@ -40,7 +40,7 @@
     font-size: 11pt;
   }
 
-  .printedPage {
+  .printed-page {
     width: 100%;
     height: 100%;
     page-break-inside: avoid;
@@ -48,7 +48,7 @@
     <!-- border: 2pt dotted grey;-->
   }
 
-  .screenOnly {
+  .screen-only {
     display: none;
   }
 }
@@ -58,7 +58,7 @@
     border: 2pt dashed blue;
   }
 
-  #XP {
+  #xp {
     border: 2pt dashed fuchsia;
   }
 
@@ -71,11 +71,11 @@
   }
 }
 
-.xsmallFont {
+.xs-font {
   font-size: x-small;
 }
 
-.smallFont {
+.s-font {
   font-size: small;
 }
 
@@ -91,7 +91,7 @@
   background-color: lightgrey;
 }
 
-.widthStretch {
+.width-stretch {
   width: stretch;
 }
 
@@ -99,7 +99,7 @@ th, caption {
   text-align: start;
 }
 
-.printedPage {
+.printed-page {
   padding: 0.6cm; /* tweak this value to your printer's capabilities */
   display: grid;
   grid-template-rows: min-content [header-end] repeat(22, auto) [footer-start] max-content;
@@ -118,27 +118,27 @@ th, caption {
   grid-row: footer-start / -1;
 }
 
-.firstQuart {
+.first-quart {
   grid-column: 1 / one-quarter;
 }
 
-.secondQuart {
+.second-quart {
   grid-column: one-quarter / half;
 }
 
-.thirdQuart {
+.third-quart {
   grid-column: half / three-quarter;
 }
 
-.fourthQuart {
+.fourth-quart {
   grid-column: three-quarter / -1;
 }
 
-.firstHalf {
+.first-half {
   grid-column: 1 / half;
 }
 
-.secondHalf {
+.second-half {
   grid-column: half / -1;
 }
 
@@ -156,7 +156,7 @@ section > img { /* make images respect parent width */
   border-bottom: 0.1em solid lightgrey;
 }
 
-.smallValueField {
+.small-value-field {
   display: flex;
   background-color: white;
   border-top: thin solid lightgrey;
@@ -172,7 +172,7 @@ section > img { /* make images respect parent width */
   align-items: flex-end;
 }
 
-.mediumValueField {
+.medium-value-field {
   display: flex;
   background-color: white;
   border-top: thin solid lightgrey;
@@ -188,7 +188,7 @@ section > img { /* make images respect parent width */
   align-items: flex-end;
 }
 
-.bigValueField {
+.big-value-field {
   display: flex;
   background-color: white;
   border-top: thin solid lightgrey;
@@ -204,7 +204,7 @@ section > img { /* make images respect parent width */
   align-items: flex-end;
 }
 
-.checkBox {
+.check-box {
   height: 1em;
   width: 1em;
   background-color: white;

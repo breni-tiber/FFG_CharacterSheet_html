@@ -16,6 +16,7 @@ header span:after {
 #front object div {
   border: thin solid lightgrey;
   width: 100%;
+  height: 100%;
 }
 
 #front object span {
@@ -43,11 +44,11 @@ header span:after {
     grid-row: 1 / header-end;
     grid-column: 1 / 13;
     width: stretch;
-  }
-  
-  header span {
-    display: inline-block;
-    width: 33%;
+
+    span {
+      display: inline-block;
+      width: 33%;
+    }
   }
   
   /* skills/characteristics */
@@ -86,7 +87,7 @@ header span:after {
     grid-column: 11 / -1;
   }
 
-  #socialSkillInteractions {
+  #social-skill-interactions {
     grid-row: 3 / 13;
     grid-column: 9 / 11;
   }
@@ -97,10 +98,10 @@ header span:after {
     grid-column: 7 / 9;
     width: stretch;
     height: stretch;
-  }
   
-  #front object div {
-    height: stretch;
+    div {
+      height: stretch;
+    }
   }
 
   #motivation {
@@ -108,7 +109,7 @@ header span:after {
     grid-column: 1 / 5;
   }
 
-  #dutyObligation {
+  #duty-obligation {
     grid-row: 13 / 18;
     grid-column: 1 / 9;
     height: stretch;
@@ -118,15 +119,15 @@ header span:after {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  #obligationSum {
+  #obligation-sum {
     grid-area: 7/9/10/10;
   }
 
-  #dutySum {
+  #duty-sum {
     grid-area: 10/9/13/10;
   }
 
-  #contributionRank {
+  #contribution-rank {
     grid-area: 13/9/18/10;
   }
   
@@ -153,7 +154,7 @@ header span:after {
   }
 
   #stims {
-    grid-column: 10 / 12;
+    grid-column: 9 / 12;
     grid-row: 13 / 22;
     width: fit-content;
     align-self: end;
@@ -173,12 +174,12 @@ header span:after {
     align-self: end;
   }
   
-  #criticalWounds {
+  #critical-wounds {
     grid-area: 22 /two-thirds/-1/-1;
-  }
-  
-  #criticalWounds thead {
-    display: none;
+
+    thead {
+      display: none;
+    }
   }
 }
 /********************************************************************portrait*/
@@ -223,7 +224,7 @@ header span:after {
     grid-row: 8 / 10;
   }
   
-  #socialSkillInteractions {
+  #social-skill-interactions {
     grid-row: 8 / 9;
   }
 
@@ -232,20 +233,20 @@ header span:after {
     grid-row: 4 / 6;
   }
 
-  #dutyObligation {
+  #duty-obligation {
     grid-row: 6 / 9;
     width: 100%;
   }
 
-  #obligationSum {
+  #obligation-sum {
     grid-area: 9/half/10/9;
   }
 
-  #dutySum {
+  #duty-sum {
     grid-area: 9/9/10/11;
   }
 
-  #contributionRank {
+  #contribution-rank {
     grid-area: 9/11/10/-1;
   }
   
@@ -278,7 +279,7 @@ header span:after {
     grid-column: half / two-thirds;
   }
 
-  #criticalWounds {
+  #critical-wounds {
     grid-area: -3/two-thirds/-1/-1;
   }
   

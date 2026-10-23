@@ -1,22 +1,22 @@
-.characteristicSkill tr:nth-child(even)>td {
-  background-color: lightgrey;
-}
-
-.characteristicSkill tr:nth-child(even)>td:last-child {
-  background: linear-gradient(to left, white 75%, lightgrey 75%);
-}
-
-.characteristicSkill tr:nth-child(even) .skillRanks img {
-  transform: rotate(180deg);
-}
-
-.characteristicSkill tr:nth-child(odd) .skillRanks img {
-  padding-left: 0.75em;
-}
-
-.characteristicSkill {
+.characteristic-skill {
   border-spacing: 0 0;
   min-width: 12em;
+
+  tr:nth-child(even)>td {
+    background-color: lightgrey;
+  }
+
+  tr:nth-child(even)>td:last-child {
+    background: linear-gradient(to left, white 75%, lightgrey 75%);
+  }
+
+  tr:nth-child(even) .skill-ranks img {
+    transform: rotate(180deg);
+  }
+
+  tr:nth-child(odd) .skill-ranks img {
+    padding-left: 0.75em;
+  }
 }
 
 caption.characteristic {
@@ -26,31 +26,31 @@ caption.characteristic {
   height: 2em;
 }
 
-.characteristicName {
+.characteristic-name {
   font-size: x-large;
   vertical-align: middle;
 }
 
-.characteristicRanks img {
+.characteristic-ranks img {
   height: 2em;
   vertical-align: middle;
 }
 
-.classSkill img {
+.class-skill img {
   height: 0.75em;
 }
 
-.skillName {
+.skill-name {
   min-width: 7em;
 }
 
-.skillRanks img {
+.skill-ranks img {
   height: 2em;
   vertical-align: middle;
   margin-top: -0.2em;
   margin-bottom: -0.15em;
 }
 
-#socialSkillInteractions caption {
+#social-skill-interactions caption {
   display: none;
 }

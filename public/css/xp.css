@@ -1,6 +1,6 @@
 /*******************************************************************landscape*/
 @media (orientation: landscape){  
-  .printedPage#XP {
+  .printedPage#xp {
     background: lime;
     page: upright;
   }
@@ -11,19 +11,19 @@
 	grid-area: 1/1/2/one-quarter;
 }
 
-#XPLogbook {
+#xp-logbook {
 	grid-area: 1/one-quarter/-1/-1;
 	height: stretch;
 	width: 100%;
-}
 
-#XPLogbook th {
-  font-weight: normal;
-  font-size: small;
-}
+  th {
+    font-weight: normal;
+    font-size: small;
+  }
 
-#XPLogbook td {
-  border: 1px solid #ccc;
+  td {
+    border: 1px solid #ccc;
+  }
 }
 
 .date {
@@ -34,41 +34,41 @@
   width: 4em;
 }
 
-.spec, .signAbility {
+.spec, .sign-ability {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.talentTree, .signatureAbilityTree {
+.talent-tree, .signature-ability-tree {
   grid-column-start: 3;
   grid-column-end: 4;  
 }
 
-.talentTree {
+.talent-tree {
 	display: inline-grid;
 	grid-template-rows: repeat(5, min-content);
 	grid-template-columns: repeat(4, min-content);
+
+	input {
+  	margin: 0em;
+  }
 }
 
-.talentTree input {
-	margin: 0em;
-}
-
-.signatureAbilityTree {
+.signature-ability-tree {
 	display: inline-grid;
 	grid-template-rows: repeat(3, min-content);
 	grid-template-columns: repeat(4, min-content);
+
+  input {
+	  margin: 0em;
+  }
+
+  .base-power {
+    grid-area: 1/1/2/-1;
+  }
 }
 
-.signatureAbilityTree input {
-	margin: 0em;
-}
-
-.signatureAbilityTree .basePower {
-  grid-area: 1/1/2/-1;
-}
-
-#XPCostsReminder td:nth-child(2) {
+#xp-costs-reminder td:nth-child(2) {
 	text-align: right;
 	white-space:nowrap;
 }
