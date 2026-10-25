@@ -203,6 +203,17 @@ section > img { /* make images respect parent width */
   min-height: 6em;
 }
 
+.table-cell-field {
+  display: flex !important;
+  gap: 0.3rem;
+  width: 100%;
+
+  input:not([type]) {
+    flex: 1;
+    text-fit: shrink;
+  }
+}
+
 input:not([type]) {
   margin: 0;
   padding: 0 0.2rem;

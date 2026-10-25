@@ -19,11 +19,6 @@ header span:after {
   height: 100%;
 }
 
-#front object span {
-  display: flex;
-  justify-content: end;
-}
-
 #front object p {
   margin: 0em;
 }
