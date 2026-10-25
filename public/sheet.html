@@ -18,9 +18,9 @@
 
   <div class="printed-page" id="front">
     <header>
-      <span class="underlined">Campaign</span>
-      <span class="underlined">Player</span>
-      <span class="underlined">Character</span>
+      <span class="small-value-field">Campaign</span>
+      <span class="small-value-field">Player</span>
+      <span class="small-value-field">Character</span>
     </header>
 
   <!-- characteristics and skills -->
@@ -304,21 +304,19 @@
       </div>
     </object>
 
-    <div id="motivation" class="big-value-field second-half">
-      Character motivations
-    </div>
+    <div id="motivation" class="big-value-field second-half">Motivation</div>
 
     <!-- duty, obligation -->
     <div id="duty-obligation" class="second-half">
-      <div class="big-value-field">duty/obligation</div>
-      <div class="big-value-field">duty/obligation</div>
-      <div class="big-value-field">duty/obligation</div>
-      <div class="big-value-field">duty/obligation</div>
+      <div class="big-value-field">Duty/Obligation</div>
+      <div class="big-value-field">Duty/Obligation</div>
+      <div class="big-value-field">Duty/Obligation</div>
+      <div class="big-value-field">Duty/Obligation</div>
     </div>
 
     <div id="contribution-rank" class="small-value-field">Contribution</div>
-    <div id="duty-sum" class="small-value-field">&sum; duty</div>
-    <div id="obligation-sum" class="small-value-field">&sum; obligation</div>
+    <div id="duty-sum" class="small-value-field">&sum; Duty</div>
+    <div id="obligation-sum" class="small-value-field">&sum; Obligation</div>
 
     <!-- stimpack uses -->
     <table id="stims" class="health">
@@ -362,7 +360,7 @@
           <td><span class="small-value-field">THOLD</span></td>
         </tr>
         <tr>
-          <td><span class="small-value-field">Current</span></td>
+          <td><span class="small-value-field">current</span></td>
         </tr>
       </tbody>
     </table>
@@ -374,7 +372,7 @@
           <td><span class="small-value-field">THOLD</span></td>
         </tr>
         <tr>
-          <td><span class="small-value-field">Current</span></td>
+          <td><span class="small-value-field">current</span></td>
         </tr>
       </tbody>
     </table>
@@ -425,7 +423,7 @@
     </span>
     <span id="staggered"  class="condition">
         <input type="checkbox" id="staggered-check"/>
-        <label for="staggered-check">stagg.</label>
+        <label for="staggered-check">STAGG</label>
         <span></span>
         <label for="staggered-check" class="reminder xs-font">No actions</label>
     </span>
@@ -805,6 +803,15 @@
       <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
     </div>
 
+    <div class="medium-value-field force-power-name2">Power</div>
+    <div class="force-power-tree force-power-tree2">
+      <input class="base-power" type="checkbox">
+      <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
+      <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
+      <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
+      <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
+    </div>
+
     <div class="medium-value-field force-power-name">Power</div>
     <div class="force-power-tree">
       <input class="base-power" type="checkbox">
@@ -823,17 +830,8 @@
       <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
     </div>
 
-    <div class="medium-value-field force-power-name2">Power</div>
-    <div class="force-power-tree force-power-tree2">
-      <input class="base-power" type="checkbox">
-      <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-      <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-      <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-      <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-    </div>
-
     <!-- lightsaber weapons -->
-    <table class="modded lightsabers">
+    <table id="lightsaber1" class="modded">
       <colgroup>
         <col class="damage">
         <col class="critical">
@@ -888,7 +886,7 @@
       
     </table>
 
-    <table class="modded lightsabers2">
+    <table id="lightsaber2" class="modded">
       <colgroup>
         <col class="damage">
         <col class="critical">
