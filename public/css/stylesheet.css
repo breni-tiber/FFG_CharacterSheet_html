@@ -165,50 +165,57 @@ section > img { /* make images respect parent width */
   display: inline-block;
 }
 
+.small-value-field, .medium-value-field, .big-value-field {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-top: thin solid lightgrey;
+  border-left: thin solid lightgrey;
+  border-right: thin solid lightgrey;
+  border-bottom: thin solid lightgrey;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: small;
+
+  input:not([type]) {
+    flex: 1;
+    text-align: center;
+    max-width: 100%;
+    text-fit: grow 300%;
+  }
+  label {
+    width: 100%;
+    text-align: right;
+  }
+}
 .small-value-field {
-  display: flex;
-  background-color: white;
-  border-top: thin solid lightgrey;
-  border-left: thin solid lightgrey;
-  border-right: thin solid lightgrey;
-  border-bottom: thin solid lightgrey;
-  width: 100%;
-  height: 100%;
   min-width: 3rem;
   min-height: 3em;
-  font-size: small;
-  justify-content: flex-end;
-  align-items: flex-end;
 }
-
 .medium-value-field {
-  display: flex;
-  background-color: white;
-  border-top: thin solid lightgrey;
-  border-left: thin solid lightgrey;
-  border-right: thin solid lightgrey;
-  border-bottom: thin solid lightgrey;
-  width: 100%;
-  height: 100%;
   min-width: 3rem;
   min-height: 3em;
-  font-size: small;
-  justify-content: flex-end;
-  align-items: flex-end;
 }
-
 .big-value-field {
-  display: flex;
-  background-color: white;
-  border-top: thin solid lightgrey;
-  border-left: thin solid lightgrey;
-  border-right: thin solid lightgrey;
-  border-bottom: thin solid lightgrey;
-  width: 100%;
-  height: 100%;
   min-width: 3rem;
   min-height: 6em;
-  font-size: small;
-  justify-content: flex-end;
-  align-items: flex-end;
+}
+
+input:not([type]) {
+  margin: 0;
+  padding: 0 0.2rem;
+  min-width: 1rem;
+  border: none;
+}
+
+textarea {
+  resize: none;
+  margin: 0;
+  padding: 0 0.2rem;
+  width: 100%;
+  border: none;
+  flex: 1;
+  text-fit: shrink;
 }
