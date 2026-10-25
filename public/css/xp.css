@@ -9,6 +9,10 @@
 
 #career {
 	grid-area: 1/1/2/one-quarter;
+
+  div {
+    grid-column: span 3;
+  }
 }
 
 #xp-logbook {
@@ -50,7 +54,7 @@
 	grid-template-columns: repeat(4, min-content);
 
 	input {
-  	margin: 0em;
+  	margin: 0;
   }
 }
 
@@ -60,7 +64,7 @@
 	grid-template-columns: repeat(4, min-content);
 
   input {
-	  margin: 0em;
+	  margin: 0;
   }
 
   .base-power {
@@ -70,5 +74,5 @@
 
 #xp-costs-reminder td:nth-child(2) {
 	text-align: right;
-	white-space:nowrap;
+	white-space: nowrap;
 }

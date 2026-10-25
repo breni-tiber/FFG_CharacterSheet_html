@@ -92,7 +92,7 @@
 }
 
 .width-stretch {
-  width: stretch;
+  width: 100%;
 }
 
 th, caption {
@@ -156,6 +156,15 @@ section > img { /* make images respect parent width */
   border-bottom: 0.1em solid lightgrey;
 }
 
+.check-box {
+  height: 1em;
+  width: 1em;
+  background-color: white;
+  border: 0.1em solid lightgrey;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 .small-value-field {
   display: flex;
   background-color: white;
@@ -202,13 +211,4 @@ section > img { /* make images respect parent width */
   font-size: small;
   justify-content: flex-end;
   align-items: flex-end;
-}
-
-.check-box {
-  height: 1em;
-  width: 1em;
-  background-color: white;
-  border: 0.1em solid lightgrey;
-  border-radius: 50%;
-  display: inline-block;
 }

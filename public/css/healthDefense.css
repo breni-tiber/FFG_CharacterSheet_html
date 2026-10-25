@@ -1,3 +1,10 @@
+.condition {
+  display: inline-grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 7fr;
+  column-gap: 0.25em;
+}
+
 .health {
   width: 100%;
 
@@ -21,6 +28,12 @@
 
 #critical-wounds tr:nth-child(2) td:nth-child(2) {
   width: 100%;
+}
+
+#defense, #wounds, #soak, #strain {
+  & td {
+    padding: 0;
+  }
 }
 
 #stims {
