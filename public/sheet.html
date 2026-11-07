@@ -3,26 +3,37 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Character Sheet | FFG Star Wars</title>
-	<link href="https://unpkg.com/sanitize.css" rel="stylesheet">
-	<link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet">
-	<link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>Character Sheet | FFG Star Wars</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
+    <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet">
+    <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
 
-	<svg style="display: none;">
-		<defs>
-			<polygon id="triangle-template" points="0,0 100,0 30.9,95.1"
-				style="stroke:black; stroke-width:5; stroke-linejoin: round;" />
-			<symbol id="pentagon-template" viewbox="-83.5 -97.7 186.1 195.4">
-				<use href="#triangle-template" style="fill:var(--fill-1, white)"/>
-				<use href="#triangle-template" style="fill:var(--fill-2, white)" transform="rotate(72)"/>
-				<use href="#triangle-template" style="fill:var(--fill-3, white)" transform="rotate(144)"/>
-				<use href="#triangle-template" style="fill:var(--fill-4, white)" transform="rotate(216)"/>
-				<use href="#triangle-template" style="fill:var(--fill-5, white)" transform="rotate(288)"/>
-			</symbol>
-		</defs>
-	</svg>
+    <svg style="display: none;">
+        <defs>
+            <polygon id="hex-triangle-template" points="0,0 100,0 50,86.6"
+                style="stroke:black; stroke-width:5; stroke-linejoin: round;" />
+            <symbol id="hexagon-template" viewbox="-102.6 -89.2 205.2 178.4">
+                <use href="#hex-triangle-template" style="fill:var(--fill-1, white)"/>
+                <use href="#hex-triangle-template" style="fill:var(--fill-2, white)" transform="rotate(60)"/>
+                <use href="#hex-triangle-template" style="fill:var(--fill-3, white)" transform="rotate(120)"/>
+                <use href="#hex-triangle-template" style="fill:var(--fill-4, white)" transform="rotate(180)"/>
+                <use href="#hex-triangle-template" style="fill:var(--fill-5, white)" transform="rotate(240)"/>
+                <use href="#hex-triangle-template" style="fill:var(--fill-6, white)" transform="rotate(300)"/>
+            </symbol>
+
+            <polygon id="triangle-template" points="0,0 100,0 30.9,95.1"
+                style="stroke:black; stroke-width:5; stroke-linejoin: round;" />
+            <symbol id="pentagon-template" viewbox="-83.5 -97.7 186.1 195.4">
+                <use href="#triangle-template" style="fill:var(--fill-1, white)"/>
+                <use href="#triangle-template" style="fill:var(--fill-2, white)" transform="rotate(72)"/>
+                <use href="#triangle-template" style="fill:var(--fill-3, white)" transform="rotate(144)"/>
+                <use href="#triangle-template" style="fill:var(--fill-4, white)" transform="rotate(216)"/>
+                <use href="#triangle-template" style="fill:var(--fill-5, white)" transform="rotate(288)"/>
+            </symbol>
+        </defs>
+    </svg>
 </head>
 
 <!-- duplex reasoning: not equip+front, because skills & tool; not XP+front, because skills+talents; force entirely optional for some players -->
@@ -40,7 +51,11 @@
   <!-- characteristics and skills -->
     <table id="brawn" class="characteristic-skill first-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Brawn</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Brawn</span> <span class="characteristic-ranks">
+                <svg id="input-brawn" aria-label="brawn characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>
@@ -94,7 +109,11 @@
 
     <table id="agility" class="characteristic-skill second-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Agility</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Agility</span> <span class="characteristic-ranks">
+                <svg id="input-agility" aria-label="agility characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>
@@ -166,7 +185,11 @@
 
     <table id="intellect" class="characteristic-skill first-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Intellect</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Intellect</span> <span class="characteristic-ranks">
+                <svg id="input-intellect" aria-label="intellect characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>
@@ -283,7 +306,11 @@
 
     <table id="cunning" class="characteristic-skill second-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Cunning</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Cunning</span> <span class="characteristic-ranks">
+                <svg id="input-cunning" aria-label="cunning characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>
@@ -337,7 +364,11 @@
 
     <table id="willpower" class="characteristic-skill first-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Willpower</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Willpower</span> <span class="characteristic-ranks">
+                <svg id="input-willpower" aria-label="willpower characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>
@@ -373,7 +404,11 @@
 
     <table id="presence" class="characteristic-skill second-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Presence</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Presence</span> <span class="characteristic-ranks">
+                <svg id="input-presence" aria-label="presence characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>

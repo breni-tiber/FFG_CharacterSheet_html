@@ -31,8 +31,9 @@ caption.characteristic {
   vertical-align: middle;
 }
 
-.characteristic-ranks img {
+.characteristic-ranks svg {
   height: 2em;
+  width: 2.3em;
   vertical-align: middle;
 }
 
