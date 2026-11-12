@@ -205,7 +205,9 @@ textarea {
   label {
     flex: 0;
     width: 100%;
+    height: 100%;
     text-align: right;
+    align-content: end;
   }
 }
 .small-value-field {
@@ -219,6 +221,16 @@ textarea {
 .big-value-field {
   min-width: 3rem;
   min-height: 6em;
+}
+.input-left {
+  flex-direction: row;
+  gap: 0.3em;
+  align-items: stretch;
+
+  input:not([type]),label {
+    min-height: inherit;
+    height: 100%;
+  }
 }
 
 .table-cell-field {
