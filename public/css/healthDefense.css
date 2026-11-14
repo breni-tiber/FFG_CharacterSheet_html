@@ -31,6 +31,8 @@
 }
 
 #defense, #wounds, #soak, #strain {
+  table-layout: fixed;
+
   & td {
     padding: 0;
   }
