@@ -3,12 +3,37 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Character Sheet | FFG Star Wars</title>
-	<link href="https://unpkg.com/sanitize.css" rel="stylesheet">
-	<link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet">
-	<link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>Character Sheet | FFG Star Wars</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
+    <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet">
+    <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+
+    <svg style="display: none;">
+        <defs>
+            <polygon id="hex-triangle-template" points="0,0 100,0 50,86.6"
+                style="stroke:black; stroke-width:5; stroke-linejoin: round;" />
+            <symbol id="hexagon-template" viewbox="-102.6 -89.2 205.2 178.4">
+                <use href="#hex-triangle-template" style="fill:var(--fill-1, white)"/>
+                <use href="#hex-triangle-template" style="fill:var(--fill-2, white)" transform="rotate(60)"/>
+                <use href="#hex-triangle-template" style="fill:var(--fill-3, white)" transform="rotate(120)"/>
+                <use href="#hex-triangle-template" style="fill:var(--fill-4, white)" transform="rotate(180)"/>
+                <use href="#hex-triangle-template" style="fill:var(--fill-5, white)" transform="rotate(240)"/>
+                <use href="#hex-triangle-template" style="fill:var(--fill-6, white)" transform="rotate(300)"/>
+            </symbol>
+
+            <polygon id="triangle-template" points="0,0 100,0 30.9,95.1"
+                style="stroke:black; stroke-width:5; stroke-linejoin: round;" />
+            <symbol id="pentagon-template" viewbox="-83.5 -97.7 186.1 195.4">
+                <use href="#triangle-template" style="fill:var(--fill-1, white)"/>
+                <use href="#triangle-template" style="fill:var(--fill-2, white)" transform="rotate(72)"/>
+                <use href="#triangle-template" style="fill:var(--fill-3, white)" transform="rotate(144)"/>
+                <use href="#triangle-template" style="fill:var(--fill-4, white)" transform="rotate(216)"/>
+                <use href="#triangle-template" style="fill:var(--fill-5, white)" transform="rotate(288)"/>
+            </symbol>
+        </defs>
+    </svg>
 </head>
 
 <!-- duplex reasoning: not equip+front, because skills & tool; not XP+front, because skills+talents; force entirely optional for some players -->
@@ -18,115 +43,200 @@
 
   <div class="printed-page" id="front">
     <header>
-      <span class="small-value-field">Campaign</span>
-      <span class="small-value-field">Player</span>
-      <span class="small-value-field">Character</span>
+      <span class="small-value-field input-left">
+        <input id="input-campaign"/>
+        <label for="input-campaign">Campaign</label>
+      </span>
+      <span class="small-value-field input-left">
+        <input id="input-player"/>
+        <label for="input-player">Player</label>
+      </span>
+      <span class="small-value-field input-left">
+        <input id="input-char-name"/>
+        <label for="input-char-name">Character</label>
+      </span>
     </header>
 
   <!-- characteristics and skills -->
     <table id="brawn" class="characteristic-skill first-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Brawn</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Brawn</span> <span class="characteristic-ranks">
+                <svg id="input-brawn" aria-label="brawn characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>
             <tr class="bold">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-brawl-is-career"></td>
                 <td class="skill-name">Brawl</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-brawl" aria-label="brawl skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr class="bold">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-lightsaber-is-career"></td>
                 <td class="skill-name">Lightsaber</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-lightsaber" aria-label="lightsaber skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr class="bold">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-melee-is-career"></td>
                 <td class="skill-name">Melee</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-melee" aria-label="melee skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-athletics-is-career"></td>
                 <td class="skill-name">Athletics</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-athletics" aria-label="athletics skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-resilience-is-career"></td>
                 <td class="skill-name">Resilience</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-resilience" aria-label="resilience skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
         </tbody>
     </table>
 
     <table id="agility" class="characteristic-skill second-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Agility</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Agility</span> <span class="characteristic-ranks">
+                <svg id="input-agility" aria-label="agility characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>
             <tr class="bold">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-gunnery-is-career"></td>
                 <td class="skill-name">Gunnery</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-gunnery" aria-label="gunnery skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr class="bold">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-ranged-heavy-is-career)"></td>
                 <td class="skill-name">Ranged&nbsp;(HVY)</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-ranged-heavy" aria-label="ranged heavy skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr class="bold">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-ranged-light-is-career)"></td>
                 <td class="skill-name">Ranged&nbsp;(LT)</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-ranged-light" aria-label="ranged light skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-coordination-is-career"></td>
                 <td class="skill-name">Coordination</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-coordination" aria-label="coordination skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-piloting-planet-is-career)"></td>
                 <td class="skill-name">Piloting&nbsp;(PLNT)</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-piloting-planet" aria-label="piloting planet skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-piloting-space-is-career)"></td>
                 <td class="skill-name">Piloting&nbsp;(SP)</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-piloting-space" aria-label="piloting space skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-stealth-is-career"></td>
                 <td class="skill-name">Stealth</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-stealth" aria-label="stealth skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
         </tbody>
     </table>
 
     <table id="intellect" class="characteristic-skill first-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Intellect</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Intellect</span> <span class="characteristic-ranks">
+                <svg id="input-intellect" aria-label="intellect characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-astrogation-is-career"></td>
                 <td class="skill-name">Astrogation</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-astrogation" aria-label="astrogation skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-computers-is-career"></td>
                 <td class="skill-name">Computers</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-computers" aria-label="computers skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-mechanics-is-career"></td>
                 <td class="skill-name">Mechanics</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-mechanics" aria-label="mechanics skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-medicine-is-career"></td>
                 <td class="skill-name">Medicine</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-medicine" aria-label="medicine skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
         </tbody>
     </table>
@@ -138,126 +248,214 @@
         <thead></thead>
         <tbody>
             <tr class="italic">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-core-worlds-is-career"></td>
                 <td class="skill-name">Core Worlds</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-core-worlds" aria-label="core worlds skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr class="italic">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-education-is-career"></td>
                 <td class="skill-name">Education</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-education" aria-label="education skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr class="italic">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-lore-is-career"></td>
                 <td class="skill-name">Lore</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-lore" aria-label="lore skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr class="italic">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-outer-rim-is-career"></td>
                 <td class="skill-name">Outer Rim</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-outer-rim" aria-label="outer rim skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr class="italic">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-underworld-is-career"></td>
                 <td class="skill-name">Underworld</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-underworld" aria-label="underworld skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr class="italic">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-warfare-is-career"></td>
                 <td class="skill-name">Warfare</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-warfare" aria-label="warfare skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr class="italic">
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-xenology-is-career"></td>
                 <td class="skill-name">Xenology</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-xenology" aria-label="xenology skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
         </tbody>
     </table>
 
     <table id="cunning" class="characteristic-skill second-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Cunning</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Cunning</span> <span class="characteristic-ranks">
+                <svg id="input-cunning" aria-label="cunning characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-deception-is-career"></td>
                 <td class="skill-name">Deception</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-deception" aria-label="deception skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-perception-is-career"></td>
                 <td class="skill-name">Perception</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-perception" aria-label="perception skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-skullduggery-is-career"></td>
                 <td class="skill-name">Skullduggery</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-skullduggery" aria-label="skullduggery skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-streetwise-is-career"></td>
                 <td class="skill-name">Streetwise</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-streetwise" aria-label="streetwise skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-survival-is-career"></td>
                 <td class="skill-name">Survival</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-survival" aria-label="survival skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
         </tbody>
     </table>
 
     <table id="willpower" class="characteristic-skill first-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Willpower</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Willpower</span> <span class="characteristic-ranks">
+                <svg id="input-willpower" aria-label="willpower characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-coercion-is-career"></td>
                 <td class="skill-name">Coercion</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-coercion" aria-label="coercion skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-discipline-is-career"></td>
                 <td class="skill-name">Discipline</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-discipline" aria-label="discipline skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-vigilance-is-career"></td>
                 <td class="skill-name">Vigilance</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-vigilance" aria-label="vigilance skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
         </tbody>
     </table>
 
     <table id="presence" class="characteristic-skill second-quart">
         <caption class="characteristic">
-            <span class="characteristic-name">Presence</span> <span class="characteristic-ranks"><img src="img/hexagon.svg" height="15" alt="characteristic ranks"></span>
+            <span class="characteristic-name">Presence</span> <span class="characteristic-ranks">
+                <svg id="input-presence" aria-label="presence characteristic ranks">
+                    <use href="#hexagon-template" />
+                </svg>
+            </span>
         </caption>
         <thead></thead>
         <tbody>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-charm-is-career"></td>
                 <td class="skill-name">Charm</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-charm" aria-label="charm skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-cool-is-career"></td>
                 <td class="skill-name">Cool</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-cool" aria-label="cool skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-leadership-is-career"></td>
                 <td class="skill-name">Leadership</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-leadership" aria-label="leadership skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
             <tr>
-                <td class="class-skill"><input type="checkbox"></td>
+                <td class="class-skill"><input type="checkbox" id="input-negotiation-is-career"></td>
                 <td class="skill-name">Negotiation</td>
-                <td class="skill-ranks"><img src="img/pentagon.svg" height="15" alt="skill ranks"></td>
+                <td class="skill-ranks">
+                    <svg id="input-skill-negotiation" aria-label="negotiation skill ranks">
+                        <use href="#pentagon-template" />
+                    </svg>
+                </td>
             </tr>
         </tbody>
     </table>
@@ -289,14 +487,38 @@
 
     <object id="portrait" class="s-font third-quart" type="image/png" data="img/pic.png">
       <div>
-        <span class="underlined">Height</span>
-        <span class="underlined">Build</span>
-        <span class="underlined">Species</span>
-        <span class="underlined">Gender</span>
-        <span class="underlined">Hair</span>
-        <span class="underlined">Age</span>
-        <span class="underlined">Eyes</span>
-        <span class="underlined">Notable Features</span>
+        <span class="table-cell-field underlined">
+          <input id="input-height"/>
+          <label for="input-height">Height</label>
+        </span>
+        <span class="table-cell-field underlined">
+          <input id="input-build"/>
+          <label for="input-build">Build</label>
+        </span>
+        <span class="table-cell-field underlined">
+          <input id="input-species"/>
+          <label for="input-species">Species</label>
+        </span>
+        <span class="table-cell-field underlined">
+          <input id="input-gender"/>
+          <label for="input-gender">Gender</label>
+        </span>
+        <span class="table-cell-field underlined">
+          <input id="input-hair"/>
+          <label for="input-hair">Hair</label>
+        </span>
+        <span class="table-cell-field underlined">
+          <input id="input-age"/>
+          <label for="input-age">Age</label>
+        </span>
+        <span class="table-cell-field underlined">
+          <input id="input-eyes"/>
+          <label for="input-eyes">Eyes</label>
+        </span>
+        <span class="table-cell-field underlined">
+          <input id="input-notable"/>
+          <label for="input-notable">Notable Features</label>
+        </span>
         <!-- home planet, known languages -->
 
         <p class="screen-only italic">Picture 'img/pic.png' not found.</p>
@@ -304,19 +526,43 @@
       </div>
     </object>
 
-    <div id="motivation" class="big-value-field second-half">Motivation</div>
+    <div id="motivation" class="big-value-field second-half">
+      <textarea id="input-motivation"></textarea>
+      <label for="input-motivation">Motivation</label>
+    </div>
 
     <!-- duty, obligation -->
     <div id="duty-obligation" class="second-half">
-      <div class="big-value-field">Duty/Obligation</div>
-      <div class="big-value-field">Duty/Obligation</div>
-      <div class="big-value-field">Duty/Obligation</div>
-      <div class="big-value-field">Duty/Obligation</div>
+      <div class="big-value-field">
+        <textarea id="input-duty-obligation-1"></textarea>
+        <label for="input-duty-obligation-1">Duty/Obligation</label>
+      </div>
+      <div class="big-value-field">
+        <textarea id="input-duty-obligation-2"></textarea>
+        <label for="input-duty-obligation-2">Duty/Obligation</label>
+      </div>
+      <div class="big-value-field">
+        <textarea id="input-duty-obligation-3"></textarea>
+        <label for="input-duty-obligation-3">Duty/Obligation</label>
+      </div>
+      <div class="big-value-field">
+        <textarea id="input-duty-obligation-4"></textarea>
+        <label for="input-duty-obligation-4">Duty/Obligation</label>
+      </div>
     </div>
 
-    <div id="contribution-rank" class="small-value-field">Contribution</div>
-    <div id="duty-sum" class="small-value-field">&sum; Duty</div>
-    <div id="obligation-sum" class="small-value-field">&sum; Obligation</div>
+    <div id="contribution-rank" class="small-value-field">
+      <input id="input-contribution"/>
+      <label for="input-contribution">Contribution</label>
+    </div>
+    <div id="duty-sum" class="small-value-field">
+      <input id="input-duty-sum"/>
+      <label for="input-duty-sum">&sum; Duty</label>
+    </div>
+    <div id="obligation-sum" class="small-value-field">
+      <input id="input-sum-obligation"/>
+      <label for="input-sum-obligation">&sum; Obligation</label>
+    </div>
 
     <!-- stimpack uses -->
     <table id="stims" class="health">
@@ -333,10 +579,16 @@
       <caption>Defense</caption>
       <tbody>
         <tr>
-          <td><span class="small-value-field">Melee</span></td>
+          <td><span class="small-value-field input-left">
+            <input id="input-defense-melee"/>
+            <label for="input-defense-melee">Melee</label>
+          </span></td>
         </tr>
         <tr>
-          <td><span class="small-value-field">Ranged</span></td>
+          <td><span class="small-value-field input-left">
+            <input id="input-defense-ranged"/>
+            <label for="input-defense-ranged">Ranged</label>
+          </span></td>
         </tr>
       </tbody>
     </table>
@@ -345,10 +597,16 @@
       <caption>Soak</caption>
       <tbody>
         <tr>
-          <td><span class="small-value-field">special</span></td>
+          <td><span class="small-value-field input-left">
+            <input id="input-soak-special"/>
+            <label for="input-soak-special">special</label>
+          </span></td>
         </tr>
         <tr>
-          <td><span class="small-value-field">ordinary</span></td>
+          <td><span class="small-value-field input-left">
+            <input id="input-soak-ordinary"/>
+            <label for="input-soak-ordinary">ordinary</label>
+          </span></td>
         </tr>
       </tbody>
     </table>
@@ -357,10 +615,16 @@
       <caption>Wounds</caption>
       <tbody>
         <tr>
-          <td><span class="small-value-field">THOLD</span></td>
+          <td><span class="small-value-field input-left">
+            <input id="input-wounds-threshold"/>
+            <label for="input-wounds-threshold">THOLD</label>
+          </span></td>
         </tr>
         <tr>
-          <td><span class="small-value-field">current</span></td>
+          <td><span class="small-value-field input-left">
+            <input id="input-wounds-current"/>
+            <label for="input-wounds-current">current</label>
+          </span></td>
         </tr>
       </tbody>
     </table>
@@ -369,10 +633,16 @@
       <caption>Strain</caption>
       <tbody>
         <tr>
-          <td><span class="small-value-field">THOLD</span></td>
+          <td><span class="small-value-field input-left">
+            <input id="input-strain-threshold"/>
+            <label for="input-strain-threshold">THOLD</label>
+          </span></td>
         </tr>
         <tr>
-          <td><span class="small-value-field">current</span></td>
+          <td><span class="small-value-field input-left">
+            <input id="input-strain-current"/>
+            <label for="input-strain-current">current</label>
+          </span></td>
         </tr>
       </tbody>
     </table>
@@ -937,6 +1207,7 @@
     <span id="force-available" class="small-value-field">available</span>
   </div>
 
+  <script src="../script/load-and-store.js" defer></script>
 </body>
 
 </html>
